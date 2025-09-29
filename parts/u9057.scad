@@ -11,12 +11,12 @@ function ldraw_lib__u9057() = [
 // 0 ~Electric Train 12V Power Pickup Plug Pin Type 1
 // 0 Name: u9057.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CMDLINE -c494
 // 
@@ -24,6 +24,8 @@ function ldraw_lib__u9057() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 4 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
   [1,16,0,4,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],

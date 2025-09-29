@@ -8,15 +8,16 @@ function ldraw_lib__s__919s03() = [
 // 0 ~Electric Battery Box with Pinholes Inside (Needs Work)
 // 0 Name: s\919s03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Work needed: correctly model battery sockets
 // 
@@ -40,10 +41,10 @@ function ldraw_lib__s__919s03() = [
   [1,16,-77,50,20,0,-154,0,20,0,0,0,0,20, ldraw_lib__1_16edge()],
 // 1 16 -77 50 -20 0 -154 0 20 0 0 0 0 -20 1-16edge.dat
   [1,16,-77,50,-20,0,-154,0,20,0,0,0,0,-20, ldraw_lib__1_16edge()],
-// 4 16 -77 70 20 -77 68.48 27.65 -77 68.48 -27.65 -77 70 -20
-  [4,16,-77,70,20,-77,68.48,27.65,-77,68.48,-27.65,-77,70,-20],
-// 4 16 77 70 -20 77 68.48 -27.65 77 68.48 27.65 77 70 20
-  [4,16,77,70,-20,77,68.48,-27.65,77,68.48,27.65,77,70,20],
+// 4 16 -77 70 -20 -77 68.48 -27.65 -77 68.48 27.65 -77 70 20
+  [4,16,-77,70,-20,-77,68.48,-27.65,-77,68.48,27.65,-77,70,20],
+// 4 16 77 70 20 77 68.48 27.65 77 68.48 -27.65 77 70 -20
+  [4,16,77,70,20,77,68.48,27.65,77,68.48,-27.65,77,70,-20],
 // 1 16 0 66 0 -77 0 0 0 -134 0 0 0 1 box5.dat
   [1,16,0,66,0,-77,0,0,0,-134,0,0,0,1, ldraw_lib__box5()],
 // 0

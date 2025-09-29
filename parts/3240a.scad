@@ -13,12 +13,12 @@ function ldraw_lib__3240a() = [
 // 0 Train Track 12V Straight Insert Type 2
 // 0 Name: 3240a.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3242c, Rebrickable 3242c
 // 
@@ -26,7 +26,8 @@ function ldraw_lib__3240a() = [
 // 
 // 0 !HISTORY 2012-02-06 [MagFors] Added missing edge lines along underside rib
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 140 12 0 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,140,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],

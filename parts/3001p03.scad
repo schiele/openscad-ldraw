@@ -5,19 +5,20 @@ function ldraw_lib__3001p03() = [
 // 0 Brick  2 x  4 with Blue Stripe and 8 Black Windows Pattern
 // 0 Name: 3001p03.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2004-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3001oldpb03, Rebrickable 3001apr0003, Set 1560
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // based on 3001p02.dat, used in set 1560
 // 
@@ -27,10 +28,10 @@ function ldraw_lib__3001p03() = [
   [1,1,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3001p03s()],
 // 1 1 0 0 20 -1 0 0 0 1 0 0 0 -1 s\3001p03s.dat
   [1,1,0,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3001p03s()],
-// 4 16 40 16 20 40 0 20 -40 0 20 -40 16 20
-  [4,16,40,16,20,40,0,20,-40,0,20,-40,16,20],
-// 4 16 -40 16 -20 -40 0 -20 40 0 -20 40 16 -20
-  [4,16,-40,16,-20,-40,0,-20,40,0,-20,40,16,-20],
+// 4 16 -40 16 20 -40 0 20 40 0 20 40 16 20
+  [4,16,-40,16,20,-40,0,20,40,0,20,40,16,20],
+// 4 16 40 16 -20 40 0 -20 -40 0 -20 -40 16 -20
+  [4,16,40,16,-20,40,0,-20,-40,0,-20,-40,16,-20],
 // 0
 ];
 module ldraw_lib__3001p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

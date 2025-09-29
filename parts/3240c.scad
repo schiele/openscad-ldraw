@@ -4,19 +4,20 @@ function ldraw_lib__3240c() = [
 // 0 Train Track 12V Straight Insert with Decoupler Underside Cutout
 // 0 Name: 3240c.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3242e, Rebrickable 3242e
 // 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Needs Work: This file currently only serves as a placeholder and emulates
 // 0 // its contents by referencing 3240a.dat.

@@ -5,15 +5,16 @@ function ldraw_lib__4181c01() = [
 // 0 Train Door  1 x  4 x  5 Left with TransClear Glass
 // 0 Name: 4181c01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4181.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4181()],

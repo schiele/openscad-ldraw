@@ -9,15 +9,16 @@ function ldraw_lib__s__47996s02() = [
 // 0 ~Boat Rigging  4 x 28 Side Joint
 // 0 Name: s\47996s02.dat
 // 0 Author: William Howard [WilliamH]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 4 0 0 0 16 0 -4 0 0 0 0 4 4-4cyli.dat
   [1,16,4,0,0,0,16,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli()],

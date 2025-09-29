@@ -9,12 +9,12 @@ function ldraw_lib__635() = [
 // 0 Conveyor Belt Axle with Crank
 // 0 Name: 635.dat
 // 0 Author: Arne Hackstein
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1998-04-11 [PTadmin] Official Update 1998-04
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
@@ -25,7 +25,8 @@ function ldraw_lib__635() = [
 // 0 !HISTORY 2013-03-19 [MMR1988] Added two condlines, removed "0" lines
 // 0 !HISTORY 2013-03-19 [MMR1988] replaced one cylc by cylo prim to avoid duplicated surfaces
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 45 0 0 0 -17 0 0 0 4 4 0 0 4-4cylc.dat
   [1,16,45,0,0,0,-17,0,0,0,4,4,0,0, ldraw_lib__4_4cylc()],
@@ -45,10 +46,10 @@ function ldraw_lib__635() = [
 // 1 16 -73 0 -20 0 24 0 4 0 0 0 0 4 4-4cylc.dat
   [1,16,-73,0,-20,0,24,0,4,0,0,0,0,4, ldraw_lib__4_4cylc()],
 // 
-// 4 16 -45 8 0 -45 5 -20 -45 -5 -20 -45 -8 0
-  [4,16,-45,8,0,-45,5,-20,-45,-5,-20,-45,-8,0],
-// 4 16 -49 -8 0 -49 -5 -20 -49 5 -20 -49 8 0
-  [4,16,-49,-8,0,-49,-5,-20,-49,5,-20,-49,8,0],
+// 4 16 -45 -8 0 -45 -5 -20 -45 5 -20 -45 8 0
+  [4,16,-45,-8,0,-45,-5,-20,-45,5,-20,-45,8,0],
+// 4 16 -49 8 0 -49 5 -20 -49 -5 -20 -49 -8 0
+  [4,16,-49,8,0,-49,5,-20,-49,-5,-20,-49,-8,0],
 // 1 16 -47 6.5 -10 0 0 2 1.5 -1 0 10 0 0 rect2p.dat
   [1,16,-47,6.5,-10,0,0,2,1.5,-1,0,10,0,0, ldraw_lib__rect2p()],
 // 1 16 -47 -6.5 -10 0 0 2 -1.5 1 0 10 0 0 rect2p.dat

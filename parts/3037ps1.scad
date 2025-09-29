@@ -5,17 +5,18 @@ function ldraw_lib__3037ps1() = [
 // 0 Slope Brick 45  2 x  4 with Red and Gold Triangles Right Pattern
 // 0 Name: 3037ps1.dat
 // 0 Author: Tim Gould [timgould]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3037px6, Rebrickable 3037pr0016, Set 7143
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3037s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3037s01()],

@@ -9,12 +9,14 @@ function ldraw_lib__51739() = [
 // 0 Wing  2 x  4
 // 0 Name: 51739.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS wedge
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement
@@ -23,6 +25,8 @@ function ldraw_lib__51739() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-07-12 [MagFors] Reworked top surface, made CCW
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2025-09-26 [Jaco] Add keywords
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],

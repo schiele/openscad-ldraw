@@ -6,12 +6,12 @@ function ldraw_lib__s__59s02() = [
 // 0 ~Minifig Sword Greatsword - 1/4 Blade
 // 0 Name: s\59s02.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Subpart UPDATE 2004-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2003-12-29 [fwcain] revised...
@@ -19,16 +19,17 @@ function ldraw_lib__s__59s02() = [
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-09-10 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 2 24 0 0 -6 -1 0 -3
   [2,24,0,0,-6,-1,0,-3],
 // 2 24 -1 0 -3 -1 0 0
   [2,24,-1,0,-3,-1,0,0],
-// 4 16 -1 0 -3 -1 -70 -3 0 -70 -6 0 0 -6
-  [4,16,-1,0,-3,-1,-70,-3,0,-70,-6,0,0,-6],
-// 4 16 -1 -70 -3 -1 0 -3 -1 0 0 -1 -70 0
-  [4,16,-1,-70,-3,-1,0,-3,-1,0,0,-1,-70,0],
+// 4 16 0 0 -6 0 -70 -6 -1 -70 -3 -1 0 -3
+  [4,16,0,0,-6,0,-70,-6,-1,-70,-3,-1,0,-3],
+// 4 16 -1 -70 0 -1 0 0 -1 0 -3 -1 -70 -3
+  [4,16,-1,-70,0,-1,0,0,-1,0,-3,-1,-70,-3],
 // 2 24 0 -70 -6 0 0 -6
   [2,24,0,-70,-6,0,0,-6],
 // 5 24 -1 0 -3 -1 -70 -3 0 -70 -6 -1 -70 3

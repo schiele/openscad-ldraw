@@ -4,15 +4,18 @@ function ldraw_lib__15926() = [
 // 0 =Technic Ball Joint with Axlehole Blind with Eye Pattern
 // 0 Name: 15926.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2014-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 32474pb002, Rebrickable 32474pr1001
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 32474p01
 // 

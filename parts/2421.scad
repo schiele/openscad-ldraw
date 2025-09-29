@@ -9,12 +9,12 @@ function ldraw_lib__2421() = [
 // 0 Propeller  3 Blade  4 Diameter
 // 0 Name: 2421.dat
 // 0 Author: Lutz Uhlmann [El-Lutzo]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
@@ -26,7 +26,8 @@ function ldraw_lib__2421() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2021-03-17 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

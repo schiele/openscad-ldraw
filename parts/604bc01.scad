@@ -5,12 +5,12 @@ function ldraw_lib__604bc01() = [
 // 0 Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete)
 // 0 Name: 604bc01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 604c01, Rebrickable 604c01
 // 
@@ -22,7 +22,8 @@ function ldraw_lib__604bc01() = [
 // 0 !HISTORY 2013-07-11 [Steffen] restructured files
 // 0 !HISTORY 2013-07-14 [PTadmin] renamed from 604
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 604b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__604b()],

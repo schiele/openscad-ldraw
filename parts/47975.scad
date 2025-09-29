@@ -7,17 +7,18 @@ function ldraw_lib__47975() = [
 // 0 Hinge Brick 1 x 2 Locking with Dual Finger Horiz. Single Vert.
 // 0 Name: 47975.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2008-03-21 [Holly-Wood] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 30 9 0 1 0 0 0 1 0 0 0 1 s\30364s01.dat
   [1,16,30,9,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30364s01()],

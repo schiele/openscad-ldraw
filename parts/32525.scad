@@ -10,12 +10,12 @@ function ldraw_lib__32525() = [
 // 0 Technic Beam 11
 // 0 Name: 32525.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Straight
 // 
@@ -23,7 +23,8 @@ function ldraw_lib__32525() = [
 // 0 !HISTORY 2004-10-15 [sbliss] Replaced groups of 1-4ring8.dat with singleton 4-4ring8.dat; corrected a BFC issue
 // 0 !HISTORY 2004-11-14 [Philo] Simplified part using new beamhole primitive
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -10 -100 9 0 0 0 1 0 0 0 -9 2-4edge.dat
   [1,16,0,-10,-100,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],

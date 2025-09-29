@@ -11,17 +11,18 @@ function ldraw_lib__s__2541s01() = [
 // 0 ~Boat Rigging  5 x 27 Top Corner Joint
 // 0 Name: s\2541s01.dat
 // 0 Author: William Howard [WilliamH]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2005-02-28 [WilliamH] Major rework of entire sub-part
 // 0 !HISTORY 2011-07-27 [BlackBrick89] Minor cleanup (header and data)
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 4 0 0 0 4 0 0 0 4 s\2541s07.dat
   [1,16,0,0,0,4,0,0,0,4,0,0,0,4, ldraw_lib__s__2541s07()],

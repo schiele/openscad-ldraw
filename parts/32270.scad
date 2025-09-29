@@ -8,19 +8,20 @@ function ldraw_lib__32270() = [
 // 0 Technic Gear 12 Tooth Double Bevel
 // 0 Name: 32270.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [technog] Primitive optimized, added BFC (2003-11-04)
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 10 0 1 0 0 0 1 0 0 0 1 toothb12.dat
   [1,16,0,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__toothb12()],

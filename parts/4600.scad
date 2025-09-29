@@ -11,12 +11,12 @@ function ldraw_lib__4600() = [
 // 0 Plate  2 x  2 with 2 Wheel Pins
 // 0 Name: 4600.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
@@ -29,7 +29,8 @@ function ldraw_lib__4600() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2018-11-25 [cwdee] Update description
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4f2w.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4f2w()],
@@ -51,14 +52,14 @@ function ldraw_lib__4600() = [
   [1,16,-16,6,-9,0,-1,0,2,0,0,0,0,7, ldraw_lib__rect2a()],
 // 1 16 -16 6 9 0 -1 0 2 0 0 0 0 -7 rect2a.dat
   [1,16,-16,6,9,0,-1,0,2,0,0,0,0,-7, ldraw_lib__rect2a()],
-// 4 16 -20 8 20 -16 8 16 16 8 16 20 8 20
-  [4,16,-20,8,20,-16,8,16,16,8,16,20,8,20],
-// 4 16 20 8 -20 16 8 -16 -16 8 -16 -20 8 -20
-  [4,16,20,8,-20,16,8,-16,-16,8,-16,-20,8,-20],
-// 4 16 20 8 20 16 8 16 16 8 -16 20 8 -20
-  [4,16,20,8,20,16,8,16,16,8,-16,20,8,-20],
-// 4 16 -20 8 -20 -16 8 -16 -16 8 16 -20 8 20
-  [4,16,-20,8,-20,-16,8,-16,-16,8,16,-20,8,20],
+// 4 16 20 8 20 16 8 16 -16 8 16 -20 8 20
+  [4,16,20,8,20,16,8,16,-16,8,16,-20,8,20],
+// 4 16 -20 8 -20 -16 8 -16 16 8 -16 20 8 -20
+  [4,16,-20,8,-20,-16,8,-16,16,8,-16,20,8,-20],
+// 4 16 20 8 -20 16 8 -16 16 8 16 20 8 20
+  [4,16,20,8,-20,16,8,-16,16,8,16,20,8,20],
+// 4 16 -20 8 20 -16 8 16 -16 8 -16 -20 8 -20
+  [4,16,-20,8,20,-16,8,16,-16,8,-16,-20,8,-20],
 // 2 24 20 8 20 -20 8 20
   [2,24,20,8,20,-20,8,20],
 // 2 24 20 8 -20 -20 8 -20

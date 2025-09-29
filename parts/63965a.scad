@@ -7,19 +7,20 @@ function ldraw_lib__63965a() = [
 // 0 Bar  6L with Thick Stop
 // 0 Name: 63965a.dat
 // 0 Author: N. W. Perry [Plastikean]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 63965, Missile, pole, Rebrickable 63965, rod, Small, stand
 // 0 !KEYWORDS Star Wars, town, umbrella
 // 
 // 0 !HISTORY 2020-04-16 [Plastikean] Adjusted part length, pos & width of ring
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -104 0 0 0 4 0 96 0 4 0 0 4-4cylc.dat
   [1,16,0,-104,0,0,0,4,0,96,0,4,0,0, ldraw_lib__4_4cylc()],
@@ -35,7 +36,6 @@ function ldraw_lib__63965a() = [
   [1,16,0,0,0,0,0,-2,0,-2,0,2,0,0, ldraw_lib__4_4ring2()],
 // 1 16 0 16 0 0 0 -4 0 -16 0 4 0 0 4-4cylc.dat
   [1,16,0,16,0,0,0,-4,0,-16,0,4,0,0, ldraw_lib__4_4cylc()],
-// 
 ];
 module ldraw_lib__63965a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__63965a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

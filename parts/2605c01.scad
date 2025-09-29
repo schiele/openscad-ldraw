@@ -6,7 +6,7 @@ function ldraw_lib__2605c01() = [
 // 0 Brick  1 x  2 x  2.333 Shock Absorber (Complete)
 // 0 Name: 2605c01.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP bushing at top
@@ -16,9 +16,9 @@ function ldraw_lib__2605c01() = [
 // 0 !HELP 1 494 0 4.75 10 1 0 0 0 0.734 0 0 0 1 70864.dat
 // 0 !HELP 1 15 0 34 10 1 0 0 0 1 0 0 0 1 2606.dat
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2001-11-23 [pneaster] added BFC
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
@@ -27,7 +27,8 @@ function ldraw_lib__2605c01() = [
 // 0 !HISTORY 2013-02-28 [MagFors] Changed colour 383 to 494 (real metal)
 // 0 !HISTORY 2013-03-22 [mikeheide] adjusted spring because of origin change of the spring.
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // bushing at bottom
 // 

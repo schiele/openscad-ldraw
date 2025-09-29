@@ -8,17 +8,18 @@ function ldraw_lib__58123p01() = [
 // 0 Electric Power Functions IR Receiver with "V2" Pattern
 // 0 Name: 58123p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 58123bc01, Rebrickable 58123b, Set 41999
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 0 0 10 40 0 0 -1 1 0 0 0 -4 0 s\58124s03.dat
   [1,0,0,10,40,0,0,-1,1,0,0,0,-4,0, ldraw_lib__s__58124s03()],

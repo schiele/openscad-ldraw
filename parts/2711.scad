@@ -10,19 +10,22 @@ function ldraw_lib__2711() = [
 // 0 Technic Rotor  2 Blade with 2 Studs
 // 0 Name: 2711.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2004-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS 1 x 5, plate
+// 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08
 // 0 !HISTORY 2003-01-21 [sbliss] Completed header, BFC'ed
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-05-18 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-12 [Jaco] Add keywords
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

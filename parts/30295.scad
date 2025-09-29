@@ -16,12 +16,12 @@ function ldraw_lib__30295() = [
 // 0 Car Base 12 x 18 x  1.333
 // 0 Name: 30295.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Chrome Crusher, Loader-Dozer, Rock Raiders Vehicle, set 4950
 // 0 !KEYWORDS set 4959, set 4970
@@ -29,7 +29,8 @@ function ldraw_lib__30295() = [
 // 0 !HISTORY 2006-09-02 [WilliamH] Moved studs from sub part to main part; used stud groups
 // 0 !HISTORY 2012-04-25 [MagFors] unmirrored stud-groups and used more stud-groups
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30295s4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30295s4()],
@@ -63,8 +64,8 @@ function ldraw_lib__30295() = [
   [1,16,70,18,-1.5,1.5,0,0,0,0,14,0,-3,0, ldraw_lib__box4_2p()],
 // 1 16 70 18 1.5 -1.5 0 0 0 0 14 0 3 0 box4-2p.dat
   [1,16,70,18,1.5,-1.5,0,0,0,0,14,0,3,0, ldraw_lib__box4_2p()],
-// 4 16 68.5 32 -1.5 71.5 32 -1.5 71.5 32 1.5 68.5 32 1.5
-  [4,16,68.5,32,-1.5,71.5,32,-1.5,71.5,32,1.5,68.5,32,1.5],
+// 4 16 68.5 32 1.5 71.5 32 1.5 71.5 32 -1.5 68.5 32 -1.5
+  [4,16,68.5,32,1.5,71.5,32,1.5,71.5,32,-1.5,68.5,32,-1.5],
 // 1 16 -73.75 4 0 -2.25 0 0 0 28 0 0 0 -1.5 box3u6.dat
   [1,16,-73.75,4,0,-2.25,0,0,0,28,0,0,0,-1.5, ldraw_lib__box3u6()],
 // 1 16 -66.25 4 0 2.25 0 0 0 28 0 0 0 1.5 box3u6.dat
@@ -73,8 +74,8 @@ function ldraw_lib__30295() = [
   [1,16,-70,18,-1.5,1.5,0,0,0,0,14,0,-3,0, ldraw_lib__box4_2p()],
 // 1 16 -70 18 1.5 -1.5 0 0 0 0 14 0 3 0 box4-2p.dat
   [1,16,-70,18,1.5,-1.5,0,0,0,0,14,0,3,0, ldraw_lib__box4_2p()],
-// 4 16 -71.5 32 -1.5 -68.5 32 -1.5 -68.5 32 1.5 -71.5 32 1.5
-  [4,16,-71.5,32,-1.5,-68.5,32,-1.5,-68.5,32,1.5,-71.5,32,1.5],
+// 4 16 -71.5 32 1.5 -68.5 32 1.5 -68.5 32 -1.5 -71.5 32 -1.5
+  [4,16,-71.5,32,1.5,-68.5,32,1.5,-68.5,32,-1.5,-71.5,32,-1.5],
 // 1 16 20 4 0 -12 0 0 0 28 0 0 0 1.5 box3u8p.dat
   [1,16,20,4,0,-12,0,0,0,28,0,0,0,1.5, ldraw_lib__box3u8p()],
 // 1 16 -20 4 0 -12 0 0 0 28 0 0 0 1.5 box3u8p.dat

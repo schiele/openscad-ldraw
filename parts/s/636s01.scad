@@ -10,15 +10,16 @@ function ldraw_lib__s__636s01() = [
 // 0 ~Conveyor Belt Axle - Drum
 // 0 Name: s\636s01.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 28 0 0 0 -2 0 0 0 5 5 0 0 4-4cylc.dat
   [1,16,28,0,0,0,-2,0,0,0,5,5,0,0, ldraw_lib__4_4cylc()],

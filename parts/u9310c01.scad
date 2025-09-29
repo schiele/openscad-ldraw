@@ -10,12 +10,12 @@ function ldraw_lib__u9310c01() = [
 // 0 Fabuland House Block with Red Door and 2 Red Round Windows with Four Quadrant Panes (Complete)
 // 0 Name: u9310c01.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Shortcut UPDATE 2017-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
 // 0 !KEYWORDS BrickLink x661c01, Rebrickable fabupn0005c01
@@ -23,7 +23,8 @@ function ldraw_lib__u9310c01() = [
 // 0 !CMDLINE -c14
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 204 0 0 0 1 0 1 0 -1 0 0 u9310.dat
   [1,16,0,204,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9310()],

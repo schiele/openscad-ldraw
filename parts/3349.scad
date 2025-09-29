@@ -4,12 +4,12 @@ function ldraw_lib__3349() = [
 // 0 Roadsign Rectangular Tall
 // 0 Name: 3349.dat
 // 0 Author: Arne Hackstein
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Rebrickable 675
 // 
@@ -22,13 +22,14 @@ function ldraw_lib__3349() = [
 // 0 !HISTORY 2010-04-10 [tchang] Add Subpart, round junction with Post (2010-03-29)
 // 0 !HISTORY 2010-04-25 [PTadmin] Renamed from 675
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3349s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3349s01()],
 // 0 //
-// 4 16 -18 -116 -2 18 -116 -2 18 -68 -2 -18 -68 -2
-  [4,16,-18,-116,-2,18,-116,-2,18,-68,-2,-18,-68,-2],
+// 4 16 -18 -68 -2 18 -68 -2 18 -116 -2 -18 -116 -2
+  [4,16,-18,-68,-2,18,-68,-2,18,-116,-2,-18,-116,-2],
 // 0 //
 ];
 module ldraw_lib__3349(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

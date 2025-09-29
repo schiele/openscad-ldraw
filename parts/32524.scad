@@ -10,17 +10,18 @@ function ldraw_lib__32524() = [
 // 0 Technic Beam  7
 // 0 Name: 32524.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Straight
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -10 -60 9 0 0 0 1 0 0 0 -9 2-4edge.dat
   [1,16,0,-10,-60,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],

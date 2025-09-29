@@ -7,12 +7,12 @@ function ldraw_lib__33009_f2() = [
 // 0 Minifig Book (Open)
 // 0 Name: 33009-f2.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS BrickLink 33009, Rebrickable 33009
@@ -22,7 +22,8 @@ function ldraw_lib__33009_f2() = [
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2020-11-15 [cwdee] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 33009k01.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__33009k01()],

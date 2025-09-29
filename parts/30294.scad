@@ -4,15 +4,16 @@ function ldraw_lib__30294() = [
 // 0 =Rock  4 x  4 x  1.667 Bottom
 // 0 Name: 30294.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 42291
 // 0 // 30294 is the transparent colour counterpart of 42291

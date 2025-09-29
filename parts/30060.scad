@@ -4,12 +4,14 @@ function ldraw_lib__30060() = [
 // 0 =Container Box  2 x  2 x  2 with Hollow Studs
 // 0 Name: 30060.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 4345, Rebrickable 4345b
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2003-01-20 [cwdee] changed in line with splitting of 4345 into 4345a and 4345b
@@ -19,7 +21,8 @@ function ldraw_lib__30060() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 4345b
 // 

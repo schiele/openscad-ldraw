@@ -9,19 +9,20 @@ function ldraw_lib__6167() = [
 // 0 ~Support  2 x  2 x 11 Solid Pillar Top
 // 0 Name: 6167.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2004-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08
 // 0 !HISTORY 2004-03-30 [westrate] Added Stud10, rings, BFCed
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 240 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
   [1,16,0,240,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],

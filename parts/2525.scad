@@ -4,12 +4,12 @@ function ldraw_lib__2525() = [
 // 0 Flag  6 x  4
 // 0 Name: 2525.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Accessory, Castle, flap, Panel, Pirates
 // 
@@ -20,17 +20,17 @@ function ldraw_lib__2525() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [PTadmin] Renamed from 43
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2525s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2525s01()],
 // 
-// 4 16 2 0 10 2 0 130 2 96 130 2 96 10
-  [4,16,2,0,10,2,0,130,2,96,130,2,96,10],
-// 4 16 -2 96 130 -2 0 130 -2 0 10 -2 96 10
-  [4,16,-2,96,130,-2,0,130,-2,0,10,-2,96,10],
+// 4 16 2 96 10 2 96 130 2 0 130 2 0 10
+  [4,16,2,96,10,2,96,130,2,0,130,2,0,10],
+// 4 16 -2 96 10 -2 0 10 -2 0 130 -2 96 130
+  [4,16,-2,96,10,-2,0,10,-2,0,130,-2,96,130],
 // 0
-// 
 ];
 module ldraw_lib__2525(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2525(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -4,7 +4,7 @@ function ldraw_lib__6208() = [
 // 0 =Slope Brick 33  3 x  6
 // 0 Name: 6208.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Part 6208 is the counterpart of 3939. Visually, the two parts seem
@@ -12,14 +12,17 @@ function ldraw_lib__6208() = [
 // 0 !HELP when using the numbers from other sources.
 // 0 !HELP 3939 is used for moulding opaque parts, 6208 for transparent parts.
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 3939, Rebrickable 3939
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3939.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3939()],

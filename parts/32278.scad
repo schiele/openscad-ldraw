@@ -10,12 +10,12 @@ function ldraw_lib__32278() = [
 // 0 Technic Beam 15
 // 0 Name: 32278.dat
 // 0 Author: Ishino Keiichiro
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
@@ -25,7 +25,8 @@ function ldraw_lib__32278() = [
 // 0 !HISTORY 2008-07-09 [sbliss] Consolidated groups of 1-4ring8.dat references into monolithic 4-4ring8.dat references; corrected mirrored transform matrices to rotated matrices (2004-10-15)
 // 0 !HISTORY 2008-07-10 [guyvivan] Use more primitives (2004-11-26)
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -10 -140 9 0 0 0 1 0 0 0 -9 2-4edge.dat
   [1,16,0,-10,-140,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],

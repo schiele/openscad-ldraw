@@ -7,12 +7,12 @@ function ldraw_lib__63965() = [
 // 0 ~Bar  6L with Thick Stop (Obsolete)
 // 0 Name: 63965.dat
 // 0 Author: El'dar Ismagilov [Eldar]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Missile, pole, rod, Small, stand, Star Wars, town, umbrella
@@ -20,7 +20,8 @@ function ldraw_lib__63965() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2020-04-19 [PTadmin] Corrected geometry in 63965a
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -102.5 0 0 0 4 0 95 0 4 0 0 4-4cylc.dat
   [1,16,0,-102.5,0,0,0,4,0,95,0,4,0,0, ldraw_lib__4_4cylc()],

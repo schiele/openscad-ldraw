@@ -7,17 +7,17 @@ use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/rect.scad>
 function ldraw_lib__6124() = [
-// 0 Minifig Magic Wand
+// 0 ~Minifig Magic Wand (Obsolete)
 // 0 Name: 6124.dat
 // 0 Author: Jaco van der Molen [Jaco]
-// 0 !LDRAW_ORG Part UPDATE 2004-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Belville, Castle, Dragon Masters, fairy, Fairy Tale, Fright Knights
 // 0 !KEYWORDS Majisto, Millimy, Time Cruisers, Time Twisters, Willa, Witch, Wizard
 // 
@@ -26,7 +26,10 @@ function ldraw_lib__6124() = [
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2024-06-22 [Philo] Corrected wrong length, rebuilt using BIs mesh
+// 0 !HISTORY 2025-05-20 [KnightOfTarenta] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-05-20 [KnightOfTarenta] Replaced by 6124b.dat and 28681.dat
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
@@ -97,7 +100,7 @@ function ldraw_lib__6124() = [
 // 4 16 0 -76.5 2 0 -81 2 3.07 -71.07 2 2.12 -69.62 2
   [4,16,0,-76.5,2,0,-81,2,3.07,-71.07,2,2.12,-69.62,2],
 // 
-// 0 Outer star
+// 0 // Outer star
 // 1 16 -1.535 -76.035 0 1.535 0 0 -4.965 1 0 0 0 2 rect.dat
   [1,16,-1.535,-76.035,0,1.535,0,0,-4.965,1,0,0,0,2, ldraw_lib__rect()],
 // 1 16 1.535 -76.035 0 1.535 0 0 4.965 1 0 0 0 2 rect.dat
@@ -119,7 +122,7 @@ function ldraw_lib__6124() = [
 // 1 16 4.015 -58.07 0 -4.015 0 0 -3.07 -1 0 0 0 2 rect.dat
   [1,16,4.015,-58.07,0,-4.015,0,0,-3.07,-1,0,0,0,2, ldraw_lib__rect()],
 // 
-// 0 Back inner star
+// 0 // Back inner star
 // 1 16 -1.06 -73.06 1.5 1.06 0 0 -3.44 -1 0 0 0 0.5 rect.dat
   [1,16,-1.06,-73.06,1.5,1.06,0,0,-3.44,-1,0,0,0,0.5, ldraw_lib__rect()],
 // 1 16 -5.56 -69.62 1.5 3.44 0 0 0 -1 0 0 0 0.5 rect.dat
@@ -157,7 +160,7 @@ function ldraw_lib__6124() = [
 // 3 16 0 -62.75 1 2.12 -69.62 1 3.44 -65.38 1
   [3,16,0,-62.75,1,2.12,-69.62,1,3.44,-65.38,1],
 // 
-// 0 Front inner star
+// 0 // Front inner star
 // 1 16 -1.06 -73.06 -1.5 1.06 0 0 -3.44 -1 0 0 0 0.5 rect.dat
   [1,16,-1.06,-73.06,-1.5,1.06,0,0,-3.44,-1,0,0,0,0.5, ldraw_lib__rect()],
 // 1 16 -5.56 -69.62 -1.5 3.44 0 0 0 -1 0 0 0 0.5 rect.dat

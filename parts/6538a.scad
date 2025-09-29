@@ -8,12 +8,12 @@ function ldraw_lib__6538a() = [
 // 0 Technic Axle Joiner
 // 0 Name: 6538a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2003-07-04 [OrionP] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
@@ -22,7 +22,8 @@ function ldraw_lib__6538a() = [
 // 0 !HISTORY 2008-09-13 [mkennedy] Put ridges and center in subparts
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6538s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6538s01()],

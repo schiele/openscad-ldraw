@@ -4,12 +4,12 @@ function ldraw_lib__s__3817s01() = [
 // 0 ~Minifig Leg Left without Front Surfaces (Obsolete)
 // 0 Name: s\3817s01.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2002-05-29 [fwcain] removed all front surfaces (put into "main" file[s])
@@ -23,7 +23,8 @@ function ldraw_lib__s__3817s01() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2020-05-30 [cwdee] Obsoleted due to bad leg geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Un-Comment these lines for front surfaces:
 // 0 // 4 16 2 -6.30 -6.30 2 -3.42 -8.28 18.23 -3.42 -8.28 18.11 -6.30 -6.30

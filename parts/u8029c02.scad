@@ -5,19 +5,20 @@ function ldraw_lib__u8029c02() = [
 // 0 Mursten Window  1 x  6 x  4 Panorama with Glass with LEGO Logo
 // 0 Name: u8029c02.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Window
 // 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
 // 
 // 0 !HISTORY 2008-01-24 [tchang] Replace Glass Color
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u8029.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u8029()],

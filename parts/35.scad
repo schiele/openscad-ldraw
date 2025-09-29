@@ -5,18 +5,19 @@ function ldraw_lib__35() = [
 // 0 Wheel  8 x 35 with 12 Spokes (Complete)
 // 0 Name: 35.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-09 [cwdee] Update description
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 

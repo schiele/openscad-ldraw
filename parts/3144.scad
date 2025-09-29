@@ -5,12 +5,12 @@ function ldraw_lib__3144() = [
 // 0 Antenna  5H with Side Spokes
 // 0 Name: 3144.dat
 // 0 Author: Jaco van der Molen [Jaco]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 928, Classic Space, transmission
 // 
@@ -19,7 +19,8 @@ function ldraw_lib__3144() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [Holly-Wood] Complete re-write (2008-05-11)
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Subpart Antenna 5H with Side Spokes - Base
 // 

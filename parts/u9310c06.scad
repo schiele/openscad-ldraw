@@ -10,12 +10,12 @@ function ldraw_lib__u9310c06() = [
 // 0 Fabuland Garage Block with Yellow Doors and Rectangular Windows (Complete)
 // 0 Name: u9310c06.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Shortcut UPDATE 2017-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
 // 0 !KEYWORDS BrickLink x655c02, Rebrickable fabupn0004c02
@@ -23,7 +23,8 @@ function ldraw_lib__u9310c06() = [
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2017-11-29 [Philo] Unmirrored Windows and door
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 204 0 0 0 1 0 1 0 -1 0 0 u9310.dat
   [1,16,0,204,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9310()],

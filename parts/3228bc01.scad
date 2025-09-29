@@ -5,17 +5,18 @@ function ldraw_lib__3228bc01() = [
 // 0 Train Track  4.5V Slotted Straight (Complete)
 // 0 Name: 3228bc01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2010-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Type 2 (standard color gray)
 // 

@@ -4,15 +4,18 @@ function ldraw_lib__18862() = [
 // 0 =Slope Brick 31  1 x  1 x  0.667
 // 0 Name: 18862.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2017-01
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 54200, Rebrickable 54200
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 54200
 // 0 // Part 18862 is the silver metallic ink counterpart of 54200

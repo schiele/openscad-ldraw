@@ -5,10 +5,10 @@ use <../p/8/4-4disc.scad>
 use <../p/8/4-4edge.scad>
 use <../p/8/r04q1000.scad>
 function ldraw_lib__u9631() = [
-// 0 ~Train Track  9V Switch - Straight Internal Wire
+// 0 ~Train Track  9V Switch/Crossing - Upper Straight Internal Wire
 // 0 Name: u9631.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2025-08
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,8 +17,10 @@ function ldraw_lib__u9631() = [
 // 
 // 0 !HISTORY 2025-08-22 [MagFors] Reduced into 8-prims
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2025-09-28 [MMR1988] Changed Description and Comment
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
-// 0 // ~Train Track 9V Switch - Straight Internal Wire, Metal Part
+// 0 // ~Train Track 9V Switch/Crossing - Upper Straight Internal Wire, Metal Part
 // 1 494 36 -6 -6.375 -.625 0 0 0 -1 0 0 0 -.625 8\4-4disc.dat
   [1,494,36,-6,-6.375,-.625,0,0,0,-1,0,0,0,-.625, ldraw_lib__8__4_4disc()],
 // 1 494 36 -6 -6.375 -.625 0 0 0 -2.5 0 0 0 -.625 8\4-4cyli.dat
@@ -69,7 +71,7 @@ function ldraw_lib__u9631() = [
 // 1 494 -26.75 0 0 0 1 0 .625 0 0 0 0 .625 8\4-4edge.dat
   [1,494,-26.75,0,0,0,1,0,.625,0,0,0,0,.625, ldraw_lib__8__4_4edge()],
 // 
-// 0 // ~Train Track 9V Switch - Straight Internal Wire, Hull
+// 0 // ~Train Track 9V Switch/Crossing - Upper Straight Internal Wire, Hull
 // 1 16 -26.75 0 0 0 53.5 0 1 0 0 0 0 1 8\4-4cylo.dat
   [1,16,-26.75,0,0,0,53.5,0,1,0,0,0,0,1, ldraw_lib__8__4_4cylo()],
 // 1 16 -26.75 0 0 0 1 0 1 0 0 0 0 1 8\4-4disc.dat

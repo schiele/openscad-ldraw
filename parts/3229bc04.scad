@@ -5,17 +5,18 @@ function ldraw_lib__3229bc04() = [
 // 0 Train Track  4.5V Curved Slotted (Complete 4 Segments)
 // 0 Name: 3229bc04.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2010-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 156.072 0 -15.372 0.980785 0 0.19509 0 1 0 -0.19509 0 0.980785 3229bc01.dat
   [1,16,156.072,0,-15.372,0.980785,0,0.19509,0,1,0,-0.19509,0,0.980785, ldraw_lib__3229bc01()],

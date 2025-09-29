@@ -5,12 +5,12 @@ function ldraw_lib__30175c01() = [
 // 0 Minifig Helmet Samurai with Horn (Complete)
 // 0 Name: 30175c01.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Castle, Ninja, shogun
@@ -23,7 +23,8 @@ function ldraw_lib__30175c01() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30175.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30175()],

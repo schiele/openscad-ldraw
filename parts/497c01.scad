@@ -5,19 +5,20 @@ function ldraw_lib__497c01() = [
 // 0 Wheel Rim  8 x 18 with 4 Studs and Notched Axle
 // 0 Name: 497c01.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 7039b, Rebrickable 7039b
 // 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 497a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__497a()],

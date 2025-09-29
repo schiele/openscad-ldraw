@@ -11,12 +11,12 @@ function ldraw_lib__6054() = [
 // 0 Boat Base  8 x 12
 // 0 Name: 6054.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement
@@ -24,7 +24,8 @@ function ldraw_lib__6054() = [
 // 0 !HISTORY 2008-10-18 [tchang] Add BFC
 // 0 !HISTORY 2009-01-02 [anathema] Corrected subfile references
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

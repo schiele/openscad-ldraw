@@ -6,12 +6,12 @@ function ldraw_lib__577c01() = [
 // 0 ~Minifig Lightsaber Chrome Silver - 1 Side On (Obsolete)
 // 0 Name: 577c01.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Accessory, bar, saber, Star Wars, sword
@@ -21,7 +21,8 @@ function ldraw_lib__577c01() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-06-21 [gregteft] Adjusted blade and light locations to suit corrections to 577.dat
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 577b.dat
   [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__577b()],

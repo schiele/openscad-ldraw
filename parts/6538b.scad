@@ -12,12 +12,12 @@ function ldraw_lib__6538b() = [
 // 0 Technic Axle Joiner Offset
 // 0 Name: 6538b.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
@@ -25,7 +25,8 @@ function ldraw_lib__6538b() = [
 // 0 !HISTORY 2008-09-13 [mkennedy] Put ridges and center in subparts
 // 0 !HISTORY 2012-01-08 [timgould] Made central divider thinner and recentered
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 .7071 -.7071 0 .7071 .7071 0 0 0 1 s\6538s01.dat
   [1,16,0,0,0,.7071,-.7071,0,.7071,.7071,0,0,0,1, ldraw_lib__s__6538s01()],

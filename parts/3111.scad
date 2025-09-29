@@ -6,12 +6,12 @@ function ldraw_lib__3111() = [
 // 0 ~Axle Bush 1.4L
 // 0 Name: 3111.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Wheel
 // 
@@ -22,7 +22,8 @@ function ldraw_lib__3111() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2018-11-24 [cwdee] Update description
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -43,7 +44,6 @@ function ldraw_lib__3111() = [
 // 1 16 -14 0 0 0 1 0 2 0 0 0 0 2 4-4ring2.dat
   [1,16,-14,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring2()],
 // 0
-// 
 ];
 module ldraw_lib__3111(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3111(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

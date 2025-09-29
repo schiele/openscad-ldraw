@@ -7,12 +7,12 @@ function ldraw_lib__2335p40() = [
 // 0 Flag  2 x  2 with Goblets and Grapes Pattern
 // 0 Name: 2335p40.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2015-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 2335px7, Castle, Guarded Inn, Rebrickable 2335pr0008
 // 0 !KEYWORDS Set 10000
@@ -26,7 +26,8 @@ function ldraw_lib__2335p40() = [
 // 0 !HISTORY 2013-02-21 [MagFors] Changed colour 334 to 82 (printed gold)
 // 0 !HISTORY 2014-10-18 [arezey] Subfiled the pattern negative
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2335s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2335s01()],

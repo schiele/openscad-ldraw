@@ -5,12 +5,12 @@ function ldraw_lib__3811p02() = [
 // 0 Baseplate 32 x 32 with Island and Water Pattern
 // 0 Name: 3811p02.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Beach, BrickLink 3811pb02, Imperial Guard, Imperial Navy, islanders
 // 0 !KEYWORDS Pirate, Pirates, Rebrickable 3811pr0002, set 6270, shore
@@ -28,7 +28,8 @@ function ldraw_lib__3811p02() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [anathema] Split into subparts (2008-06-20)
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 1 0 0 0 1 0 0 0 1 0 0 0 1 s\3811p02d.dat
   [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3811p02d()],

@@ -5,12 +5,12 @@ function ldraw_lib__32c() = [
 // 0 ~Door  1 x  2 x  3 Left
 // 0 Name: 32c.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
@@ -19,7 +19,8 @@ function ldraw_lib__32c() = [
 // 0 !HISTORY 2009-11-22 [mkennedy] moved bulk to subpart
 // 0 !HISTORY 2012-01-11 [PTadmin] Renamed from 32
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32cs01()],

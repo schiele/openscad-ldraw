@@ -6,12 +6,12 @@ function ldraw_lib__30553() = [
 // 0 Hinge Arm Locking with Dual Finger and Axlehole
 // 0 Name: 30553.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS click-hinge, Life on Mars, Star Wars, Studio, Technic
 // 
@@ -24,7 +24,8 @@ function ldraw_lib__30553() = [
 // 0 !HISTORY 2008-07-07 [PTadmin] Renamed from 482
 // 0 !HISTORY 2012-10-05 [Philo] Corrected bleeding
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\480s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__480s02()],
@@ -34,14 +35,14 @@ function ldraw_lib__30553() = [
   [1,16,0,0,0,2.12132,0,-2.12132,-2.12132,0,-2.12132,0,1,0, ldraw_lib__1_4ring2()],
 // 1 16 0 0 0 -2.12132 0 2.12132 2.12132 0 2.12132 0 1 0 1-4ring2.dat
   [1,16,0,0,0,-2.12132,0,2.12132,2.12132,0,2.12132,0,1,0, ldraw_lib__1_4ring2()],
-// 3 16 6.364 -6.364 0 6.607 -6 0 6 -6 0
-  [3,16,6.364,-6.364,0,6.607,-6,0,6,-6,0],
-// 3 16 -6 -6 0 -6.607 -6 0 -6.364 -6.364 0
-  [3,16,-6,-6,0,-6.607,-6,0,-6.364,-6.364,0],
-// 3 16 6 6 0 6.607 6 0 6.364 6.364 0
-  [3,16,6,6,0,6.607,6,0,6.364,6.364,0],
-// 3 16 -6.364 6.364 0 -6.607 6 0 -6 6 0
-  [3,16,-6.364,6.364,0,-6.607,6,0,-6,6,0],
+// 3 16 6 -6 0 6.607 -6 0 6.364 -6.364 0
+  [3,16,6,-6,0,6.607,-6,0,6.364,-6.364,0],
+// 3 16 -6.364 -6.364 0 -6.607 -6 0 -6 -6 0
+  [3,16,-6.364,-6.364,0,-6.607,-6,0,-6,-6,0],
+// 3 16 6.364 6.364 0 6.607 6 0 6 6 0
+  [3,16,6.364,6.364,0,6.607,6,0,6,6,0],
+// 3 16 -6 6 0 -6.607 6 0 -6.364 6.364 0
+  [3,16,-6,6,0,-6.607,6,0,-6.364,6.364,0],
 ];
 module ldraw_lib__30553(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30553(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

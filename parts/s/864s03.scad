@@ -4,15 +4,16 @@ function ldraw_lib__s__864s03() = [
 // 0 ~Train Track 12V Slotted Point: Conducting Rails Base
 // 0 Name: s\864s03.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 6 -16 -5 0 0 0 0 6 0 -4 0 box3u8p.dat
   [1,16,0,6,-16,-5,0,0,0,0,6,0,-4,0, ldraw_lib__box3u8p()],
@@ -26,8 +27,8 @@ function ldraw_lib__s__864s03() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12 9 -5 0 0 0 -4 0 0 0 -7 box3u8p.dat
   [1,16,0,12,9,-5,0,0,0,-4,0,0,0,-7, ldraw_lib__box3u8p()],
-// 4 16 -5 12 2 -5 12 -2 5 12 -2 5 12 2
-  [4,16,-5,12,2,-5,12,-2,5,12,-2,5,12,2],
+// 4 16 5 12 2 5 12 -2 -5 12 -2 -5 12 2
+  [4,16,5,12,2,5,12,-2,-5,12,-2,-5,12,2],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -5 0 0 0 4 0 0 0 -16 box3u8p.dat

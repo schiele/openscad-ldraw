@@ -4,15 +4,18 @@ function ldraw_lib__28978() = [
 // 0 =Technic Link  4 x  6 Bent 53.13
 // 0 Name: 28978.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2018-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 64451, Rebrickable 64451
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 64451
 // 

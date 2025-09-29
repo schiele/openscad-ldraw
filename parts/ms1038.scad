@@ -8,17 +8,18 @@ function ldraw_lib__ms1038() = [
 // 0 Electric Mindstorms NXT Colour Sensor
 // 0 Name: ms1038.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink bb0398, HiTechnic, Rebrickable upn0160
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 7 0 -48 11 -1 0 0 0 1 0 0 0 -1 54732.dat
   [1,7,0,-48,11,-1,0,0,0,1,0,0,0,-1, ldraw_lib__54732()],

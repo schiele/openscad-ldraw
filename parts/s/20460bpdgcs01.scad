@@ -2,10 +2,10 @@ use <../../lib.scad>
 use <20460bs03.scad>
 use <20460bs04.scad>
 function ldraw_lib__s__20460bpdgcs01() = [
-// 0 ~Minifig Leg Left with Brigh Light Orange Foot and Silver Sandals
+// 0 ~Minifig Leg Left with Bright Light Orange Foot and Silver Sandals
 // 0 Name: s\20460bpdgcs01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-08
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,6 +13,8 @@ function ldraw_lib__s__20460bpdgcs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2025-09-25 [Holly-Wood] Corrected typo
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20460bs04.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460bs04()],

@@ -5,17 +5,18 @@ function ldraw_lib__3596p04() = [
 // 0 Flag on Flagpole Type 5 with Tri-Coloured Shield Pattern
 // 0 Name: 3596p04.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3596px1, Rebrickable 3596pr0005, Set 383
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Flag on Flagpole
 // 

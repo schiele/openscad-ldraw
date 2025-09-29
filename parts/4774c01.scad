@@ -5,15 +5,16 @@ function ldraw_lib__4774c01() = [
 // 0 Electric Light & Sound Brick  2 x  2 x  1.333 Siren (Complete)
 // 0 Name: 4774c01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Shortcut UPDATE 2010-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Electric Light & Sound Brick 2 x 2 x 1 & 1/3 Siren Base
 // 

@@ -11,15 +11,16 @@ function ldraw_lib__s__933s02() = [
 // 0 ~Electric Mindstorms NXT Cable End
 // 0 Name: s\933s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Wires
 // 
@@ -120,8 +121,8 @@ function ldraw_lib__s__933s02() = [
   [1,16,-5,-2,-3,0,0,-3,-3,0,0,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 5 -2 -3 0 0 3 3 0 0 0 -1 0 2-4disc.dat
   [1,16,5,-2,-3,0,0,3,3,0,0,0,-1,0, ldraw_lib__2_4disc()],
-// 4 16 -5 1 -15 -5 -5 -15 5 -5 -15 5 1 -15
-  [4,16,-5,1,-15,-5,-5,-15,5,-5,-15,5,1,-15],
+// 4 16 5 1 -15 5 -5 -15 -5 -5 -15 -5 1 -15
+  [4,16,5,1,-15,5,-5,-15,-5,-5,-15,-5,1,-15],
 // 1 16 -5 -2 -15 0 0 -3 -3 0 0 0 1 0 2-4disc.dat
   [1,16,-5,-2,-15,0,0,-3,-3,0,0,0,1,0, ldraw_lib__2_4disc()],
 // 1 16 5 -2 -15 0 0 3 3 0 0 0 1 0 2-4disc.dat

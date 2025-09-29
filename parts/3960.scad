@@ -5,12 +5,12 @@ function ldraw_lib__3960() = [
 // 0 Dish  4 x  4 Inverted
 // 0 Name: 3960.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Radar Dish, Round, Space
 // 
@@ -20,7 +20,8 @@ function ldraw_lib__3960() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2010-05-09 [cwdee] Remove CATEGORY Round
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s03.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s03()],

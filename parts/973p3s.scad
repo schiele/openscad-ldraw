@@ -9,12 +9,12 @@ function ldraw_lib__973p3s() = [
 // 0 Minifig Torso with Red Imperial Guard Officer Pattern
 // 0 Name: 973p3s.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS set 6277
 // 
@@ -25,14 +25,15 @@ function ldraw_lib__973p3s() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Colour cleanup
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
-// 
-// 4 16 14.345 2 10 12 0 10 -12 0 10 -14.345 2 10
-  [4,16,14.345,2,10,12,0,10,-12,0,10,-14.345,2,10],
-// 4 16 19 29 10 14.345 2 10 -14.345 2 10 -19 29 10
-  [4,16,19,29,10,14.345,2,10,-14.345,2,10,-19,29,10],
-// 4 16 19 32 10 19 29 10 -19 29 10 -19 32 10
-  [4,16,19,32,10,19,29,10,-19,29,10,-19,32,10],
+// 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
+  [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
+// 4 16 -19 29 10 -14.345 2 10 14.345 2 10 19 29 10
+  [4,16,-19,29,10,-14.345,2,10,14.345,2,10,19,29,10],
+// 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
+  [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
   [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat

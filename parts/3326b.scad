@@ -10,12 +10,12 @@ function ldraw_lib__3326b() = [
 // 0 Technic Universal Joint Centre Type 2
 // 0 Name: 3326b.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2007-07-25 [PTadmin] Header formatted for Contributor Agreement
@@ -26,7 +26,8 @@ function ldraw_lib__3326b() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2009-05-04 [PTadmin] Renamed from 3326
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 4 6 0 0 0 0 6 0 1 0 4-4edge.dat
   [1,16,0,0,4,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],

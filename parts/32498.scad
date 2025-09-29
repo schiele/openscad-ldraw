@@ -8,16 +8,17 @@ function ldraw_lib__32498() = [
 // 0 Technic Gear 36 Tooth Double Bevel
 // 0 Name: 32498.dat
 // 0 Author: Ross Crawford [rosco]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2006-03-12 [technog] recreated part to correct size and detail
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\32498s01.dat
   [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__32498s01()],

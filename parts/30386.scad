@@ -5,12 +5,12 @@ function ldraw_lib__30386() = [
 // 0 Hinge Brick  1 x  2 Locking Double, Two Finger End with  9 Teeth
 // 0 Name: 30386.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
@@ -24,7 +24,8 @@ function ldraw_lib__30386() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2021-02-16 [Philo] Subparted for varaints
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30386s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30386s01()],

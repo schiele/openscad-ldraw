@@ -15,16 +15,17 @@ function ldraw_lib__22579() = [
 // 0 ~Electric Technic Capacitor Circuit Board
 // 0 Name: 22579.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-01-23 [cwdee] colour 383->494
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 2 0 30 -40 35 0 0 0 0 -1 0 55 0 box5-4a.dat
   [1,2,0,30,-40,35,0,0,0,0,-1,0,55,0, ldraw_lib__box5_4a()],
@@ -34,10 +35,10 @@ function ldraw_lib__22579() = [
   [1,2,25,30,-47.5,10,0,0,0,0,-1,7.5,1,0, ldraw_lib__rect()],
 // 1 2 -25 30 -47.5 -10 0 0 0 0 -1 7.5 1 0 rect.dat
   [1,2,-25,30,-47.5,-10,0,0,0,0,-1,7.5,1,0, ldraw_lib__rect()],
-// 4 2 15 31 -55 35 31 -40 -35 31 -40 -15 31 -55
-  [4,2,15,31,-55,35,31,-40,-35,31,-40,-15,31,-55],
-// 4 2 -15 29 -55 -35 29 -40 35 29 -40 15 29 -55
-  [4,2,-15,29,-55,-35,29,-40,35,29,-40,15,29,-55],
+// 4 2 -15 31 -55 -35 31 -40 35 31 -40 15 31 -55
+  [4,2,-15,31,-55,-35,31,-40,35,31,-40,15,31,-55],
+// 4 2 15 29 -55 35 29 -40 -35 29 -40 -15 29 -55
+  [4,2,15,29,-55,35,29,-40,-35,29,-40,-15,29,-55],
 // 1 0 20 -35 -38 12 0 0 0 64 0 0 0 -12 7-8cyli.dat
   [1,0,20,-35,-38,12,0,0,0,64,0,0,0,-12, ldraw_lib__7_8cyli()],
 // 1 0 20 29 -38 12 0 0 0 -1 0 0 0 -12 4-4disc.dat

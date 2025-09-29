@@ -10,12 +10,12 @@ function ldraw_lib__4720() = [
 // 0 Wheel Minifig Bicycle
 // 0 Name: 4720.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CMDLINE -c47
 // 
@@ -23,7 +23,8 @@ function ldraw_lib__4720() = [
 // 0 !HISTORY 2008-11-04 [mikeheide] optimized spokes intersection
 // 0 !HISTORY 2010-03-15 [arezey] Changed orientation to match other wheels
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // rear wheel 0 30 0
 // 0 // front wheel 0 30 -86

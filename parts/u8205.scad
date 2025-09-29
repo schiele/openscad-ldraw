@@ -9,19 +9,20 @@ function ldraw_lib__u8205() = [
 // 0 Plate  4 x  8 Curved Right with Square Underside Studholes
 // 0 Name: u8205.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 713old, Rebrickable 713a, Vintage, waffle
 // 
 // 0 !HISTORY 2010-01-18 [mikeheide] moved studs to mainfile
 // 0 !HISTORY 2011-01-02 [tchang] replace studs by stugs and unsym, used rectifier
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u8204s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u8204s01()],

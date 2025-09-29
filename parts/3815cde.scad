@@ -6,12 +6,12 @@ function ldraw_lib__3815cde() = [
 // 0 ~Minifig Hips and Legs with Laboratory Smock Pattern (Obsolete)
 // 0 Name: 3815cde.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Obsolete
 // 
@@ -22,7 +22,8 @@ function ldraw_lib__3815cde() = [
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2020-07-09 [cwdee] Obsoleted due to bad leg geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3815pde.dat
   [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pde()],

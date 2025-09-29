@@ -2,10 +2,10 @@ use <../lib.scad>
 use <30261.scad>
 use <4542422a.scad>
 function ldraw_lib__30261d01() = [
-// 0 Roadsign Clip-on  2 x  2 Round with Sticker "50"
+// 0 Roadsign Clip-on  2 x  2 Round with Speed Limit "50" Sticker
 // 0 Name: 30261d01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,17 +13,18 @@ function ldraw_lib__30261d01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sticker Shortcut
+// 0 !KEYWORDS Bricklink 30261pb017, Set 8401
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
-// 
+// 0 !HISTORY 2025-09-13 [MagFors] Update description
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30261.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30261()],
 // 1 16 0 0 -9 1 0 0 0 0 -1 0 1 0 4542422a.dat
   [1,16,0,0,-9,1,0,0,0,0,-1,0,1,0, ldraw_lib__4542422a()],
-// 0 //
 ];
 module ldraw_lib__30261d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30261d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

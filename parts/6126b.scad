@@ -6,19 +6,20 @@ function ldraw_lib__6126b() = [
 // 0 Minifig Flame with Rim
 // 0 Name: 6126b.dat
 // 0 Author: Stephan Meisinger [smr]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Adventurers, Castle, Divers, dragon, Dragon Masters, Fire
 // 0 !KEYWORDS Harry Potter, kelp, leaf, Plant, seaweed, torch
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 -8 4 0 0 0 0 4 0 6 0 4-4cylc.dat
   [1,16,0,0,-8,4,0,0,0,0,4,0,6,0, ldraw_lib__4_4cylc()],

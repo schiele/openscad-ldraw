@@ -7,17 +7,18 @@ function ldraw_lib__ms1034() = [
 // 0 Electric Mindstorms NXT Compass Sensor
 // 0 Name: ms1034.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink bb0635, HiTechnic, Rebrickable upn0377
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // RJ12 socket - rj12 gray
 // 
@@ -32,7 +33,6 @@ function ldraw_lib__ms1034() = [
 // 0 // shell top - light stone
 // 1 16 0 -70 -24 1 0 0 0 1 0 0 0 1 55966.dat
   [1,16,0,-70,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__55966()],
-// 
 ];
 module ldraw_lib__ms1034(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__ms1034(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -17,16 +17,18 @@ function ldraw_lib__55981() = [
 // 0 Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work)
 // 0 Name: 55981.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 0 // Hole in the middle for moulding is missing

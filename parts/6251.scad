@@ -6,12 +6,12 @@ function ldraw_lib__6251() = [
 // 0 Animal Cat Crouching
 // 0 Name: 6251.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS creature, mousetrap, pet, Set 5571, set 5871, set 7673
 // 
@@ -23,7 +23,8 @@ function ldraw_lib__6251() = [
 // 0 !HISTORY 2022-03-07 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2022-03-08 [Holly-Wood] Complete rewrite from LUT data
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Half without Patternable Area
 // 

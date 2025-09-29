@@ -10,15 +10,16 @@ function ldraw_lib__269() = [
 // 0 ~Wheel Axle Metal with Notched End
 // 0 Name: 269.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 18 4 0 0 0 0 4 0 4 0 2-4edge.dat
   [1,16,0,0,18,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4edge()],
@@ -64,8 +65,8 @@ function ldraw_lib__269() = [
   [1,16,0,0,23.5,-4,0,0,0,0,-4,0,-4,0, ldraw_lib__2_4disc()],
 // 1 16 0 0 23.5 -4 0 0 0 0 -4 0 -5.5 0 2-4cyli.dat
   [1,16,0,0,23.5,-4,0,0,0,0,-4,0,-5.5,0, ldraw_lib__2_4cyli()],
-// 4 16 -4 0 18 4 0 18 4 0 23.5 -4 0 23.5
-  [4,16,-4,0,18,4,0,18,4,0,23.5,-4,0,23.5],
+// 4 16 -4 0 23.5 4 0 23.5 4 0 18 -4 0 18
+  [4,16,-4,0,23.5,4,0,23.5,4,0,18,-4,0,18],
 // 2 24 4 0 18 -4 0 18
   [2,24,4,0,18,-4,0,18],
 // 2 24 -4 0 18 -4 0 23.5

@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__logo_weichai_text() = [
-// 0 ~Logo Weichai Text without Central E line
+// 0 Logo Weichai Text without Central E line
 // 0 Name: logo-weichai-text.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Primitive UPDATE 2025-08
+// 0 !LDRAW_ORG Primitive UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 6.69; Z = 1
@@ -13,6 +13,8 @@ function ldraw_lib__logo_weichai_text() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2025-09-12 [Holly-Wood] Removed tilde from description
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Text "WEICHAI"
 // 0 // Letter "Weichai"

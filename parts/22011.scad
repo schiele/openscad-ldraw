@@ -6,19 +6,20 @@ function ldraw_lib__22011() = [
 // 0 Electric Technic Capacitor with Clear Top
 // 0 Name: 22011.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-05
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 32342, Rebrickable 32342c01
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2022-07-20 [PTadmin] Moved from 32342c01
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 32341.dat
   [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32341()],

@@ -5,17 +5,18 @@ function ldraw_lib__2495c01() = [
 // 0 Minifig Hand Truck (Complete)
 // 0 Name: 2495c01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Shortcut UPDATE 2010-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2495.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2495()],

@@ -5,7 +5,7 @@ function ldraw_lib__342c01() = [
 // 0 Technic Flex-System Cable 96LDu Long (open file for usage guide)
 // 0 Name: 342c01.dat
 // 0 Author: Ross Crawford [rosco]
-// 0 !LDRAW_ORG Shortcut UPDATE 2004-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP A Technic Flex-System is often seen curved in a model. In those cases,
@@ -19,16 +19,17 @@ function ldraw_lib__342c01() = [
 // 0 !HELP centre part of the hose is scaled to have 56LDU length, thus filling out
 // 0 !HELP the rest of the segment.
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink bb0008c04L, Rebrickable flex08c04
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 342.dat
   [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__342()],

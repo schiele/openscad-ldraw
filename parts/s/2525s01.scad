@@ -7,7 +7,7 @@ function ldraw_lib__s__2525s01() = [
 // 0 ~Flag  6 x  4 without Front and Back
 // 0 Name: s\2525s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Subpart UPDATE 2009-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Used for plain and decorated 4x6 flags
@@ -18,9 +18,9 @@ function ldraw_lib__s__2525s01() = [
 // 0 !HELP 4 16 2 0 10 2 0 130 2 96 130 2 96 10
 // 0 !HELP Put decorations in "Z = -2" (front) and "Z = 2" (back)
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2002-12-13 [cwdee] Corrected size, BFC compliance
@@ -31,7 +31,8 @@ function ldraw_lib__s__2525s01() = [
 // 0 !HISTORY 2008-07-08 [WilliamH] Added missing lines around clips (2006-07-18)
 // 0 !HISTORY 2008-07-09 [PTadmin] Renamed from 43s01 (2007-07-30)
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 48 10 2 0 0 0 0 -48 0 120 0 box3u2p.dat
   [1,16,0,48,10,2,0,0,0,0,-48,0,120,0, ldraw_lib__box3u2p()],

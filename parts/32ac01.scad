@@ -5,16 +5,17 @@ function ldraw_lib__32ac01() = [
 // 0 Door  1 x  2 x  3 Left with Solid Stud with Hole (Complete)
 // 0 Name: 32ac01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-01-11 [cwdee] Restructured
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32a()],

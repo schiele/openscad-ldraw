@@ -4,12 +4,12 @@ function ldraw_lib__3570() = [
 // 0 Roadsign Octagonal
 // 0 Name: 3570.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Rebrickable 739
 // 
@@ -21,14 +21,15 @@ function ldraw_lib__3570() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2010-04-22 [PTadmin] Renamed from 739
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
-// 
-// 4 16 -18 -93 -2 18 -93 -2 18 -79 -2 -18 -79 -2
-  [4,16,-18,-93,-2,18,-93,-2,18,-79,-2,-18,-79,-2],
-// 4 16 -18 -93 -2 -7 -104 -2 7 -104 -2 18 -93 -2
-  [4,16,-18,-93,-2,-7,-104,-2,7,-104,-2,18,-93,-2],
-// 4 16 18 -79 -2 7 -68 -2 -7 -68 -2 -18 -79 -2
-  [4,16,18,-79,-2,7,-68,-2,-7,-68,-2,-18,-79,-2],
+// 4 16 -18 -79 -2 18 -79 -2 18 -93 -2 -18 -93 -2
+  [4,16,-18,-79,-2,18,-79,-2,18,-93,-2,-18,-93,-2],
+// 4 16 18 -93 -2 7 -104 -2 -7 -104 -2 -18 -93 -2
+  [4,16,18,-93,-2,7,-104,-2,-7,-104,-2,-18,-93,-2],
+// 4 16 -18 -79 -2 -7 -68 -2 7 -68 -2 18 -79 -2
+  [4,16,-18,-79,-2,-7,-68,-2,7,-68,-2,18,-79,-2],
 // 0
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3570s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3570s01()],

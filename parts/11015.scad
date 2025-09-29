@@ -4,15 +4,16 @@ function ldraw_lib__11015() = [
 // 0 =Electric Mindstorms EV3 Colour Sensor Opto Support with Red Edge
 // 0 Name: 11015.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2019-03
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Alias of 11014p01
 // 

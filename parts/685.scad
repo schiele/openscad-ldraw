@@ -5,12 +5,12 @@ function ldraw_lib__685() = [
 // 0 Maxifig Head
 // 0 Name: 685.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure
 // 
@@ -20,7 +20,8 @@ function ldraw_lib__685() = [
 // 0 !HISTORY 2002-09-01 [BrickCaster] Added BFC certification, removed L3P warnings
 // 0 !HISTORY 2003-05-21 [Steffen] Reworked to subpart and use 48 primitives
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\685s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__685s01()],

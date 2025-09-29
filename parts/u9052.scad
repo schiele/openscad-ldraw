@@ -12,17 +12,18 @@ function ldraw_lib__u9052() = [
 // 0 ~Motor Windup  2 x  6 x  2.333 Rachet Axle
 // 0 Name: u9052.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 18 0 0 0 -1 0 0 0 1 1 0 0 axleend.dat
   [1,16,18,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axleend()],

@@ -8,12 +8,12 @@ function ldraw_lib__6221() = [
 // 0 Technic Handle
 // 0 Name: 6221.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 424, Rebrickable 424
 // 
@@ -21,6 +21,8 @@ function ldraw_lib__6221() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 8 6 0 0 0 0 6 0 1 0 4-4edge.dat
   [1,16,0,0,8,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],

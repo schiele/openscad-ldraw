@@ -6,12 +6,12 @@ function ldraw_lib__766bc01() = [
 // 0 Electric Plug (Type 4) Twin without Centre Plastic Pin (Complete)
 // 0 Name: 766bc01.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 4.5V, BrickLink bb0081c01, dacta, Rebrickable upn0123c01
 // 
@@ -20,7 +20,8 @@ function ldraw_lib__766bc01() = [
 // 0 !HISTORY 2009-01-27 [mikeheide] initial version based on 766c01.dat
 // 0 !HISTORY 2011-12-10 [Steffen] changed color 383 to 494
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 766b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__766b()],

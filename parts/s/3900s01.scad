@@ -10,16 +10,17 @@ function ldraw_lib__s__3900s01() = [
 // 0 ~Minifig Signal Holder without Rear Surface
 // 0 Name: s\3900s01.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2014-05-29 [smr] moved holder from 3900 to s\3900s01.dat
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 14 0 0 0 4 0 0 0 14 4-4cyli.dat
   [1,16,0,0,0,14,0,0,0,4,0,0,0,14, ldraw_lib__4_4cyli()],

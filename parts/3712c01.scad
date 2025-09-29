@@ -5,12 +5,12 @@ function ldraw_lib__3712c01() = [
 // 0 Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete)
 // 0 Name: 3712c01.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 9244c01, Rebrickable 9244
 // 
@@ -22,7 +22,8 @@ function ldraw_lib__3712c01() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2019-10-13 [cwdee] Update description
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 30 1 0 0 0 1 0 0 0 1 3712.dat
   [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__3712()],

@@ -6,12 +6,12 @@ function ldraw_lib__87994p01() = [
 // 0 Bar  3L with White Ends Pattern
 // 0 Name: 87994p01.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 87994pb01, magic man, magic wand, magician
 // 0 !KEYWORDS Rebrickable 87994pr0001, Set 41001
@@ -19,7 +19,8 @@ function ldraw_lib__87994p01() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2015-07-09 [cwdee] Adjusted description
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],

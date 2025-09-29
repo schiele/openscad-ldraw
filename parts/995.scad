@@ -12,16 +12,18 @@ function ldraw_lib__995() = [
 // 0 ~Train Wheel Large with Pin Axle Hole
 // 0 Name: 995.dat
 // 0 Author: Reinhard "Ben" Beneke [Ben_aus_BS]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 4 4 0 0 0 0 4 0 -2 0 1-4con7.dat
   [1,16,0,0,4,4,0,0,0,0,4,0,-2,0, ldraw_lib__1_4con7()],
@@ -155,7 +157,6 @@ function ldraw_lib__995() = [
   [1,16,0,0,-6,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -8 6 0 0 0 0 6 0 1 0 4-4edge.dat
   [1,16,0,0,-8,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
-// 
 ];
 module ldraw_lib__995(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__995(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

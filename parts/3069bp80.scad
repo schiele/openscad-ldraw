@@ -5,12 +5,12 @@ function ldraw_lib__3069bp80() = [
 // 0 Tile  1 x  2 with 28-Key 'QERYUIOP' Keyboard Pattern
 // 0 Name: 3069bp80.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3069p80, computer, input, letter, office
 // 0 !KEYWORDS Rebrickable 3069bpr0049, Set 1775, terminal, typewriter
@@ -20,18 +20,19 @@ function ldraw_lib__3069bp80() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2019-08-17 [cwdee] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // // Border
 // 
-// 4 16 -20 0 10 20 0 10 19.1 0 8.5 -19.1 0 8.5
-  [4,16,-20,0,10,20,0,10,19.1,0,8.5,-19.1,0,8.5],
-// 4 16 20 0 10 20 0 -10 19.1 0 -8.6 19.1 0 8.5
-  [4,16,20,0,10,20,0,-10,19.1,0,-8.6,19.1,0,8.5],
-// 4 16 -19.1 0 -8.6 19.1 0 -8.6 20 0 -10 -20 0 -10
-  [4,16,-19.1,0,-8.6,19.1,0,-8.6,20,0,-10,-20,0,-10],
-// 4 16 -19.1 0 8.5 -19.1 0 -8.6 -20 0 -10 -20 0 10
-  [4,16,-19.1,0,8.5,-19.1,0,-8.6,-20,0,-10,-20,0,10],
+// 4 16 -19.1 0 8.5 19.1 0 8.5 20 0 10 -20 0 10
+  [4,16,-19.1,0,8.5,19.1,0,8.5,20,0,10,-20,0,10],
+// 4 16 19.1 0 8.5 19.1 0 -8.6 20 0 -10 20 0 10
+  [4,16,19.1,0,8.5,19.1,0,-8.6,20,0,-10,20,0,10],
+// 4 16 -20 0 -10 20 0 -10 19.1 0 -8.6 -19.1 0 -8.6
+  [4,16,-20,0,-10,20,0,-10,19.1,0,-8.6,-19.1,0,-8.6],
+// 4 16 -20 0 10 -20 0 -10 -19.1 0 -8.6 -19.1 0 8.5
+  [4,16,-20,0,10,-20,0,-10,-19.1,0,-8.6,-19.1,0,8.5],
 // 
 // 0 // Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069p80a.dat

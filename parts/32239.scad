@@ -4,7 +4,7 @@ function ldraw_lib__32239() = [
 // 0 =Technic Gearbox  2 x  4 x  3.333
 // 0 Name: 32239.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Part 32239 is the counterpart of 6588. Visually, the two parts seem
@@ -12,14 +12,17 @@ function ldraw_lib__32239() = [
 // 0 !HELP when using the numbers from other sources.
 // 0 !HELP 6588 is used for moulding opaque parts, 32239 for transparent parts.
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 6588, Rebrickable 6588
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6588.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6588()],

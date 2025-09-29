@@ -3,10 +3,10 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
 function ldraw_lib__s__u9001s01() = [
-// 0 ~Electric Switch: Key without Top Face
+// 0 ~Electric Switch: Key without Top Face (Obsolete)
 // 0 Name: s\u9001s01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP to put this part into a pressed-down state, rotate it 4.3 degrees
@@ -21,7 +21,8 @@ function ldraw_lib__s__u9001s01() = [
 // 0 !HISTORY 2009-11-02 [Steffen] closed gap
 // 0 !HISTORY 2010-04-20 [Steffen] corrected geometry
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-10-24 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 3 16 -38 -14.3976 -56.503 -38 -10.278 -1.718 -38 -29 -2
   [3,16,-38,-14.3976,-56.503,-38,-10.278,-1.718,-38,-29,-2],

@@ -6,17 +6,18 @@ function ldraw_lib__6251p01() = [
 // 0 Animal Cat Crouching with Medium Blue Eyes, Black Pupils, Eyelashes and Nose Pattern
 // 0 Name: 6251p01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Belville, Bricklink 6251pb05, creature, mousetrap, pet, set 5823
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Half without Patternable Area
 // 

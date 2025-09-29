@@ -5,18 +5,19 @@ function ldraw_lib__53793() = [
 // 0 Electric Mindstorms NXT Touch Sensor (Button Not Pressed)
 // 0 Name: 53793.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2006-12-03 [kclague] minor adjustment to shell placement
 // 0 !HISTORY 2007-01-08 [Philo] minor adjustment to push button placement
 // 0 !HISTORY 2007-10-23 [Philo] BFCed, Used real stone colors
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 25 0 -40 -90 1 0 0 0 0 -1 0 1 0 55968.dat
   [1,25,0,-40,-90,1,0,0,0,0,-1,0,1,0, ldraw_lib__55968()],

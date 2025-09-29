@@ -17,18 +17,20 @@ function ldraw_lib__56902() = [
 // 0 Wheel Rim  8 x 18 with Deep Centre Groove and Peghole
 // 0 Name: 56902.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2015-09-16 [Philo] Added missing condlines, removed extraneous ring, completed description
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 

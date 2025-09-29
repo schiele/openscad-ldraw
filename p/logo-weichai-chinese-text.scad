@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__logo_weichai_chinese_text() = [
-// 0 ~Logo Weichai Chinese Characters
+// 0 Logo Weichai Chinese Characters
 // 0 Name: logo-weichai-chinese-text.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Primitive UPDATE 2025-08
+// 0 !LDRAW_ORG Primitive UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 4; Z = 0.665
@@ -13,7 +13,8 @@ function ldraw_lib__logo_weichai_chinese_text() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
-// 
+// 0 !HISTORY 2025-09-12 [Holly-Wood] Removed tilde from description
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Chinese characters
 // 0 // Left character

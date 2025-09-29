@@ -4,18 +4,19 @@ function ldraw_lib__2703() = [
 // 0 Technic Action Figure Leg Upper Left
 // 0 Name: 2703.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 2709.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__2709()],

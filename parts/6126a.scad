@@ -9,12 +9,12 @@ function ldraw_lib__6126a() = [
 // 0 Minifig Flame with Pegs
 // 0 Name: 6126a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Adventurers, BrickLink 6126, Castle, Divers, dragon, Dragon Masters
@@ -28,7 +28,8 @@ function ldraw_lib__6126a() = [
 // 0 !HISTORY 2014-02-09 [PTadmin] Renamed from 6126
 // 0 !HISTORY 2014-02-10 [smr] Subparted flame to s\6126s01.dat
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // HOLDER
 // 0 // Central

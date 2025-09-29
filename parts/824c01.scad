@@ -6,12 +6,12 @@ function ldraw_lib__824c01() = [
 // 0 Train Base  4 x  7 with 4 Black Axle Bushes
 // 0 Name: 824c01.dat
 // 0 Author: Arne Hackstein
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 824, Rebrickable 824
 // 
@@ -24,7 +24,8 @@ function ldraw_lib__824c01() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2018-11-24 [cwdee] Update description and subpart case
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9388.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9388()],

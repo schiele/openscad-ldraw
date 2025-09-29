@@ -5,19 +5,20 @@ function ldraw_lib__3496c02() = [
 // 0 Tap  1 x  2 with Chrome Spout
 // 0 Name: 3496c02.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bathroom, Belville, BrickLink 69c02, faucet, Kitchen, minifig
 // 0 !KEYWORDS Rebrickable 69c02, sink, spigot, town
 // 
 // 0 !HISTORY 2016-09-22 [Holly-Wood] Moved origin of 3278.dat
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3496.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3496()],

@@ -7,12 +7,12 @@ function ldraw_lib__3842c() = [
 // 0 Minifig Helmet Classic with Thick Chin Guard
 // 0 Name: 3842c.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS astronaut, BrickLink 193b1, Castle, cosmonaut, knight, motocycle
@@ -27,7 +27,8 @@ function ldraw_lib__3842c() = [
 // 0 !HISTORY 2012-10-02 [Steffen] BFC rationalisation
 // 0 !HISTORY 2016-02-22 [Holly-Wood] Fixed chin guard height, added cond. lines, subparted
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Top Inside
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat

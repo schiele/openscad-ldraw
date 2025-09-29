@@ -12,12 +12,12 @@ function ldraw_lib__30322() = [
 // 0 Antenna  8H with Flag
 // 0 Name: 30322.dat
 // 0 Author: Jaco van der Molen [Jaco]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Antenna Whip
 // 
@@ -28,7 +28,8 @@ function ldraw_lib__30322() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [PTadmin] Renamed from 105
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
@@ -64,10 +65,10 @@ function ldraw_lib__30322() = [
 // 1 16 0 -151.5 -25 0 0 2 7.5 -1 0 25 1 0 rect2p.dat
   [1,16,0,-151.5,-25,0,0,2,7.5,-1,0,25,1,0, ldraw_lib__rect2p()],
 // 0
-// 4 16 2 -161 -50 2 -176 0 2 -144 0 2 -159 -50
-  [4,16,2,-161,-50,2,-176,0,2,-144,0,2,-159,-50],
-// 4 16 -2 -144 0 -2 -176 0 -2 -161 -50 -2 -159 -50
-  [4,16,-2,-144,0,-2,-176,0,-2,-161,-50,-2,-159,-50],
+// 4 16 2 -159 -50 2 -144 0 2 -176 0 2 -161 -50
+  [4,16,2,-159,-50,2,-144,0,2,-176,0,2,-161,-50],
+// 4 16 -2 -159 -50 -2 -161 -50 -2 -176 0 -2 -144 0
+  [4,16,-2,-159,-50,-2,-161,-50,-2,-176,0,-2,-144,0],
 // 0
 // 1 16 2 -160 -50 0 -1 0 1 0 0 0 0 -1 2-4disc.dat
   [1,16,2,-160,-50,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4disc()],

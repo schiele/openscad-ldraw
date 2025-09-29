@@ -5,12 +5,12 @@ function ldraw_lib__736c01() = [
 // 0 Train Base  6 x 16 Type 1 with Red Wheels (Complete)
 // 0 Name: 736c01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CMDLINE -c0
 // 
@@ -23,7 +23,8 @@ function ldraw_lib__736c01() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2021-06-04 [Holly-Wood] Used corrected wheel shortcut
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 736.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__736()],

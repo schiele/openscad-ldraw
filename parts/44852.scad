@@ -8,12 +8,12 @@ function ldraw_lib__44852() = [
 // 0 Technic Axle Joiner 3 x 2 with Axial Torsion Spring
 // 0 Name: 44852.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink x928cx1
 // 
@@ -21,7 +21,8 @@ function ldraw_lib__44852() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2013-06-16 [arezey] Added surface/axlehole details, moved screw locations, retitled
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 47 0 3 -10 1 0 0 0 1 0 0 0 1 984.dat
   [1,47,0,3,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__984()],

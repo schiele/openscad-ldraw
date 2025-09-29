@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/u9001s01.scad>
 function ldraw_lib__u9001p04() = [
-// 0 ~Electric Switch: Key Left with Yellow Triangle Down Pattern
+// 0 ~Electric Switch: Key Left with Yellow Triangle Down Pattern (Obsolete)
 // 0 Name: u9001p04.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP to put this part into a pressed-down state, rotate it 4.3 degrees
@@ -14,10 +14,12 @@ function ldraw_lib__u9001p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Train
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS Set 4707pb03, Train
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-10-24 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9001s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9001s01()],

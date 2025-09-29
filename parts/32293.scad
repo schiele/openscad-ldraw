@@ -6,16 +6,17 @@ function ldraw_lib__32293() = [
 // 0 Technic Steering Link 9L
 // 0 Name: 32293.dat
 // 0 Author: John Riley [jriley]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2003-05-23 [technog] cleaned up and added detail
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 10 8 0 0 0 0 -4 0 140 0 4-4cyli.dat
   [1,16,0,0,10,8,0,0,0,0,-4,0,140,0, ldraw_lib__4_4cyli()],
@@ -136,7 +137,6 @@ function ldraw_lib__32293() = [
 // 2 24 0 -4 150 -3.061 -3.695 150.6
   [2,24,0,-4,150,-3.061,-3.695,150.6],
 // 0
-// 
 ];
 module ldraw_lib__32293(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__32293(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

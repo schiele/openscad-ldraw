@@ -6,17 +6,18 @@ function ldraw_lib__54734() = [
 // 0 Electric  9V Battery Box with Pegholes (Complete)
 // 0 Name: 54734.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2011-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 54950c01
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 923.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__923()],

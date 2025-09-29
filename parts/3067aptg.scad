@@ -5,17 +5,18 @@ function ldraw_lib__3067aptg() = [
 // 0 Brick  1 x  6 without Centre Studs with Black Thick "TAXI" Pattern
 // 0 Name: 3067aptg.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink crssprt02pb58, Rebrickable 3009apr0036, Set DATABASE
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3067s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s02()],

@@ -20,10 +20,10 @@ use <../p/box3u4p.scad>
 use <../p/rect.scad>
 use <s/66155s01.scad>
 function ldraw_lib__66155() = [
-// 0 Wheel Rim 30 x 20 with  3 Dual Angled Spokes and  4L Hub
+// 0 Wheel Rim 20 x 30 with  3 Dual Angled Spokes and  4L Hub
 // 0 Name: 66155.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-05
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__66155() = [
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2020-12-28 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2025-09-21 [MagFors] Update description
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 -25 4.22222 0 0 0 0 4.22222 0 1 0 48\4-4ring8.dat
   [1,16,0,0,-25,4.22222,0,0,0,0,4.22222,0,1,0, ldraw_lib__48__4_4ring8()],

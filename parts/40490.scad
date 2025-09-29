@@ -10,12 +10,12 @@ function ldraw_lib__40490() = [
 // 0 Technic Beam  9
 // 0 Name: 40490.dat
 // 0 Author: Ross Crawford [rosco]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement
@@ -26,7 +26,8 @@ function ldraw_lib__40490() = [
 // 0 !HISTORY 2008-07-10 [guyvivan] Use more primitives (2004-11-26)
 // 0 !HISTORY 2008-07-11 [PTadmin] Renamed from 120 (2005-07-07)
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -10 -80 9 0 0 0 1 0 0 0 -9 2-4edge.dat
   [1,16,0,-10,-80,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],

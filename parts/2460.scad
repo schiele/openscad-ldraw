@@ -6,18 +6,19 @@ function ldraw_lib__2460() = [
 // 0 Tile  2 x  2 with Pin
 // 0 Name: 2460.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2007-05-10 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [nielsk] BFC'd (2006-01-04)
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068a()],

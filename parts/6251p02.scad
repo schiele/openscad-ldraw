@@ -6,18 +6,19 @@ function ldraw_lib__6251p02() = [
 // 0 Animal Cat Crouching with Black Eyes, Eyelashes, Eyebrows and Nose Pattern
 // 0 Name: 6251p02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Belville, Bricklink 6251px1, creature, mousetrap, pet, set 10173
 // 0 !KEYWORDS set 10185, Set 10199, set 5944
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Half without Patternable Area
 // 

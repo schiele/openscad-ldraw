@@ -4,10 +4,10 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/box4-7a.scad>
 function ldraw_lib__s__u9005s01() = [
-// 0 ~Electric Switch: Front with Twin and Multi-use Plug Sockets
+// 0 ~Electric Switch: Front with Twin and Multi-use Plug Sockets (Obsolete)
 // 0 Name: s\u9005s01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__u9005s01() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-01-26 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-10-30 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 4 16 -60 -8 0 -60 15 0 -80 15 0 -80 -8 0
   [4,16,-60,-8,0,-60,15,0,-80,15,0,-80,-8,0],

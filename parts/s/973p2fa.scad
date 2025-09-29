@@ -4,17 +4,18 @@ function ldraw_lib__s__973p2fa() = [
 // 0 ~Minifig Torso with Spotted Singlet and Necklace Pattern - Gold
 // 0 Name: s\973p2fa.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Subpart UPDATE 2004-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-09-13 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 5 2 -10 -1 0 0 0 0 1 0 1 0 4-4disc.dat
   [1,16,5,2,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],

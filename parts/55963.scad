@@ -8,17 +8,18 @@ function ldraw_lib__55963() = [
 // 0 Electric Mindstorms NXT Sound Sensor
 // 0 Name: 55963.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2006-12-03 [kclague] - minor adjusments to foam and shell placement
 // 0 !HISTORY 2007-10-12 [Philo] BFCed, used true stone colors
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // RJ12 socket - rj12 gray
 // 

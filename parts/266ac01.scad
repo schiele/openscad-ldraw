@@ -6,12 +6,12 @@ function ldraw_lib__266ac01() = [
 // 0 Electric Lightbrick  2 x  2 Type 1 12V (Complete)
 // 0 Name: 266ac01.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Shortcut UPDATE 2011-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 08010ac01
 // 
@@ -20,7 +20,8 @@ function ldraw_lib__266ac01() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2011-12-11 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 266a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__266a()],

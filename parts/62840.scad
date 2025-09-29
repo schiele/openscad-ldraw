@@ -10,17 +10,18 @@ function ldraw_lib__62840() = [
 // 0 Electric Mindstorms NXT Temperature Sensor
 // 0 Name: 62840.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink bb0802
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Cable Pass-Through - dark stone
 // 
@@ -45,8 +46,8 @@ function ldraw_lib__62840() = [
   [1,0,5,-25,32,0,0,3,3,0,0,0,-1,0, ldraw_lib__2_4disc()],
 // 1 0 -5 -25 32 0 0 -3 -3 0 0 0 -1 0 2-4disc.dat
   [1,0,-5,-25,32,0,0,-3,-3,0,0,0,-1,0, ldraw_lib__2_4disc()],
-// 4 0 -5 -22 32 5 -22 32 5 -28 32 -5 -28 32
-  [4,0,-5,-22,32,5,-22,32,5,-28,32,-5,-28,32],
+// 4 0 -5 -28 32 5 -28 32 5 -22 32 -5 -22 32
+  [4,0,-5,-28,32,5,-28,32,5,-22,32,-5,-22,32],
 ];
 module ldraw_lib__62840(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__62840(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -4,12 +4,14 @@ function ldraw_lib__192425b() = [
 // 0 Sticker  2.4 x  3 with Classic Space Logo (Mirrored)
 // 0 Name: 192425b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 6970stk01, Rebrickable 192425
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-10-08 [PTadmin] Header formatted for Contributor Agreement
@@ -19,11 +21,11 @@ function ldraw_lib__192425b() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-01-09 [cwdee] Corrected dimensions
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 192425a.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__192425a()],
-// 
 ];
 module ldraw_lib__192425b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__192425b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

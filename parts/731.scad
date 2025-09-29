@@ -5,12 +5,12 @@ function ldraw_lib__731() = [
 // 0 ~Technic Shock Absorber  6.5L, Piston Rod with Spring (Obsolete)
 // 0 Name: 731.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Obsolete
 // 
@@ -21,7 +21,8 @@ function ldraw_lib__731() = [
 // 0 !HISTORY 2010-04-05 [arezey] Split out piston part to 4254
 // 0 !HISTORY 2012-01-23 [cwdee] Restore spring for backward compatibility
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 55 0 1 0 0 0 1 0 0 0 1 4254.dat
   [1,16,0,55,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4254()],

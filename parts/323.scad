@@ -12,19 +12,20 @@ function ldraw_lib__323() = [
 // 0 Electric Light Bulb for Electric Light Brick  2 x  4
 // 0 Name: 323.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink x456a, Electric, Rebrickable upn0253a, Vintage
 // 
 // 0 !CMDLINE -c383
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // // Some edges and faces of glass (color 47) part are disabled,
 // 0 // // as these are duplicates of metal (color 16) edges and faces.
@@ -197,7 +198,6 @@ function ldraw_lib__323() = [
 // 0 // 1 47 -13.5 0 0 0 -1 0 1 0 0 0 0 1 4-4con6.dat
 // 0 // 1 47 -13.5 0 0 0 -12.5 0 6 0 0 0 0 6 4-4cyli.dat
 // 0
-// 
 ];
 module ldraw_lib__323(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__323(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

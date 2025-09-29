@@ -5,17 +5,18 @@ function ldraw_lib__30178c01() = [
 // 0 Door  1 x  4 x  6 with 3 Panes with TransClear Glass
 // 0 Name: 30178c01.dat
 // 0 Author: Ildefonso Zanette [izanette]
-// 0 !LDRAW_ORG Shortcut UPDATE 2019-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2019-11-23 [cwdee] Re-title
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // // main door
 // 

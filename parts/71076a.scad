@@ -11,12 +11,12 @@ function ldraw_lib__71076a() = [
 // 0 Cylinder  2 x  2 Elbow
 // 0 Name: 71076a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 71076, Rebrickable 71076
 // 
@@ -29,7 +29,8 @@ function ldraw_lib__71076a() = [
 // 0 !HISTORY 2009-05-21 [PTadmin] Renamed from 71075. Part number really is 71076, but was mistakenly issued as 71075
 // 0 !HISTORY 2009-05-21 [arezey] Fixed BFC and ring and circle matrices
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 -24 0 24 0 0 24 0 24 0 -24 0 0 t04o4167.dat
   [1,16,-24,0,24,0,0,24,0,24,0,-24,0,0, ldraw_lib__t04o4167()],

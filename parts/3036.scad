@@ -6,19 +6,20 @@ function ldraw_lib__3036() = [
 // 0 Plate  6 x  8
 // 0 Name: 3036.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2004-04
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2004-07-26 [guyvivan] Made BFC Compliant
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-07 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 60 4 40 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,60,4,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
@@ -94,14 +95,14 @@ function ldraw_lib__3036() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 76 0 0 0 -4 0 0 0 56 box5.dat
   [1,16,0,8,0,76,0,0,0,-4,0,0,0,56, ldraw_lib__box5()],
-// 4 16 80 8 -60 76 8 -56 -76 8 -56 -80 8 -60
-  [4,16,80,8,-60,76,8,-56,-76,8,-56,-80,8,-60],
-// 4 16 80 8 60 76 8 56 76 8 -56 80 8 -60
-  [4,16,80,8,60,76,8,56,76,8,-56,80,8,-60],
-// 4 16 -76 8 -56 -76 8 56 -80 8 60 -80 8 -60
-  [4,16,-76,8,-56,-76,8,56,-80,8,60,-80,8,-60],
-// 4 16 -76 8 56 76 8 56 80 8 60 -80 8 60
-  [4,16,-76,8,56,76,8,56,80,8,60,-80,8,60],
+// 4 16 -80 8 -60 -76 8 -56 76 8 -56 80 8 -60
+  [4,16,-80,8,-60,-76,8,-56,76,8,-56,80,8,-60],
+// 4 16 80 8 -60 76 8 -56 76 8 56 80 8 60
+  [4,16,80,8,-60,76,8,-56,76,8,56,80,8,60],
+// 4 16 -80 8 -60 -80 8 60 -76 8 56 -76 8 -56
+  [4,16,-80,8,-60,-80,8,60,-76,8,56,-76,8,-56],
+// 4 16 -80 8 60 80 8 60 76 8 56 -76 8 56
+  [4,16,-80,8,60,80,8,60,76,8,56,-76,8,56],
 // 1 16 0 8 0 80 0 0 0 -8 0 0 0 60 box5.dat
   [1,16,0,8,0,80,0,0,0,-8,0,0,0,60, ldraw_lib__box5()],
 // 1 16 70 0 50 1 0 0 0 1 0 0 0 1 stud.dat

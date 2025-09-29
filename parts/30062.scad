@@ -5,12 +5,12 @@ function ldraw_lib__30062() = [
 // 0 Plate  6 x  6 Octagonal Open Center
 // 0 Name: 30062.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 2003-06-30 [Steffen] BFCed, re-oriented studs correctly, removed several duplicate lines
@@ -20,7 +20,8 @@ function ldraw_lib__30062() = [
 // 0 !HISTORY 2008-07-07 [Steffen] BFCed, re-oriented studs correctly, removed several duplicate lines (2003-06-30)
 // 0 !HISTORY 2008-07-08 [mkennedy] Divided into quadrants, optimized with more primitive (2007-04-21)
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30062s4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30062s4()],

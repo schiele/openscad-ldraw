@@ -6,15 +6,16 @@ function ldraw_lib__s__58124s03() = [
 // 0 ~Electric Power Functions 4-way Ribbon Cable End
 // 0 Name: s\58124s03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // To be used to indicate location of cable attachment
 // 0 // in PF elements with integral cable
@@ -63,8 +64,8 @@ function ldraw_lib__s__58124s03() = [
   [1,16,0,0,-3.712,-1.23744,0,1.23744,0,1,0,-1.23744,0,-1.23744, ldraw_lib__1_4chrd()],
 // 1 16 0 0 -3.712 1.23744 0 1.23744 0 1 0 -1.23744 0 1.23744 1-4chrd.dat
   [1,16,0,0,-3.712,1.23744,0,1.23744,0,1,0,-1.23744,0,1.23744, ldraw_lib__1_4chrd()],
-// 4 16 -1.237 0 -4.95 -1.237 0 4.95 1.237 0 4.95 1.237 0 -4.95
-  [4,16,-1.237,0,-4.95,-1.237,0,4.95,1.237,0,4.95,1.237,0,-4.95],
+// 4 16 1.237 0 -4.95 1.237 0 4.95 -1.237 0 4.95 -1.237 0 -4.95
+  [4,16,1.237,0,-4.95,1.237,0,4.95,-1.237,0,4.95,-1.237,0,-4.95],
 // 0
 ];
 module ldraw_lib__s__58124s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

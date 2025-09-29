@@ -14,7 +14,7 @@ function ldraw_lib__3241a() = [
 // 0 Train Track 12V Curved Insert Type 2 with Plug Sockets
 // 0 Name: 3241a.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP The curve elements are rotated around this point (MLCAD Syntax):
@@ -22,16 +22,17 @@ function ldraw_lib__3241a() = [
 // 0 !HELP 0 ROTATION CONFIG 1 1
 // 0 !HELP with a step of 0.5625 degrees
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3241, Rebrickable 3241
 // 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 -14.726 12 -13.302 3.9335 0 -0.363184 0 1 0 -0.726368 0 -1.96675 box3u8p.dat
   [1,16,-14.726,12,-13.302,3.9335,0,-0.363184,0,1,0,-0.726368,0,-1.96675, ldraw_lib__box3u8p()],

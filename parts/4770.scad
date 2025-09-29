@@ -8,12 +8,12 @@ function ldraw_lib__4770() = [
 // 0 Electric Light & Sound Coloured Globe
 // 0 Name: 4770.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bulb Cover, Colored Globe
 // 
@@ -24,7 +24,8 @@ function ldraw_lib__4770() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-11-24 [Jellby] Made inner surface match 4769
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 -12 0 8 0 0 0 -6 0 0 0 8 4-8sphe.dat
   [1,16,0,-12,0,8,0,0,0,-6,0,0,0,8, ldraw_lib__4_8sphe()],

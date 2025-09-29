@@ -4,19 +4,18 @@ function ldraw_lib__86037b() = [
 // 0 ~Moved to 4548064b
 // 0 Name: 86037b.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Sticker Shortcut
-// 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
-// 
+// 0 !HISTORY 2025-09-11 [OrionP] Fix Category
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Sticker 17.5 x 77.5 with "MK 8265" Banner Side B
 // 1 15 0 .25 0 1 0 0 0 1 0 0 0 1 4548064b.dat

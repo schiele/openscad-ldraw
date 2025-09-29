@@ -4,12 +4,12 @@ function ldraw_lib__3816pa3() = [
 // 0 ~Minifig Leg Right with Buttoned Pocket Pattern (Obsolete)
 // 0 Name: 3816pa3.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Obsolete
 // 
@@ -18,7 +18,8 @@ function ldraw_lib__3816pa3() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2020-07-09 [cwdee] Obsoleted due to bad leg geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3817pa3.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817pa3()],

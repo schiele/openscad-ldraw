@@ -5,12 +5,12 @@ function ldraw_lib__u8029c01() = [
 // 0 Mursten Window  1 x  6 x  4 Panorama with Glass
 // 0 Name: u8029c01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Window
 // 0 !KEYWORDS Automatic Binding Brick, BrickLink cwindow01, Lego Mursten
@@ -19,7 +19,8 @@ function ldraw_lib__u8029c01() = [
 // 0 !HISTORY 2008-01-24 [tchang] rebuilt glass
 // 0 !HISTORY 2013-11-17 [Steffen] rebuilt glass
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u8029.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u8029()],

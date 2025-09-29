@@ -9,17 +9,18 @@ function ldraw_lib__304c02() = [
 // 0 Train Signal Semaphore 4.5V (Complete) Proceed Pos. Red/White
 // 0 Name: 304c02.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2013-03-09 [MagFors] Changed colour 383 to 494 (real metal)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 304.dat
   [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__304()],
@@ -38,7 +39,6 @@ function ldraw_lib__304c02() = [
 // 0 // Bar: Metal (494)
 // 1 494 -80 -155 0 1 0 0 0 1 0 0 0 1 129.dat
   [1,494,-80,-155,0,1,0,0,0,1,0,0,0,1, ldraw_lib__129()],
-// 
 ];
 module ldraw_lib__304c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__304c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

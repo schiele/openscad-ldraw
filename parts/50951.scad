@@ -9,17 +9,18 @@ function ldraw_lib__50951() = [
 // 0 Tyre  6/ 30 x 11
 // 0 Name: 50951.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2025-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 50945
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
+// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 
