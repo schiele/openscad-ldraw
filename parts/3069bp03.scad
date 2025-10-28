@@ -3,8 +3,8 @@ use <s/3069bs01.scad>
 function ldraw_lib__3069bp03() = [
 // 0 Tile  1 x  2 with Dynamite Pattern
 // 0 Name: 3069bp03.dat
-// 0 Author: Dennis Osborn
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 Author: Dennis Osborn [DennisOsborn]
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__3069bp03() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2009-08-14 [anathema] BFC'd
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
+// 0 !HISTORY 2025-10-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 
 // 0 // // Basic Box

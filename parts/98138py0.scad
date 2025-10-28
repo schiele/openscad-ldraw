@@ -4,10 +4,10 @@ use <../p/4-4ring4.scad>
 use <../p/4-4ring7.scad>
 use <s/98138s02.scad>
 function ldraw_lib__98138py0() = [
-// 0 Tile  1 x  1 Round with Small Black Disc Pattern
+// 0 Tile  1 x  1 Round with Black Disc (14 LDU Diameter) Pattern
 // 0 Name: 98138py0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-04
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +20,8 @@ function ldraw_lib__98138py0() = [
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2024-12-23 [ejboer] Reduced disc size by 2LDU
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
+// 0 !HISTORY 2025-10-25 [KnightOfTarenta] Name adapted to pattern family
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 0 // Subpart
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat

@@ -12,15 +12,20 @@ use <../../p/recte4.scad>
 use <../../p/stud7.scad>
 use <../../p/stud8a.scad>
 function ldraw_lib__s__6474s01() = [
-// 0 ~Duplo Slope  2 x  2 x  1.5 without Back and Slope Face
+// 0 ~Duplo Slope  2 x  2 x  1.5 without Patternable Faces
 // 0 Name: s\6474s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 !HELP // removed faces for pattern:
+// 0 !HELP // removed faces for pattern (front/back)
 // 0 !HELP // 4 13 -40 0 40 40 0 40 40 72 40 -40 72 40
 // 0 !HELP // 4 13 40 48 -40 40 0 0 -40 0 0 -40 48 -40
+// 0 !HELP // sides
+// 0 !HELP // 4 16 -40 0 20 -40 72 20 -40 72 -60 -40 48 -60
+// 0 !HELP // 3 16 -40 0 -20 -40 0 20 -40 48 -60
+// 0 !HELP // 4 16 40 48 -60 40 72 -60 40 72 20 40 0 20
+// 0 !HELP // 3 16 40 48 -60 40 0 20 40 0 -20
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -28,10 +33,10 @@ function ldraw_lib__s__6474s01() = [
 // 
 // 0 !HISTORY 2013-01-15 [MMR1988] Improving of file (use of more prims), prepared for patterning
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-10-09 [Blechtaler] removed sides from subpart
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 0 // Bottom Stud
-// 
 // 1 16 0 6.25 -20 -16 0 0 0 1 19.2 0 0 -16 2-4edge.dat
   [1,16,0,6.25,-20,-16,0,0,0,1,19.2,0,0,-16, ldraw_lib__2_4edge()],
 // 1 16 0 6.25 -20 -14 0 0 0 1 16.8 0 0 -14 2-4edge.dat
@@ -158,14 +163,6 @@ function ldraw_lib__s__6474s01() = [
   [1,16,0,36,20,0,0,-40,36,0,0,0,-1,0, ldraw_lib__recte4()],
 // 1 16 0 60 -60 -40 0 0 0 0 12 0 1 0 rect3.dat
   [1,16,0,60,-60,-40,0,0,0,0,12,0,1,0, ldraw_lib__rect3()],
-// 4 16 -40 0 20 -40 72 20 -40 72 -60 -40 48 -60
-  [4,16,-40,0,20,-40,72,20,-40,72,-60,-40,48,-60],
-// 3 16 -40 0 -20 -40 0 20 -40 48 -60
-  [3,16,-40,0,-20,-40,0,20,-40,48,-60],
-// 4 16 40 48 -60 40 72 -60 40 72 20 40 0 20
-  [4,16,40,48,-60,40,72,-60,40,72,20,40,0,20],
-// 3 16 40 48 -60 40 0 20 40 0 -20
-  [3,16,40,48,-60,40,0,20,40,0,-20],
 // 1 16 0 0 0 -40 0 0 0 1 0 0 0 -20 rect3.dat
   [1,16,0,0,0,-40,0,0,0,1,0,0,0,-20, ldraw_lib__rect3()],
 // 1 16 20 0 0 1 0 0 0 2.75 0 0 0 1 stud7.dat

@@ -7,8 +7,8 @@ use <s/2546s02.scad>
 function ldraw_lib__2546() = [
 // 0 Animal Bird Parrot
 // 0 Name: 2546.dat
-// 0 Author: Dennis Osborn
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 Author: Dennis Osborn [DennisOsborn]
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,6 +24,8 @@ function ldraw_lib__2546() = [
 // 0 !HISTORY 2014-01-21 [cwdee] Description change
 // 0 !HISTORY 2014-04-14 [MagFors] subfiled pattern surface
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 0 !HISTORY 2025-10-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2546s01.dat

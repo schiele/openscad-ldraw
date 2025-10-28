@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/3817cs01.scad>
 function ldraw_lib__3817cpy5() = [
-// 0 Minifig Leg Left with Racing Suit with with Orange Lines and Silver Hexagons Pattern
+// 0 Minifig Leg Left with Racing Suit with Orange Lines and Silver Hexagons Pattern
 // 0 Name: 3817cpy5.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -20,6 +20,8 @@ function ldraw_lib__3817cpy5() = [
 // 0 !KEYWORDS McLaren, Senna, Set 75892, Speed Champions
 // 
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2025-10-12 [Holly-Wood] Corrected description
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 0 // Subpart
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817cs01.dat

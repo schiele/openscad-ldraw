@@ -5,7 +5,7 @@ use <../p/4-4ring9.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/axleend.scad>
+use <../p/axleend2.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__24014() = [
 // 0 Technic Gear 12 Tooth Double Bevel with Axle Extension
 // 0 Name: 24014.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,6 +30,8 @@ function ldraw_lib__24014() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2025-10-11 [MagFors] Shaped axleend
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 1 16 -2.5882 9.6593 0 0.96593 -0.25882 0 0.25882 0.96593 0 0 0 0.975 toothb12.dat
   [1,16,-2.5882,9.6593,0,0.96593,-0.25882,0,0.25882,0.96593,0,0,0,0.975, ldraw_lib__toothb12()],
@@ -380,14 +382,10 @@ function ldraw_lib__24014() = [
   [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
 // 1 16 20 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
   [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
-// 1 16 20 0 0 0 30 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,20,0,0,0,30,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
-// 1 16 50 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,50,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
-// 1 16 50 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
-  [1,16,50,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
-// 1 16 50 0 0 0 -1 0 1 0 0 0 0 1 axleend.dat
-  [1,16,50,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__axleend()],
+// 1 16 20 0 0 0 27.5 0 -1 0 0 0 0 1 axlehol8.dat
+  [1,16,20,0,0,0,27.5,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+// 1 16 50 0 0 0 -1 0 1 0 0 0 0 1 axleend2.dat
+  [1,16,50,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__axleend2()],
 ];
 module ldraw_lib__24014(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__24014(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

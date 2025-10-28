@@ -1,11 +1,12 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-use <logoshells01.scad>
+use <../../p/logo-shell-1971-outerbox-with-border.scad>
+use <../../p/logo-shell-1971.scad>
 function ldraw_lib__s__6009254es01() = [
 // 0 ~Sticker  1.7 x  0.8 with Logos Shell and Santander on Red Background - Section 1
 // 0 Name: s\6009254es01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,10 +14,14 @@ function ldraw_lib__s__6009254es01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2025-06-26 [Sirio] Changed logo reference
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
-// 
-// 1 4 0 -0.25 -6.3953 0 0 0.532 0 1 0 -0.532 0 0 s\logoshells01.dat
-  [1,4,0,-0.25,-6.3953,0,0,0.532,0,1,0,-0.532,0,0, ldraw_lib__s__logoshells01()],
+// 0 // Logo primitives
+// 1 4 0 -0.25 -6.3953 0 0 0.532 0 1 0 -0.532 0 0 logo-shell-1971.dat
+  [1,4,0,-0.25,-6.3953,0,0,0.532,0,1,0,-0.532,0,0, ldraw_lib__logo_shell_1971()],
+// 1 4 0 -0.25 -6.3953 0 0 0.532 0 1 0 -0.532 0 0 logo-shell-1971-outerbox-with-border.dat
+  [1,4,0,-0.25,-6.3953,0,0,0.532,0,1,0,-0.532,0,0, ldraw_lib__logo_shell_1971_outerbox_with_border()],
 // 0 // Primitives
 // 1 16 -6 -0.25 -14.9847 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
   [1,16,-6,-0.25,-14.9847,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],

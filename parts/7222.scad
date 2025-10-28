@@ -3,14 +3,14 @@ use <../p/3-16cylo.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/5-8cyli.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect.scad>
 use <s/7222s01.scad>
 function ldraw_lib__7222() = [
 // 0 Technic Axle with  4 Wheel Pins
 // 0 Name: 7222.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-05
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,9 +20,11 @@ function ldraw_lib__7222() = [
 // 0 !HISTORY 2025-05-15 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2025-05-15 [GeraldLasser] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
-// 1 16 0 0 0 0 0 -1 0 -20 0 1 0 0 axle.dat
-  [1,16,0,0,0,0,0,-1,0,-20,0,1,0,0, ldraw_lib__axle()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axleend20()],
 // 1 16 0 0 0 0 0 -9 0 5 0 9 0 0 4-4cylc.dat
   [1,16,0,0,0,0,0,-9,0,5,0,9,0,0, ldraw_lib__4_4cylc()],
 // 1 16 0 5 0 0 0 -9 0 -1 0 9 0 0 4-4disc.dat

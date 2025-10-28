@@ -3,10 +3,10 @@ use <../p/4-4disc.scad>
 use <../p/4-4ring4.scad>
 use <s/98138s02.scad>
 function ldraw_lib__98138p38() = [
-// 0 Tile  1 x  1 Round with Large Black Disc Pattern
+// 0 Tile  1 x  1 Round with Black Disc (16 LDU Diameter) Pattern
 // 0 Name: 98138p38.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2025-06
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__98138p38() = [
 // 0 !KEYWORDS Set 40757, Side Scuttle, The Endurance
 // 
 // 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
+// 0 !HISTORY 2025-10-25 [KnightOfTarenta] Name adapted to pattern family
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],

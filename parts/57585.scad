@@ -8,12 +8,12 @@ use <../p/4-4edge.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ring2.scad>
 use <../p/axl2hole.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 function ldraw_lib__57585() = [
 // 0 Technic Bush with Three Axles
 // 0 Name: 57585.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__57585() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2022-02-04 [MagFors] Removed overlaps and edgelines
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 1 16 0 -10 0 1 0 0 0 20 0 0 0 1 axl2hole.dat
   [1,16,0,-10,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axl2hole()],
@@ -42,8 +43,8 @@ function ldraw_lib__57585() = [
 // 1 16 0 -10 0 9 0 0 0 20 0 0 0 9 4-4cyli.dat
   [1,16,0,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__4_4cyli()],
 // 
-// 1 16 0 0 30 1 0 0 0 0 1 0 -20 0 axle.dat
-  [1,16,0,0,30,1,0,0,0,0,1,0,-20,0, ldraw_lib__axle()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 axleend20.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 0 0 10 9 0 0 0 0 9 0 -1 0 4-4edge.dat
   [1,16,0,0,10,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 10 9 0 0 0 0 9 0 -1 0 4-4disc.dat
@@ -58,8 +59,9 @@ function ldraw_lib__57585() = [
   [1,16,0,0,9,-9,0,0,0,0,9,0,-5.4,0, ldraw_lib__1_4cyls2()],
 // 1 16 0 0 9 -9 0 0 0 0 -9 0 -5.4 0 1-4cyls2.dat
   [1,16,0,0,9,-9,0,0,0,0,-9,0,-5.4,0, ldraw_lib__1_4cyls2()],
-// 1 16 25.981 0 -15 -0.5 -17.32 0 0 0 1 -0.866 10 0 axle.dat
-  [1,16,25.981,0,-15,-0.5,-17.32,0,0,0,1,-0.866,10,0, ldraw_lib__axle()],
+// 
+// 1 16 8.66 0 -5 -.5 -.866 0 0 0 1 -.866 .5 0 axleend20.dat
+  [1,16,8.66,0,-5,-.5,-.866,0,0,0,1,-.866,.5,0, ldraw_lib__axleend20()],
 // 1 16 8.66 0 -5 -4.5 -1 0 0 0 9 -7.794 0 0 4-4edge.dat
   [1,16,8.66,0,-5,-4.5,-1,0,0,0,9,-7.794,0,0, ldraw_lib__4_4edge()],
 // 1 16 8.66 0 -5 -4.5 -1 0 0 0 9 -7.794 0 0 4-4disc.dat
@@ -74,8 +76,9 @@ function ldraw_lib__57585() = [
   [1,16,7.621,0,-4.4,4.5,-4.677,0,0,0,9,7.794,2.7,0, ldraw_lib__1_4cyls2()],
 // 1 16 7.621 0 -4.4 4.5 -4.677 0 0 0 -9 7.794 2.7 0 1-4cyls2.dat
   [1,16,7.621,0,-4.4,4.5,-4.677,0,0,0,-9,7.794,2.7,0, ldraw_lib__1_4cyls2()],
-// 1 16 -25.981 0 -15 -.5 17.32 0 0 0 1 .866 10 0 axle.dat
-  [1,16,-25.981,0,-15,-.5,17.32,0,0,0,1,.866,10,0, ldraw_lib__axle()],
+// 
+// 1 16 -8.66 0 -5 -.5 .866 0 0 0 1 .866 .5 0 axleend20.dat
+  [1,16,-8.66,0,-5,-.5,.866,0,0,0,1,.866,.5,0, ldraw_lib__axleend20()],
 // 1 16 -8.66 0 -5 -4.5 1 0 0 0 9 7.794 0 0 4-4edge.dat
   [1,16,-8.66,0,-5,-4.5,1,0,0,0,9,7.794,0,0, ldraw_lib__4_4edge()],
 // 1 16 -8.66 0 -5 -4.5 1 0 0 0 9 7.794 0 0 4-4disc.dat

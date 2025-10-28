@@ -3,8 +3,8 @@ use <2546p01.scad>
 function ldraw_lib__81379() = [
 // 0 ~_Animal Bird Parrot with Yellow/Green Wings Pattern Red (Obsolete)
 // 0 Name: 81379.dat
-// 0 Author: Dennis Osborn
-// 0 !LDRAW_ORG Part Physical_Colour UPDATE 2019-02
+// 0 Author: Dennis Osborn [DennisOsborn]
+// 0 !LDRAW_ORG Part Physical_Colour UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +20,8 @@ function ldraw_lib__81379() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2019-08-26 [Holly-Wood] Obsoleted per decision not to include physical colour parts
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
+// 0 !HISTORY 2025-10-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 2546p01.dat

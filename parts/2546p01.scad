@@ -7,8 +7,8 @@ use <s/2546s01.scad>
 function ldraw_lib__2546p01() = [
 // 0 Animal Bird Parrot with White Face and Yellow/Green Wings Pattern
 // 0 Name: 2546p01.dat
-// 0 Author: Dennis Osborn
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 Author: Dennis Osborn [DennisOsborn]
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,6 +23,8 @@ function ldraw_lib__2546p01() = [
 // 0 !HISTORY 2014-01-21 [cwdee] Description change
 // 0 !HISTORY 2014-04-13 [MagFors] BFC'd, subfiled
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2025-10-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2546s01.dat

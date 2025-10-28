@@ -1,12 +1,12 @@
 use <../lib.scad>
-use <../p/axle.scad>
 use <../p/axleconnect.scad>
+use <../p/axleend20.scad>
 use <../p/connhole.scad>
 function ldraw_lib__27940() = [
 // 0 Technic Axle  3L with Middle Perpendicular Pin Hole
 // 0 Name: 27940.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,16 +16,17 @@ function ldraw_lib__27940() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-02-08 [arezey] Simplified using the new primitive axleconnect.dat
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
 // 
 // 0 // Thanks to Thorsten for his work on this part
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 connhole.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
-// 1 16 10 0 0 0 20 0 -1 0 0 0 0 -1 axle.dat
-  [1,16,10,0,0,0,20,0,-1,0,0,0,0,-1, ldraw_lib__axle()],
-// 1 16 -10 0 0 0 -20 0 -1 0 0 0 0 1 axle.dat
-  [1,16,-10,0,0,0,-20,0,-1,0,0,0,0,1, ldraw_lib__axle()],
+// 1 16 -10 0 0 0 1 0 -1 0 0 0 0 -1 axleend20.dat
+  [1,16,-10,0,0,0,1,0,-1,0,0,0,0,-1, ldraw_lib__axleend20()],
+// 1 16 10 0 0 0 -1 0 -1 0 0 0 0 1 axleend20.dat
+  [1,16,10,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend20()],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 axleconnect.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__axleconnect()],
 // 1 16 0 0 0 0 0 -1 0 -1 0 -1 0 0 axleconnect.dat
