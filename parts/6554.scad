@@ -6,12 +6,12 @@ use <../p/box2-7.scad>
 use <../p/box3u2p.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-use <../p/studel.scad>
+use <../p/stugel-2x2.scad>
 function ldraw_lib__6554() = [
 // 0 ~Electric Brick  2 x  2 x  0.667 with Side Clamps
 // 0 Name: 6554.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2015-02
+// 0 !LDRAW_ORG Part UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,16 +19,11 @@ function ldraw_lib__6554() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
+// 0 !HISTORY 2024-02-06 [Steffen] used stug
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
-// 
-// 1 16 10 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 -10 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,-10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
-// 1 16 10 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 stugel-2x2.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stugel_2x2()],
 // 1 16 0 6.25 0 20 0 0 0 -6.25 0 0 0 20 box3u2p.dat
   [1,16,0,6.25,0,20,0,0,0,-6.25,0,0,0,20, ldraw_lib__box3u2p()],
 // 0 BFC INVERTNEXT

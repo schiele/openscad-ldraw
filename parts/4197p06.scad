@@ -3,10 +3,10 @@ use <../p/48/3-16tang.scad>
 use <../p/48/3-16tndis.scad>
 use <s/4197s01.scad>
 function ldraw_lib__4197p06() = [
-// 0 Duplo Brick 2 x 6 x 2 with Raised Central 2 x 2 Section with Curved Sides with "Zoo" in Form of Snake Pattern
+// 0 Duplo Brick  2 x  6 x  2 with Raised Central  2 x  2 Section with Curved Sides with "Zoo" in Form of Snake Pattern
 // 0 Name: 4197p06.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2025-08
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,10 +14,20 @@ function ldraw_lib__4197p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 4197pb006, Bucket, Rebrickable 4197pr0007, Set 2324
-// 0 !KEYWORDS Set 2356, Set 2396
+// 
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":11824,"keyword":"Bricklink 4197pb006","pivot":{"part_id":50707,"part_keyword_id":11824}}
+// 0 !KEYWORDS {"id":11825,"keyword":"Set 2324","pivot":{"part_id":50707,"part_keyword_id":11825}}
+// 0 !KEYWORDS {"id":11826,"keyword":"Set 2396","pivot":{"part_id":50707,"part_keyword_id":11826}}
+// 0 !KEYWORDS {"id":23334,"keyword":"Rebrickable 4197pr0007","pivot":{"part_id":50707,"part_keyword_id":23334}}
+// 0 !KEYWORDS {"id":37625,"keyword":"Brickowl 25124","pivot":{"part_id":50707,"part_keyword_id":37625}}
+// 0 !KEYWORDS {"id":5462,"keyword":"Bucket","pivot":{"part_id":50707,"part_keyword_id":5462}}
+// 0 !KEYWORDS {"id":5518,"keyword":"Set 2356","pivot":{"part_id":50707,"part_keyword_id":5518}}
+// 0 !KEYWORDS Bricklink 4197pb006, Brickowl 25124, Rebrickable 4197pr0007
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2025-12-23 [MagFors] Update description
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4197s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4197s01()],

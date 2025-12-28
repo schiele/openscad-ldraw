@@ -15,7 +15,7 @@ function ldraw_lib__34987() = [
 // 0 ~Animal Trunk Right
 // 0 Name: 34987.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,6 +27,10 @@ function ldraw_lib__34987() = [
 // 0 !HISTORY 2024-11-24 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2024-11-24 [GeraldLasser] File preparation for LDraw Parts Tracker, Complete Rewrite from initial version by Wiktor Knosala
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2025-11-02 [OrionP] Fix Invalid lines
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 70 -33.5 0 0 1 1 0 0 0 1 0 stud2.dat
   [1,16,0,70,-33.5,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2()],
@@ -253,8 +257,8 @@ function ldraw_lib__34987() = [
   [5,24,3.843,64.733,-27.385,4.289,76.926,-29.06,0,77.115,-28.75,6.117,65.323,-27.637],
 // 5 24 6.117 65.323 -27.637 8.139 70.354 -28.508 7.029 74.38 -28.922 7.728 66.98 -27.998
   [5,24,6.117,65.323,-27.637,8.139,70.354,-28.508,7.029,74.38,-28.922,7.728,66.98,-27.998],
-// 5 24 7.029 74.38 -28.922 6.117 65.323 -27.637 8.139 70.354 -28.508 4.289 76.926 -29.
-  [5,24,7.029,74.38,-28.922,6.117,65.323,-27.637,8.139,70.354,-28.508,4.289,76.926,-29.],
+// 5 24 7.029 74.38 -28.922 6.117 65.323 -27.637 8.139 70.354 -28.508 4.289 76.926 -29
+  [5,24,7.029,74.38,-28.922,6.117,65.323,-27.637,8.139,70.354,-28.508,4.289,76.926,-29],
 // 
 // 0 // Outside
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\34987s01.dat

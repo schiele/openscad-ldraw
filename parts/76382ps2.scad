@@ -4,22 +4,26 @@ use <3819.scad>
 use <3820.scad>
 use <973ps2.scad>
 function ldraw_lib__76382ps2() = [
-// 0 Minifig Torso with Arms and Hands with SW Jedi Robes and Sash Pattern
+// 0 Minifig Torso with Arms and Yellow Hands with SW Jedi Robes and Sash Pattern
 // 0 Name: 76382ps2.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps2c01, Episode VI, Jabbas Palace, jedi knight
-// 0 !KEYWORDS Luke Skywalker, Mini Upper Part No 400, Original Trilogy
-// 0 !KEYWORDS Rebrickable 973c03h01pr0004, Return of the Jedi, Set 3341, Set 4480
-// 0 !KEYWORDS Set 7104, Star Wars, Tatooine
+// 0 !KEYWORDS Bricklink 973ps2c01, Brickowl 333458, Episode VI, Jabbas Palace
+// 0 !KEYWORDS jedi knight, Luke Skywalker, Mini Upper Part No 400
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h01pr0004, Return of the Jedi
+// 0 !KEYWORDS Set 3341, Set 4480, Set 7104, Star Wars, Tatooine
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-10-27 [KnightOfTarenta] Added Hands Colour in Name
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973ps2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973ps2()],

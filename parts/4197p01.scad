@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/48/3-16tang.scad>
 use <s/4197s01.scad>
 function ldraw_lib__4197p01() = [
-// 0 Duplo Brick 2 x 6 x 2 with Raised Central 2 x 2 Section with Curved Sides with Three Yellow Stars Pattern
+// 0 Duplo Brick  2 x  6 x  2 with Raised Central  2 x  2 Section with Curved Sides with Three Yellow Stars Pattern
 // 0 Name: 4197p01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2025-04
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,11 +13,25 @@ function ldraw_lib__4197p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 4197pb002, Circus, Clown, Rebrickable 4197pr0002, Set 1583
-// 0 !KEYWORDS Set 1685, Set 2221, Set 2326, Set 2383, Set 2387
+// 
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":23151,"keyword":"Rebrickable 4197pr0002","pivot":{"part_id":50706,"part_keyword_id":23151}}
+// 0 !KEYWORDS {"id":2628,"keyword":"Clown","pivot":{"part_id":50706,"part_keyword_id":2628}}
+// 0 !KEYWORDS {"id":37624,"keyword":"Brickowl 382108","pivot":{"part_id":50706,"part_keyword_id":37624}}
+// 0 !KEYWORDS {"id":5415,"keyword":"Circus","pivot":{"part_id":50706,"part_keyword_id":5415}}
+// 0 !KEYWORDS {"id":5463,"keyword":"Set 2221","pivot":{"part_id":50706,"part_keyword_id":5463}}
+// 0 !KEYWORDS {"id":9799,"keyword":"Set 1685","pivot":{"part_id":50706,"part_keyword_id":9799}}
+// 0 !KEYWORDS {"id":9824,"keyword":"Set 2326","pivot":{"part_id":50706,"part_keyword_id":9824}}
+// 0 !KEYWORDS {"id":9882,"keyword":"Bricklink 4197pb002","pivot":{"part_id":50706,"part_keyword_id":9882}}
+// 0 !KEYWORDS {"id":9883,"keyword":"Set 1583","pivot":{"part_id":50706,"part_keyword_id":9883}}
+// 0 !KEYWORDS {"id":9884,"keyword":"Set 2383","pivot":{"part_id":50706,"part_keyword_id":9884}}
+// 0 !KEYWORDS {"id":9885,"keyword":"Set 2387","pivot":{"part_id":50706,"part_keyword_id":9885}}
+// 0 !KEYWORDS Bricklink 4197pb002, Brickowl 382108, Rebrickable 4197pr0002
 // 
 // 0 !HISTORY 2025-03-31 [Holly-Wood] Added prims
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
+// 0 !HISTORY 2025-12-23 [MagFors] Update description
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4197s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4197s01()],

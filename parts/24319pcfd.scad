@@ -2,20 +2,25 @@ use <../lib.scad>
 use <24074.scad>
 use <973pcfd.scad>
 function ldraw_lib__24319pcfd() = [
-// 0 Minifig Torso with Flipper Arms with Light Blue Parabola Shaped Belly Pattern
+// 0 Minifig Torso with Flipper Arms with Bright Light Blue Parabola Shaped Belly Pattern
 // 0 Name: 24319pcfd.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2209c01, CMF, Costume, Mini Upper Part No 3197
-// 0 !KEYWORDS Rebrickable 24319pr3197, Series 15, Set 71011, Shark Suit Guy
+// 0 !KEYWORDS Bricklink 973pb2209c01, Brickowl 695883, Brickset 24319, CMF
+// 0 !KEYWORDS Costume, Mini Upper Part No 3197, Rebrickable 24319pr3197, Series 15
+// 0 !KEYWORDS Set 71011, Shark Suit Guy
 // 
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2025-10-24 [MagFors] Corrected colour
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pcfd.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pcfd()],

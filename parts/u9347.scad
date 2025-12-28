@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/box2-5.scad>
 use <../p/box2-7.scad>
-use <../p/studel.scad>
+use <../p/stugel-2x2.scad>
 function ldraw_lib__u9347() = [
 // 0 ~Electric Technic Mini-Motor  9V - Contact
 // 0 Name: u9347.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,16 +14,11 @@ function ldraw_lib__u9347() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
+// 0 !HISTORY 2024-02-06 [Steffen] used stug
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
-// 
-// 1 16 -10 0 -10 0 0 1 0 1 0 -1 0 0 studel.dat
-  [1,16,-10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel()],
-// 1 16 -10 0 10 0 0 1 0 1 0 -1 0 0 studel.dat
-  [1,16,-10,0,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel()],
-// 1 16 10 0 -10 0 0 -1 0 1 0 1 0 0 studel.dat
-  [1,16,10,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel()],
-// 1 16 10 0 10 0 0 -1 0 1 0 1 0 0 studel.dat
-  [1,16,10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel()],
+// 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stugel-2x2.dat
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stugel_2x2()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 1 20 0 0 0 2 0 0 0 19 box2-5.dat

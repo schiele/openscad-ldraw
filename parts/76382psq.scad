@@ -4,21 +4,26 @@ use <3819.scad>
 use <3820.scad>
 use <973psq.scad>
 function ldraw_lib__76382psq() = [
-// 0 Minifig Torso with Arms and Hands with SW Imperial Officer (Captain) Pattern
+// 0 Minifig Torso with Arms and Yellow Hands with SW Imperial Officer (Captain) Pattern
 // 0 Name: 76382psq.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973psqc01, Final Duel II, Galactic Empire, Jacket
-// 0 !KEYWORDS Military, Mini Upper Part No 590, Original Trilogy, rank insignia
-// 0 !KEYWORDS Rebrickable 973c08h01pr0002, set 7201, Star Wars, Uniform
+// 0 !KEYWORDS Bricklink 973psqc01, Brickowl 122287, Brickset 73403, Final Duel II
+// 0 !KEYWORDS Galactic Empire, Jacket, Military, Mini Upper Part No 590
+// 0 !KEYWORDS Original Trilogy, rank insignia, Rebrickable 973c08h01pr0002
+// 0 !KEYWORDS set 7201, Star Wars, Uniform
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-10-28 [KnightOfTarenta] Added Missing Hands Colour in Name
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973psq.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973psq()],

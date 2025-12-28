@@ -5,7 +5,7 @@ function ldraw_lib__4182d04() = [
 // 0 Train Door  1 x  4 x  5 Right with Sticker DB 7727
 // 0 Name: 4182d04.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,6 +13,8 @@ function ldraw_lib__4182d04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sticker Shortcut
+// 
+// 0 !KEYWORDS Set 7727
 // 
 // 0 !CMDLINE -c0
 // 
@@ -23,6 +25,9 @@ function ldraw_lib__4182d04() = [
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4182.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4182()],

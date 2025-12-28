@@ -3,13 +3,13 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <s/2683s01.scad>
-use <../p/studel.scad>
 use <../p/stug2-2x2.scad>
+use <../p/stugel-2x2.scad>
 function ldraw_lib__2683() = [
 // 0 ~Monorail Motor Case
 // 0 Name: 2683.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__2683() = [
 // 0 !HISTORY 2013-04-27 [MagFors] Modified for BFC compliance
 // 0 !HISTORY 2013-04-30 [MagFors] Removed t-junctions
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-02-06 [Steffen] fixed mirrored electric studs
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2683s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2683s01()],
@@ -36,14 +37,8 @@ function ldraw_lib__2683() = [
 // 1 16 0 1 0 1 0 0 0 1.625 0 0 0 1 stug2-2x2.dat
   [1,16,0,1,0,1,0,0,0,1.625,0,0,0,1, ldraw_lib__stug2_2x2()],
 // 
-// 1 16 -37 64 -10 0 1 0 0 0 -1 1 0 0 studel.dat
-  [1,16,-37,64,-10,0,1,0,0,0,-1,1,0,0, ldraw_lib__studel()],
-// 1 16 -37 64 10 0 1 0 0 0 1 -1 0 0 studel.dat
-  [1,16,-37,64,10,0,1,0,0,0,1,-1,0,0, ldraw_lib__studel()],
-// 1 16 -37 84 -10 0 1 0 0 0 -1 1 0 0 studel.dat
-  [1,16,-37,84,-10,0,1,0,0,0,-1,1,0,0, ldraw_lib__studel()],
-// 1 16 -37 84 10 0 1 0 0 0 1 -1 0 0 studel.dat
-  [1,16,-37,84,10,0,1,0,0,0,1,-1,0,0, ldraw_lib__studel()],
+// 1 16 -37 74 0 0 1 0 -1 0 0 0 0 1 stugel-2x2.dat
+  [1,16,-37,74,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__stugel_2x2()],
 // 
 // 1 16 32.5 64 -10 0 -1 0 4 0 0 0 0 4 4-4disc.dat
   [1,16,32.5,64,-10,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4disc()],

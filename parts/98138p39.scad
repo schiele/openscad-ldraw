@@ -2,20 +2,31 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
 function ldraw_lib__98138p39() = [
-// 0 Tile  1 x  1 Round with with Orange Fruit Slice Pattern
+// 0 Tile  1 x  1 Round with Orange Fruit Slice Pattern
 // 0 Name: 98138p39.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-02
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb262, Rebrickable 98138pr0271, Set 41757, Set 60437
-// 0 !KEYWORDS Set 76444, Set 80108
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":12091,"keyword":"Set 41757","pivot":{"part_id":50711,"part_keyword_id":12091}}
+// 0 !KEYWORDS {"id":20104,"keyword":"Set 60437","pivot":{"part_id":50711,"part_keyword_id":20104}}
+// 0 !KEYWORDS {"id":20238,"keyword":"Rebrickable 98138pr0271","pivot":{"part_id":50711,"part_keyword_id":20238}}
+// 0 !KEYWORDS {"id":20239,"keyword":"Bricklink 98138pb262","pivot":{"part_id":50711,"part_keyword_id":20239}}
+// 0 !KEYWORDS {"id":20240,"keyword":"Set 76444","pivot":{"part_id":50711,"part_keyword_id":20240}}
+// 0 !KEYWORDS {"id":37629,"keyword":"Brickowl 1230633","pivot":{"part_id":50711,"part_keyword_id":37629}}
+// 0 !KEYWORDS {"id":37630,"keyword":"Brickset 103352","pivot":{"part_id":50711,"part_keyword_id":37630}}
+// 0 !KEYWORDS {"id":9586,"keyword":"Set 80108","pivot":{"part_id":50711,"part_keyword_id":9586}}
+// 0 !KEYWORDS Bricklink 98138pb262, Brickowl 1230633, Brickset 103352
+// 0 !KEYWORDS Rebrickable 98138pr0271
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-12-23 [MagFors] Update description
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],

@@ -1,0 +1,30 @@
+use <../lib.scad>
+use <s/105645p01s01.scad>
+use <s/110638s01.scad>
+use <s/110638s02.scad>
+function ldraw_lib__110638p01() = [
+// 0 Wheel 30 x 50 with Rubber Black Integral Smooth Racing Tyre with White "GOODYEAR EAGLE" Pattern
+// 0 Name: 110638p01.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2025-11
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 110638pb01, Brickowl 303601, Brickset 112603
+// 0 !KEYWORDS Rebrickable 110638pat0001pr0001, set 10353, Slick
+// 
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\110638s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__110638s01()],
+// 1 256 0 0 0 1 0 0 0 1 0 0 0 1 s\110638s02.dat
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__110638s02()],
+// 1 256 0 0 0 1 0 0 0 1 0 0 0 1 s\105645p01s01.dat
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__105645p01s01()],
+];
+module ldraw_lib__110638p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__110638p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__110638p01(line=0.2);

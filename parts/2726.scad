@@ -9,12 +9,12 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <../p/recte3.scad>
 use <../p/recte4.scad>
-use <../p/studel.scad>
+use <../p/stugel-2x2.scad>
 function ldraw_lib__2726() = [
 // 0 ~Electric Brick  2 x  2 x  0.667 Top
 // 0 Name: 2726.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__2726() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-02-06 [Steffen] used stug
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
 // 4 16 2 0 -3 2 0 3 -2 0 3 -2 0 -3
   [4,16,2,0,-3,2,0,3,-2,0,3,-2,0,-3],
@@ -296,14 +297,8 @@ function ldraw_lib__2726() = [
 // 2 24 17 16 -3.5 20 16 -3.5
   [2,24,17,16,-3.5,20,16,-3.5],
 // 
-// 1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 10 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 10 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
-// 1 16 -10 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,-10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 stugel-2x2.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stugel_2x2()],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

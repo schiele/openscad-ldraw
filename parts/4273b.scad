@@ -10,14 +10,14 @@ function ldraw_lib__4273b() = [
 // 0 Technic Connector Toggle Joint Toothed
 // 0 Name: 4273b.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4273
+// 0 !KEYWORDS BrickLink 4273, Brickowl 813490, Brickset 4273
 // 
 // 0 !HISTORY 2000-02-08 [sbliss] Changed part name from Technic Connector Locking
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
@@ -29,7 +29,10 @@ function ldraw_lib__4273b() = [
 // 0 !HISTORY 2018-10-08 [MagFors] Adapted to updated bush lock primitives
 // 0 !HISTORY 2018-10-11 [MagFors] Subfiled
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-11-02 [OrionP] Fix Invalid lines
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4273s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4273s01()],
@@ -171,8 +174,8 @@ function ldraw_lib__4273b() = [
   [1,16,-7,0,-4,0,1,.199,0,0,-1,-1,0,0, ldraw_lib__1_4ndis()],
 // 1 16 -7 0 -4 0 1 .199 0 0 1 -1 0 0 1-4ndis.dat
   [1,16,-7,0,-4,0,1,.199,0,0,1,-1,0,0, ldraw_lib__1_4ndis()],
-// 1 16 -7 0 4. 0 1 .199 0 0 1 1 0 0 1-4ndis.dat
-  [1,16,-7,0,4.,0,1,.199,0,0,1,1,0,0, ldraw_lib__1_4ndis()],
+// 1 16 -7 0 4 0 1 .199 0 0 1 1 0 0 1-4ndis.dat
+  [1,16,-7,0,4,0,1,.199,0,0,1,1,0,0, ldraw_lib__1_4ndis()],
 // 1 16 -7 0 4 0 1 .199 0 0 -1 1 0 0 1-4ndis.dat
   [1,16,-7,0,4,0,1,.199,0,0,-1,1,0,0, ldraw_lib__1_4ndis()],
 // 1 16 7 0 -4 0 -1 -.199 0 0 1 -1 0 0 1-4ndis.dat

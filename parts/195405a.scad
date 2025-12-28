@@ -6,17 +6,20 @@ function ldraw_lib__195405a() = [
 // 0 Sticker  2.4 x  2 with White German Railways Logo and "7727"
 // 0 Name: 195405a.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS DB, Deutsche Bahn
+// 0 !KEYWORDS Bricklink 7727stk01, Brickowl 812973, DB, Deutsche Bahn
+// 0 !KEYWORDS Rebrickable 195465, Set 7727
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 -0.25 0 20 0 0 0 0.25 0 0 0 -23.5 box5-12.dat
   [1,16,0,-0.25,0,20,0,0,0,0.25,0,0,0,-23.5, ldraw_lib__box5_12()],

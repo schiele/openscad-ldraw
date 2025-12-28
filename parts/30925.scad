@@ -13,17 +13,21 @@ function ldraw_lib__30925() = [
 // 0 Plate  1 x  2 with Spoiler  1 x  4
 // 0 Name: 30925.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Vehicle
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":1039,"keyword":"Vehicle","pivot":{"part_id":50338,"part_keyword_id":1039}}
+// 0 !KEYWORDS {"id":36850,"keyword":"Brickowl 686801","pivot":{"part_id":50338,"part_keyword_id":36850}}
+// 0 !KEYWORDS Brickowl 686801
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-11-21 [Blechtaler] added missing complementary condlines
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
@@ -154,9 +158,12 @@ function ldraw_lib__30925() = [
   [3,16,33,-24,20,20,-21.5718,24.3708,16.5,-21.5718,24.3708],
 // 4 16 33 -24 20 16.5 -21.5718 24.3708 -16.5 -21.5718 24.3708 -33 -24 20
   [4,16,33,-24,20,16.5,-21.5718,24.3708,-16.5,-21.5718,24.3708,-33,-24,20],
-// 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+// 5 24 38.5 -20.0661 17.8149 38.5 -17.6383 22.1859 37.77485 -19.143734 23.02211 39.5 -9 17.3865
+  [5,24,38.5,-20.0661,17.8149,38.5,-17.6383,22.1859,37.77485,-19.143734,23.02211,39.5,-9,17.3865],
+// 5 24 -38.5 -20.0661 17.8149 -38.5 -17.6383 22.1859 -37.77485 -19.143734 23.02211 -39.5 -9 17.3865
+  [5,24,-38.5,-20.0661,17.8149,-38.5,-17.6383,22.1859,-37.77485,-19.143734,23.02211,-39.5,-9,17.3865],
 ];
 module ldraw_lib__30925(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30925(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

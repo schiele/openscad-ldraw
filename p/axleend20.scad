@@ -4,10 +4,10 @@ use <axlehol2.scad>
 use <axlehol8.scad>
 use <axlehol9.scad>
 function ldraw_lib__axleend20() = [
-// 0 Axle End 20 LDU
+// 0 Technic Axle End 20 LDU
 // 0 Name: axleend20.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Primitive UPDATE 2025-10
+// 0 !LDRAW_ORG Primitive UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__axleend20() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-10-27 [OrionP] Official Update 2025-10
+// 0 !HISTORY 2025-10-29 [Holly-Wood] Sanded description
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],

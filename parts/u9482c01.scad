@@ -11,22 +11,23 @@ function ldraw_lib__u9482c01() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 3  4.5V
 // 0 Name: u9482c01.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Sticker Shortcut
-// 0 !KEYWORDS Train
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":13,"keyword":"Train","pivot":{"part_id":50510,"part_keyword_id":13}}
 // 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
-// 
+// 0 !HISTORY 2025-12-05 [OrionP] Corrected Category
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9483.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9483()],

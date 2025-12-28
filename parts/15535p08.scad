@@ -1,0 +1,44 @@
+use <../lib.scad>
+use <s/15535p07s01.scad>
+use <s/15535p07s02.scad>
+use <s/15535s01.scad>
+function ldraw_lib__15535p08() = [
+// 0 Tile 2 x 2 Round with Hole with Red Circles Pattern
+// 0 Name: 15535p08.dat
+// 0 Author: Gerald Lasser [GeraldLasser]
+// 0 !LDRAW_ORG Part UPDATE 2025-11
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 15535pb17, Brickowl 1373840, Brickset 111773, Formula 1
+// 0 !KEYWORDS Rebrickable 15535pr0012, Set 60443, Set 60474, Wheel Cap
+// 
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15535s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535s01()],
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15535p07s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535p07s01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\15535p07s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__15535p07s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15535p07s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535p07s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\15535p07s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__15535p07s01()],
+// 
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\15535p07s02.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535p07s02()],
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 -1 s\15535p07s02.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__15535p07s02()],
+// 1 4 0 0 0 -1 0 0 0 1 0 0 0 1 s\15535p07s02.dat
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535p07s02()],
+// 1 4 0 0 0 -1 0 0 0 1 0 0 0 -1 s\15535p07s02.dat
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__15535p07s02()],
+];
+module ldraw_lib__15535p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__15535p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__15535p08(line=0.2);

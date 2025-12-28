@@ -4,7 +4,7 @@ function ldraw_lib__axleho10() = [
 // 0 Technic Axle Base Surface
 // 0 Name: axleho10.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LDRAW_ORG Primitive UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +20,8 @@ function ldraw_lib__axleho10() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2024-01-24 [MagFors] Update description, to be only used on axles, not holes
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
+// 0 !HISTORY 2025-10-11 [MagFors] corrected a typo
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
 // 3 16 5.54328 0 2.2961 2 0 2 5.6023 0 2
   [3,16,5.54328,0,2.2961,2,0,2,5.6023,0,2],
@@ -33,10 +35,11 @@ function ldraw_lib__axleho10() = [
   [3,16,2,0,-2,5.543226,0,-2.296081,5.6023,0,-2],
 // 3 16 2 0 -2 2 0 -5.6023 2.2961 0 -5.54328
   [3,16,2,0,-2,2,0,-5.6023,2.2961,0,-5.54328],
-// 3 16 -5.54328 0 -2.2961 -2 0 -2 -5.6032 0 -2
-  [3,16,-5.54328,0,-2.2961,-2,0,-2,-5.6032,0,-2],
+// 3 16 -5.54328 0 -2.2961 -2 0 -2 -5.6023 0 -2
+  [3,16,-5.54328,0,-2.2961,-2,0,-2,-5.6023,0,-2],
 // 3 16 -2 0 -5.6023 -2 0 -2 -2.296081 0 -5.543226
   [3,16,-2,0,-5.6023,-2,0,-2,-2.296081,0,-5.543226],
+// 
 // 3 16 2.296081 0 5.543226 2 0 2 5.54328 0 2.2961
   [3,16,2.296081,0,5.543226,2,0,2,5.54328,0,2.2961],
 // 1 16 0 0 0 5.54328 0 -2.2961 0 1 0 2.2961 0 5.54328 1-8chrd.dat

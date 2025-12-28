@@ -5,22 +5,32 @@ use <../p/logo-porsche-rs.scad>
 use <s/98138pt0s01.scad>
 use <s/98138s02.scad>
 function ldraw_lib__98138pt0() = [
-// 0 Tile  1 x  1 Round with 'RS' Pattern
+// 0 Tile  1 x  1 Round with "RS" Pattern
 // 0 Name: 98138pt0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-06
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb054, Porsche GT3 RS, Rebrickable 98138pr0055
-// 0 !KEYWORDS set 42056, Wheelhub
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":1510,"keyword":"set 42056","pivot":{"part_id":50712,"part_keyword_id":1510}}
+// 0 !KEYWORDS {"id":31465,"keyword":"Rebrickable 98138pr0055","pivot":{"part_id":50712,"part_keyword_id":31465}}
+// 0 !KEYWORDS {"id":37631,"keyword":"Brickowl 874657","pivot":{"part_id":50712,"part_keyword_id":37631}}
+// 0 !KEYWORDS {"id":37632,"keyword":"Brickset 26505","pivot":{"part_id":50712,"part_keyword_id":37632}}
+// 0 !KEYWORDS {"id":8307,"keyword":"BrickLink 98138pb054","pivot":{"part_id":50712,"part_keyword_id":8307}}
+// 0 !KEYWORDS {"id":8308,"keyword":"Porsche GT3 RS","pivot":{"part_id":50712,"part_keyword_id":8308}}
+// 0 !KEYWORDS {"id":8309,"keyword":"Wheelhub","pivot":{"part_id":50712,"part_keyword_id":8309}}
+// 0 !KEYWORDS BrickLink 98138pb054, Brickowl 874657, Brickset 26505
+// 0 !KEYWORDS Rebrickable 98138pr0055
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-04-01 [jb70] Using new Logo Primitives and Subfile
 // 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
+// 0 !HISTORY 2025-12-23 [MagFors] Update description
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],

@@ -4,20 +4,26 @@ use <3819.scad>
 use <3820.scad>
 use <973p6j.scad>
 function ldraw_lib__76382p6j() = [
-// 0 Minifig Torso with Arms and Hands with Jacket, Zippered Pockets and Classic Space Logo Pattern
+// 0 Minifig Torso with Arms and Yellow Hands with Jacket, Zippered Pockets and Classic Space Logo Pattern
 // 0 Name: 76382p6j.dat
 // 0 Author: Orion Pobursky [OrionP]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 973pb0298c01, City, Rebrickable 973c22h01pr1170
-// 0 !KEYWORDS set 10173, Set 10199, Set 4513, Trains, Winter Village, World City
+// 0 !KEYWORDS Airport, Bricklink 973pb0298c01, Brickowl 397333, Brickset 73403
+// 0 !KEYWORDS City, Mini Upper Part No 1170, Mini Upper Part No 846
+// 0 !KEYWORDS Rebrickable 973c22h01pr1170, set 10173, Set 10199, Set 4513, Trains
+// 0 !KEYWORDS Winter Village, World City
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 0 !HISTORY 2025-10-27 [KnightOfTarenta] Added Hands Colour in Name
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p6j.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p6j()],

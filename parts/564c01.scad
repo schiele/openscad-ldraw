@@ -8,14 +8,17 @@ function ldraw_lib__564c01() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 1  4.5V
 // 0 Name: 564c01.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Sticker Shortcut
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":37429,"keyword":"Brickowl 85261","pivot":{"part_id":50509,"part_keyword_id":37429}}
+// 0 !KEYWORDS {"id":37430,"keyword":"Bricklink bb0006","pivot":{"part_id":50509,"part_keyword_id":37430}}
+// 0 !KEYWORDS Bricklink bb0006, Brickowl 85261
 // 
 // 0 !HISTORY 2012-01-07 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
@@ -23,7 +26,8 @@ function ldraw_lib__564c01() = [
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
-// 
+// 0 !HISTORY 2025-12-05 [OrionP] Corrected Category
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 494 -20 0 20 1.06066 0 -1.06066 0 1 0 1.06066 0 1.06066 u9020.dat
   [1,494,-20,0,20,1.06066,0,-1.06066,0,1,0,1.06066,0,1.06066, ldraw_lib__u9020()],
@@ -43,7 +47,6 @@ function ldraw_lib__564c01() = [
   [1,15,0,66,60,1,0,0,0,1,0,0,0,1, ldraw_lib__566()],
 // 1 15 0 5 -25 1 0 0 0 1 0 0 0 1 u9480.dat
   [1,15,0,5,-25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9480()],
-// 0
 ];
 module ldraw_lib__564c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__564c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

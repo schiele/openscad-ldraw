@@ -3,10 +3,10 @@ use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/box3u12.scad>
 function ldraw_lib__s__stickerback013x015() = [
-// 0 ~Stickerback  1.3 x  1.5
+// 0 ~Sticker Back  1.3 x  1.5
 // 0 Name: s\stickerback013x015.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-08
+// 0 !LDRAW_ORG Subpart UPDATE 2025-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,6 +14,8 @@ function ldraw_lib__s__stickerback013x015() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2025-11-21 [MagFors] Update description
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 
 // 1 16 -13.5 0 -11.5 0 0 -1.5 0 -1 0 -1.5 0 0 1-4chrd.dat
   [1,16,-13.5,0,-11.5,0,0,-1.5,0,-1,0,-1.5,0,0, ldraw_lib__1_4chrd()],

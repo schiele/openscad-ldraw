@@ -6,18 +6,22 @@ function ldraw_lib__u7031() = [
 // 0 Modulex Slope Brick 27  2 x  1
 // 0 Name: u7031.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 27.5651 degree, Bricklink Mx1521, Peeron x717, Rebrickable 1521
-// 0 !KEYWORDS slope 1:2
+// 0 !KEYWORDS 27.5651 degree, Bricklink Mx1521, Brickowl 2245, Peeron x717
+// 0 !KEYWORDS Rebrickable 1521, slope 1:2
 // 
 // 0 !HISTORY 2025-06-06 [MagFors] Original design by Tore Eriksson as slp0102c
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2025-11-02 [OrionP] Fix Invalid lines
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 10 -1.25 0 0 1 0 -1.25 0 0 0 0 3.75 rect.dat
   [1,16,10,-1.25,0,0,1,0,-1.25,0,0,0,0,3.75, ldraw_lib__rect()],
@@ -45,8 +49,8 @@ function ldraw_lib__u7031() = [
   [1,16,12.5,-1.25,0,0,-1,0,-1.25,0,0,0,0,-6.25, ldraw_lib__rect()],
 // 4 16 12.5 0 -6.25 12.5 -2.5 -6.25 -12.5 -15 -6.25 -12.5 0 -6.25
   [4,16,12.5,0,-6.25,12.5,-2.5,-6.25,-12.5,-15,-6.25,-12.5,0,-6.25],
-// 4 16 -12.5 0 6.25 -12.5 -15. 6.25 12.5 -2.5 6.25 12.5 0 6.25
-  [4,16,-12.5,0,6.25,-12.5,-15.,6.25,12.5,-2.5,6.25,12.5,0,6.25],
+// 4 16 -12.5 0 6.25 -12.5 -15 6.25 12.5 -2.5 6.25 12.5 0 6.25
+  [4,16,-12.5,0,6.25,-12.5,-15,6.25,12.5,-2.5,6.25,12.5,0,6.25],
 // 2 24 -12.5 0 -6.25 12.5 0 -6.25
   [2,24,-12.5,0,-6.25,12.5,0,-6.25],
 // 2 24 -12.5 0 6.25 12.5 0 6.25

@@ -1,15 +1,14 @@
 use <../lib.scad>
-use <../p/axleend.scad>
+use <../p/axleend2.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
-use <../p/axlehol9.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 function ldraw_lib__t1115() = [
 // 0 | Circuit Cubes Axle  1.25 Notched
 // 0 Name: t1115.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-02
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,18 +18,17 @@ function ldraw_lib__t1115() = [
 // 0 !CATEGORY Technic
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
-// 
+// 0 !HISTORY 2025-12-19 [MagFors] Shaped axleend
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 7 0 0 0 11 0 -1 0 0 0 0 1 axlehol8.dat
   [1,16,7,0,0,0,11,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
-// 1 16 21 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,21,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
-// 1 16 0 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,0,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
-// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
-// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+// 1 16 21 0 0 0 1.5 0 -1 0 0 0 0 1 axlehol8.dat
+  [1,16,21,0,0,0,1.5,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+// 1 16 2.5 0 0 0 1.5 0 -1 0 0 0 0 1 axlehol8.dat
+  [1,16,2.5,0,0,0,1.5,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 axleend2.dat
+  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend2()],
 // 1 16 4 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
   [1,16,4,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
 // 1 16 7 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
@@ -39,14 +37,8 @@ function ldraw_lib__t1115() = [
   [1,16,18,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
 // 1 16 21 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
   [1,16,21,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
-// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
-  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
-// 1 16 25 0 0 0 -1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,25,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
-// 1 16 25 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,25,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
-// 1 16 25 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
-  [1,16,25,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
+// 1 16 25 0 0 0 -1 0 -1 0 0 0 0 1 axleend2.dat
+  [1,16,25,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend2()],
 // 2 24 4 -5.602 2 4 -3.58 2
   [2,24,4,-5.602,2,4,-3.58,2],
 // 2 24 7 -3.58 2 7 -5.602 2

@@ -7,22 +7,26 @@ function ldraw_lib__4121723o() = [
 // 0 Sticker  1.6 x  1.6 with Black Grille and Transparent Background
 // 0 Name: 4121723o.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Model Team, Racing Truck, Set 5563
+// 0 !KEYWORDS Bricklink 5563stk01, Brickowl 288038, Model Team, Racing Truck
+// 0 !KEYWORDS Rebrickable 72703, Set 5563
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-11-02 [OrionP] Fix Invalid lines
+// 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
+// 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 0 // Body
 // 
-// 1 16 0 -.25 0 0 0 -16. 0 .25 0 15.2 0 0 box3u12.dat
-  [1,16,0,-.25,0,0,0,-16.,0,.25,0,15.2,0,0, ldraw_lib__box3u12()],
+// 1 16 0 -.25 0 0 0 -16 0 .25 0 15.2 0 0 box3u12.dat
+  [1,16,0,-.25,0,0,0,-16,0,.25,0,15.2,0,0, ldraw_lib__box3u12()],
 // 1 16 -15 0 -15.2 -1 0 0 0 -.25 0 0 0 -1 1-4cyli.dat
   [1,16,-15,0,-15.2,-1,0,0,0,-.25,0,0,0,-1, ldraw_lib__1_4cyli()],
 // 1 16 15 0 -15.2 1 0 0 0 -.25 0 0 0 -1 1-4cyli.dat

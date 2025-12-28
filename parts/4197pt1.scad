@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/48/3-16tndis.scad>
 use <s/4197s01.scad>
 function ldraw_lib__4197pt1() = [
-// 0 Duplo Brick 2 x 6 x 2 with Raised Central 2 x 2 Section with Curved Sides with Blue "WINDMILL" Pattern
+// 0 Duplo Brick  2 x  6 x  2 with Raised Central  2 x  2 Section with Curved Sides with Blue "WINDMILL" Pattern
 // 0 Name: 4197pt1.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2025-04
+// 0 !LDRAW_ORG Part UPDATE 2025-12
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,9 +13,18 @@ function ldraw_lib__4197pt1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 4197pb011, Rebrickable 4197pr9997, Set 2404, Signboard
+// 
+// 0 !KEYWORDS
+// 0 !KEYWORDS {"id":23156,"keyword":"Rebrickable 4197pr9997","pivot":{"part_id":50708,"part_keyword_id":23156}}
+// 0 !KEYWORDS {"id":37626,"keyword":"Brickowl 236047-93","pivot":{"part_id":50708,"part_keyword_id":37626}}
+// 0 !KEYWORDS {"id":830,"keyword":"Signboard","pivot":{"part_id":50708,"part_keyword_id":830}}
+// 0 !KEYWORDS {"id":9899,"keyword":"Bricklink 4197pb011","pivot":{"part_id":50708,"part_keyword_id":9899}}
+// 0 !KEYWORDS {"id":9900,"keyword":"Set 2404","pivot":{"part_id":50708,"part_keyword_id":9900}}
+// 0 !KEYWORDS Bricklink 4197pb011, Brickowl 236047-93, Rebrickable 4197pr9997
 // 
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
+// 0 !HISTORY 2025-12-23 [MagFors] Update description
+// 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4197s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4197s01()],
