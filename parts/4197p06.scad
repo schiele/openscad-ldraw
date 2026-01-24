@@ -15,15 +15,8 @@ function ldraw_lib__4197p06() = [
 // 
 // 0 !CATEGORY Brick
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":11824,"keyword":"Bricklink 4197pb006","pivot":{"part_id":50707,"part_keyword_id":11824}}
-// 0 !KEYWORDS {"id":11825,"keyword":"Set 2324","pivot":{"part_id":50707,"part_keyword_id":11825}}
-// 0 !KEYWORDS {"id":11826,"keyword":"Set 2396","pivot":{"part_id":50707,"part_keyword_id":11826}}
-// 0 !KEYWORDS {"id":23334,"keyword":"Rebrickable 4197pr0007","pivot":{"part_id":50707,"part_keyword_id":23334}}
-// 0 !KEYWORDS {"id":37625,"keyword":"Brickowl 25124","pivot":{"part_id":50707,"part_keyword_id":37625}}
-// 0 !KEYWORDS {"id":5462,"keyword":"Bucket","pivot":{"part_id":50707,"part_keyword_id":5462}}
-// 0 !KEYWORDS {"id":5518,"keyword":"Set 2356","pivot":{"part_id":50707,"part_keyword_id":5518}}
-// 0 !KEYWORDS Bricklink 4197pb006, Brickowl 25124, Rebrickable 4197pr0007
+// 0 !KEYWORDS Bricklink 4197pb006, Brickowl 25124, Bucket, Rebrickable 4197pr0007
+// 0 !KEYWORDS Set 2324, Set 2356, Set 2396
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

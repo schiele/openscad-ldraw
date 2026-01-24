@@ -20,10 +20,7 @@ function ldraw_lib__30925() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":1039,"keyword":"Vehicle","pivot":{"part_id":50338,"part_keyword_id":1039}}
-// 0 !KEYWORDS {"id":36850,"keyword":"Brickowl 686801","pivot":{"part_id":50338,"part_keyword_id":36850}}
-// 0 !KEYWORDS Brickowl 686801
+// 0 !KEYWORDS Brickowl 686801, Vehicle
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-11-21 [Blechtaler] added missing complementary condlines

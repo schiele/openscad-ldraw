@@ -14,11 +14,7 @@ function ldraw_lib__11055d04() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":12184,"keyword":"Destiny Bounty","pivot":{"part_id":50709,"part_keyword_id":12184}}
-// 0 !KEYWORDS {"id":12187,"keyword":"Bricklink 2335pb194","pivot":{"part_id":50709,"part_keyword_id":12187}}
-// 0 !KEYWORDS {"id":2154,"keyword":"Set 70618","pivot":{"part_id":50709,"part_keyword_id":2154}}
-// 0 !KEYWORDS {"id":398,"keyword":"Ninjago","pivot":{"part_id":50709,"part_keyword_id":398}}
+// 0 !KEYWORDS Bricklink 2335pb194, Destiny Bounty, Ninjago, Set 70618
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

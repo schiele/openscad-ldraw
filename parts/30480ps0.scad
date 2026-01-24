@@ -12,23 +12,9 @@ function ldraw_lib__30480ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":11550,"keyword":"set 10236","pivot":{"part_id":46345,"part_keyword_id":11550}}
-// 0 !KEYWORDS {"id":26935,"keyword":"Rebrickable 30480pr0001","pivot":{"part_id":46345,"part_keyword_id":26935}}
-// 0 !KEYWORDS {"id":26936,"keyword":"BrickLink x134pb01","pivot":{"part_id":46345,"part_keyword_id":26936}}
-// 0 !KEYWORDS {"id":3121,"keyword":"C3-PO","pivot":{"part_id":46345,"part_keyword_id":3121}}
-// 0 !KEYWORDS {"id":3122,"keyword":"C3PO","pivot":{"part_id":46345,"part_keyword_id":3122}}
-// 0 !KEYWORDS {"id":34515,"keyword":"K-3PO","pivot":{"part_id":46345,"part_keyword_id":34515}}
-// 0 !KEYWORDS {"id":34516,"keyword":"TC-4","pivot":{"part_id":46345,"part_keyword_id":34516}}
-// 0 !KEYWORDS {"id":34518,"keyword":"U-3PO","pivot":{"part_id":46345,"part_keyword_id":34518}}
-// 0 !KEYWORDS {"id":34519,"keyword":"Set 5002122","pivot":{"part_id":46345,"part_keyword_id":34519}}
-// 0 !KEYWORDS {"id":34520,"keyword":"Set 9490","pivot":{"part_id":46345,"part_keyword_id":34520}}
-// 0 !KEYWORDS {"id":34523,"keyword":"Set 75271","pivot":{"part_id":46345,"part_keyword_id":34523}}
-// 0 !KEYWORDS {"id":373,"keyword":"Star Wars","pivot":{"part_id":46345,"part_keyword_id":373}}
-// 0 !KEYWORDS {"id":3811,"keyword":"set 75146","pivot":{"part_id":46345,"part_keyword_id":3811}}
-// 0 !KEYWORDS {"id":8143,"keyword":"Set 75228","pivot":{"part_id":46345,"part_keyword_id":8143}}
-// 0 !KEYWORDS BrickLink x134pb01, Brickowl 161568, Brickset 24049
-// 0 !KEYWORDS Rebrickable 30480pr0001
+// 0 !KEYWORDS BrickLink x134pb01, Brickowl 161568, Brickset 24049, C3-PO, C3PO
+// 0 !KEYWORDS K-3PO, Rebrickable 30480pr0001, set 10236, Set 5002122, set 75146
+// 0 !KEYWORDS Set 75228, Set 75271, Set 9490, Star Wars, TC-4, U-3PO
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2025-06-24 [notmaster] changed eye color, used new subpart, complete rewrite, original by Gargan

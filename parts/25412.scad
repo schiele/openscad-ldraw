@@ -16,20 +16,8 @@ function ldraw_lib__25412() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":1012,"keyword":"CMF","pivot":{"part_id":50466,"part_keyword_id":1012}}
-// 0 !KEYWORDS {"id":12243,"keyword":"Dreamzzz","pivot":{"part_id":50466,"part_keyword_id":12243}}
-// 0 !KEYWORDS {"id":12247,"keyword":"Set 71459","pivot":{"part_id":50466,"part_keyword_id":12247}}
-// 0 !KEYWORDS {"id":16805,"keyword":"Set 21337","pivot":{"part_id":50466,"part_keyword_id":16805}}
-// 0 !KEYWORDS {"id":17923,"keyword":"Set 71484","pivot":{"part_id":50466,"part_keyword_id":17923}}
-// 0 !KEYWORDS {"id":35891,"keyword":"Set 71715","pivot":{"part_id":50466,"part_keyword_id":35891}}
-// 0 !KEYWORDS {"id":35892,"keyword":"Set 71732","pivot":{"part_id":50466,"part_keyword_id":35892}}
-// 0 !KEYWORDS {"id":36711,"keyword":"Brickowl 258287","pivot":{"part_id":50466,"part_keyword_id":36711}}
-// 0 !KEYWORDS {"id":3791,"keyword":"Set 71741","pivot":{"part_id":50466,"part_keyword_id":3791}}
-// 0 !KEYWORDS {"id":398,"keyword":"Ninjago","pivot":{"part_id":50466,"part_keyword_id":398}}
-// 0 !KEYWORDS {"id":4823,"keyword":"Jay","pivot":{"part_id":50466,"part_keyword_id":4823}}
-// 0 !KEYWORDS {"id":6591,"keyword":"Cooper","pivot":{"part_id":50466,"part_keyword_id":6591}}
-// 0 !KEYWORDS Brickowl 258287
+// 0 !KEYWORDS Brickowl 258287, CMF, Cooper, Dreamzzz, Jay, Ninjago, Set 21337
+// 0 !KEYWORDS Set 71459, Set 71484, Set 71715, Set 71732, Set 71741
 // 
 // 0 !HISTORY 2023-11-14 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2025-10-21 [LisaWinter] File preparation for LDraw Parts Tracker

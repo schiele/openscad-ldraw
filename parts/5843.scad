@@ -23,8 +23,6 @@ function ldraw_lib__5843() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":37642,"keyword":"Brickowl 430884","pivot":{"part_id":50717,"part_keyword_id":37642}}
 // 0 !KEYWORDS Brickowl 430884
 // 
 // 0 !HISTORY 2024-12-21 [GeraldLasser] Derived from 6005 by James Jessiman

@@ -14,10 +14,7 @@ function ldraw_lib__30259ad02() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":12202,"keyword":"Bricklink 892pb013","pivot":{"part_id":50705,"part_keyword_id":12202}}
-// 0 !KEYWORDS {"id":5895,"keyword":"Set 7905","pivot":{"part_id":50705,"part_keyword_id":5895}}
-// 0 !KEYWORDS {"id":5896,"keyword":"Tower Crane","pivot":{"part_id":50705,"part_keyword_id":5896}}
+// 0 !KEYWORDS Bricklink 892pb013, Set 7905, Tower Crane
 // 
 // 0 !HISTORY 2024-06-27 [Philo] Modified for updated part
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

@@ -12,13 +12,7 @@ function ldraw_lib__30480() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":26934,"keyword":"BrickLink x134","pivot":{"part_id":46346,"part_keyword_id":26934}}
-// 0 !KEYWORDS {"id":3121,"keyword":"C3-PO","pivot":{"part_id":46346,"part_keyword_id":3121}}
-// 0 !KEYWORDS {"id":3122,"keyword":"C3PO","pivot":{"part_id":46346,"part_keyword_id":3122}}
-// 0 !KEYWORDS {"id":3123,"keyword":"C-3PO","pivot":{"part_id":46346,"part_keyword_id":3123}}
-// 0 !KEYWORDS {"id":373,"keyword":"Star Wars","pivot":{"part_id":46346,"part_keyword_id":373}}
-// 0 !KEYWORDS BrickLink x134, Brickowl 765396
+// 0 !KEYWORDS BrickLink x134, Brickowl 765396, C-3PO, C3-PO, C3PO, Star Wars
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2015-01-26 [Gargan] Updated to allow patterning of eyes

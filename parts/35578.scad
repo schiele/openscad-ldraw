@@ -13,10 +13,7 @@ function ldraw_lib__35578() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":36588,"keyword":"Brickowl 865274","pivot":{"part_id":44169,"part_keyword_id":36588}}
-// 0 !KEYWORDS {"id":4083,"keyword":"Tyre 37 x 14","pivot":{"part_id":44169,"part_keyword_id":4083}}
-// 0 !KEYWORDS Brickowl 865274
+// 0 !KEYWORDS Brickowl 865274, Tyre 37 x 14
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

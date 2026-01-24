@@ -13,11 +13,7 @@ function ldraw_lib__4215ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":24597,"keyword":"Rebrickable 4215apr0011","pivot":{"part_id":45635,"part_keyword_id":24597}}
-// 0 !KEYWORDS {"id":831,"keyword":"set 6380","pivot":{"part_id":45635,"part_keyword_id":831}}
-// 0 !KEYWORDS {"id":914,"keyword":"ambulance","pivot":{"part_id":45635,"part_keyword_id":914}}
-// 0 !KEYWORDS Brickowl 95756, Rebrickable 4215apr0011
+// 0 !KEYWORDS ambulance, Brickowl 95756, Rebrickable 4215apr0011, set 6380
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

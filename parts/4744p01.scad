@@ -21,22 +21,10 @@ function ldraw_lib__4744p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":11134,"keyword":"Set 1504","pivot":{"part_id":46490,"part_keyword_id":11134}}
-// 0 !KEYWORDS {"id":1292,"keyword":"Freestyle","pivot":{"part_id":46490,"part_keyword_id":1292}}
-// 0 !KEYWORDS {"id":14661,"keyword":"Set 4131","pivot":{"part_id":46490,"part_keyword_id":14661}}
-// 0 !KEYWORDS {"id":20841,"keyword":"Bricks and More","pivot":{"part_id":46490,"part_keyword_id":20841}}
-// 0 !KEYWORDS {"id":21505,"keyword":"Basic 1998","pivot":{"part_id":46490,"part_keyword_id":21505}}
-// 0 !KEYWORDS {"id":21506,"keyword":"Classic 1998","pivot":{"part_id":46490,"part_keyword_id":21506}}
-// 0 !KEYWORDS {"id":2196,"keyword":"dacta","pivot":{"part_id":46490,"part_keyword_id":2196}}
-// 0 !KEYWORDS {"id":29669,"keyword":"Rebrickable 4744pr0001","pivot":{"part_id":46490,"part_keyword_id":29669}}
-// 0 !KEYWORDS {"id":29670,"keyword":"BrickLink 4744px9","pivot":{"part_id":46490,"part_keyword_id":29670}}
-// 0 !KEYWORDS {"id":32984,"keyword":"Set 1885","pivot":{"part_id":46490,"part_keyword_id":32984}}
-// 0 !KEYWORDS {"id":34604,"keyword":"Basic 1990","pivot":{"part_id":46490,"part_keyword_id":34604}}
-// 0 !KEYWORDS {"id":34605,"keyword":"Set 1884","pivot":{"part_id":46490,"part_keyword_id":34605}}
-// 0 !KEYWORDS {"id":34606,"keyword":"Set 5587","pivot":{"part_id":46490,"part_keyword_id":34606}}
-// 0 !KEYWORDS BrickLink 4744px9, Brickowl 331357, Brickset 81781
-// 0 !KEYWORDS Rebrickable 4744pr0001
+// 0 !KEYWORDS Basic 1990, Basic 1998, BrickLink 4744px9, Brickowl 331357
+// 0 !KEYWORDS Bricks and More, Brickset 81781, Classic 1998, dacta, Freestyle
+// 0 !KEYWORDS Rebrickable 4744pr0001, Set 1504, Set 1884, Set 1885, Set 4131
+// 0 !KEYWORDS Set 5587
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

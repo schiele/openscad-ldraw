@@ -14,10 +14,7 @@ function ldraw_lib__30258df1() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":16207,"keyword":"Bricklink 30258pb034","pivot":{"part_id":50704,"part_keyword_id":16207}}
-// 0 !KEYWORDS {"id":3157,"keyword":"Set 3188","pivot":{"part_id":50704,"part_keyword_id":3157}}
-// 0 !KEYWORDS {"id":389,"keyword":"Friends","pivot":{"part_id":50704,"part_keyword_id":389}}
+// 0 !KEYWORDS Bricklink 30258pb034, Friends, Set 3188
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

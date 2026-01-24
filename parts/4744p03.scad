@@ -13,29 +13,10 @@ function ldraw_lib__4744p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":11134,"keyword":"Set 1504","pivot":{"part_id":39397,"part_keyword_id":11134}}
-// 0 !KEYWORDS {"id":11135,"keyword":"Set 1688","pivot":{"part_id":39397,"part_keyword_id":11135}}
-// 0 !KEYWORDS {"id":11884,"keyword":"Set 1701","pivot":{"part_id":39397,"part_keyword_id":11884}}
-// 0 !KEYWORDS {"id":11885,"keyword":"Set 1716","pivot":{"part_id":39397,"part_keyword_id":11885}}
-// 0 !KEYWORDS {"id":1292,"keyword":"Freestyle","pivot":{"part_id":39397,"part_keyword_id":1292}}
-// 0 !KEYWORDS {"id":14663,"keyword":"Set 4169","pivot":{"part_id":39397,"part_keyword_id":14663}}
-// 0 !KEYWORDS {"id":14807,"keyword":"Bricklink 4744px15","pivot":{"part_id":39397,"part_keyword_id":14807}}
-// 0 !KEYWORDS {"id":14808,"keyword":"Rebrickable 4744pr0007","pivot":{"part_id":39397,"part_keyword_id":14808}}
-// 0 !KEYWORDS {"id":14810,"keyword":"Set 345","pivot":{"part_id":39397,"part_keyword_id":14810}}
-// 0 !KEYWORDS {"id":14811,"keyword":"Set 1699","pivot":{"part_id":39397,"part_keyword_id":14811}}
-// 0 !KEYWORDS {"id":14812,"keyword":"Set 1703","pivot":{"part_id":39397,"part_keyword_id":14812}}
-// 0 !KEYWORDS {"id":14813,"keyword":"Set 1706","pivot":{"part_id":39397,"part_keyword_id":14813}}
-// 0 !KEYWORDS {"id":14814,"keyword":"Set 4145","pivot":{"part_id":39397,"part_keyword_id":14814}}
-// 0 !KEYWORDS {"id":14815,"keyword":"Set 4213","pivot":{"part_id":39397,"part_keyword_id":14815}}
-// 0 !KEYWORDS {"id":14816,"keyword":"Set 9253","pivot":{"part_id":39397,"part_keyword_id":14816}}
-// 0 !KEYWORDS {"id":14817,"keyword":"Set 9255","pivot":{"part_id":39397,"part_keyword_id":14817}}
-// 0 !KEYWORDS {"id":2196,"keyword":"dacta","pivot":{"part_id":39397,"part_keyword_id":2196}}
-// 0 !KEYWORDS {"id":34607,"keyword":"Father","pivot":{"part_id":39397,"part_keyword_id":34607}}
-// 0 !KEYWORDS {"id":34608,"keyword":"Dad","pivot":{"part_id":39397,"part_keyword_id":34608}}
-// 0 !KEYWORDS {"id":3904,"keyword":"basic","pivot":{"part_id":39397,"part_keyword_id":3904}}
-// 0 !KEYWORDS {"id":7625,"keyword":"fireman","pivot":{"part_id":39397,"part_keyword_id":7625}}
-// 0 !KEYWORDS Bricklink 4744px15, Brickowl 322995, Rebrickable 4744pr0007
+// 0 !KEYWORDS basic, Bricklink 4744px15, Brickowl 322995, dacta, Dad, Father
+// 0 !KEYWORDS fireman, Freestyle, Rebrickable 4744pr0007, Set 1504, Set 1688
+// 0 !KEYWORDS Set 1699, Set 1701, Set 1703, Set 1706, Set 1716, Set 345, Set 4145
+// 0 !KEYWORDS Set 4169, Set 4213, Set 9253, Set 9255
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

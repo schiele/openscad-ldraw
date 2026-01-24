@@ -15,16 +15,8 @@ function ldraw_lib__98138pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":1510,"keyword":"set 42056","pivot":{"part_id":50712,"part_keyword_id":1510}}
-// 0 !KEYWORDS {"id":31465,"keyword":"Rebrickable 98138pr0055","pivot":{"part_id":50712,"part_keyword_id":31465}}
-// 0 !KEYWORDS {"id":37631,"keyword":"Brickowl 874657","pivot":{"part_id":50712,"part_keyword_id":37631}}
-// 0 !KEYWORDS {"id":37632,"keyword":"Brickset 26505","pivot":{"part_id":50712,"part_keyword_id":37632}}
-// 0 !KEYWORDS {"id":8307,"keyword":"BrickLink 98138pb054","pivot":{"part_id":50712,"part_keyword_id":8307}}
-// 0 !KEYWORDS {"id":8308,"keyword":"Porsche GT3 RS","pivot":{"part_id":50712,"part_keyword_id":8308}}
-// 0 !KEYWORDS {"id":8309,"keyword":"Wheelhub","pivot":{"part_id":50712,"part_keyword_id":8309}}
 // 0 !KEYWORDS BrickLink 98138pb054, Brickowl 874657, Brickset 26505
-// 0 !KEYWORDS Rebrickable 98138pr0055
+// 0 !KEYWORDS Porsche GT3 RS, Rebrickable 98138pr0055, set 42056, Wheelhub
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-04-01 [jb70] Using new Logo Primitives and Subfile

@@ -14,18 +14,9 @@ function ldraw_lib__14769pz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":17363,"keyword":"Rebrickable 14769pr9972","pivot":{"part_id":50714,"part_keyword_id":17363}}
-// 0 !KEYWORDS {"id":17364,"keyword":"Bricklink 14769pb711","pivot":{"part_id":50714,"part_keyword_id":17364}}
-// 0 !KEYWORDS {"id":17366,"keyword":"Fortnite","pivot":{"part_id":50714,"part_keyword_id":17366}}
-// 0 !KEYWORDS {"id":36841,"keyword":"Brickowl 537895","pivot":{"part_id":50714,"part_keyword_id":36841}}
-// 0 !KEYWORDS {"id":36842,"keyword":"Brickset 109260","pivot":{"part_id":50714,"part_keyword_id":36842}}
-// 0 !KEYWORDS {"id":37313,"keyword":"Flat Tile 2x2 Round No 1319","pivot":{"part_id":50714,"part_keyword_id":37313}}
-// 0 !KEYWORDS {"id":37314,"keyword":"Set 77071","pivot":{"part_id":50714,"part_keyword_id":37314}}
-// 0 !KEYWORDS {"id":37315,"keyword":"Supply Llama","pivot":{"part_id":50714,"part_keyword_id":37315}}
-// 0 !KEYWORDS {"id":4434,"keyword":"pupil","pivot":{"part_id":50714,"part_keyword_id":4434}}
 // 0 !KEYWORDS Bricklink 14769pb711, Brickowl 537895, Brickset 109260
-// 0 !KEYWORDS Rebrickable 14769pr9972
+// 0 !KEYWORDS Flat Tile 2x2 Round No 1319, Fortnite, pupil
+// 0 !KEYWORDS Rebrickable 14769pr9972, Set 77071, Supply Llama
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 0 !HISTORY 2025-10-28 [KnightOfTarenta] Changed Name to fit Similar Patterns

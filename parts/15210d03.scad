@@ -14,10 +14,7 @@ function ldraw_lib__15210d03() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":10182,"keyword":"Roller Coaster","pivot":{"part_id":50697,"part_keyword_id":10182}}
-// 0 !KEYWORDS {"id":12197,"keyword":"Bricklink 15210pb036","pivot":{"part_id":50697,"part_keyword_id":12197}}
-// 0 !KEYWORDS {"id":4691,"keyword":"set 10261","pivot":{"part_id":50697,"part_keyword_id":4691}}
+// 0 !KEYWORDS Bricklink 15210pb036, Roller Coaster, set 10261
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 0 !HISTORY 2024-09-12 [Cheenzo] Rotated sticker by 90 degrees

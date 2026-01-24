@@ -12,13 +12,8 @@ function ldraw_lib__6011268c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":18064,"keyword":"Set 10228","pivot":{"part_id":47405,"part_keyword_id":18064}}
-// 0 !KEYWORDS {"id":18213,"keyword":"Rebrickable 11085","pivot":{"part_id":47405,"part_keyword_id":18213}}
-// 0 !KEYWORDS {"id":18214,"keyword":"Brickowl 692797","pivot":{"part_id":47405,"part_keyword_id":18214}}
-// 0 !KEYWORDS {"id":18221,"keyword":"Bricklink 10228stk01","pivot":{"part_id":47405,"part_keyword_id":18221}}
-// 0 !KEYWORDS {"id":294,"keyword":"Monster Fighters","pivot":{"part_id":47405,"part_keyword_id":294}}
-// 0 !KEYWORDS Bricklink 10228stk01, Brickowl 692797, Rebrickable 11085
+// 0 !KEYWORDS Bricklink 10228stk01, Brickowl 692797, Monster Fighters
+// 0 !KEYWORDS Rebrickable 11085, Set 10228
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 0 !HISTORY 2025-08-20 [Philo] Used stickerback

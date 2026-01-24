@@ -14,14 +14,8 @@ function ldraw_lib__4603014d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":100,"keyword":"Cafe","pivot":{"part_id":47340,"part_keyword_id":100}}
-// 0 !KEYWORDS {"id":3232,"keyword":"Sweets","pivot":{"part_id":47340,"part_keyword_id":3232}}
-// 0 !KEYWORDS {"id":34937,"keyword":"Rebrickable 93272","pivot":{"part_id":47340,"part_keyword_id":34937}}
-// 0 !KEYWORDS {"id":34938,"keyword":"BrickLink 3061stk01","pivot":{"part_id":47340,"part_keyword_id":34938}}
-// 0 !KEYWORDS {"id":36617,"keyword":"Brickowl 291662","pivot":{"part_id":47340,"part_keyword_id":36617}}
-// 0 !KEYWORDS {"id":6118,"keyword":"Set 3061","pivot":{"part_id":47340,"part_keyword_id":6118}}
-// 0 !KEYWORDS BrickLink 3061stk01, Brickowl 291662, Rebrickable 93272
+// 0 !KEYWORDS BrickLink 3061stk01, Brickowl 291662, Cafe, Rebrickable 93272
+// 0 !KEYWORDS Set 3061, Sweets
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2025-08-13 [RainbowDolphin] Corrected colour, updated with latest sticker spec

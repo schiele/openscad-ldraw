@@ -27,8 +27,6 @@ function ldraw_lib__92906() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":37523,"keyword":"Brickowl 264929","pivot":{"part_id":50586,"part_keyword_id":37523}}
 // 0 !KEYWORDS Brickowl 264929
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

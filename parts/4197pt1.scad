@@ -14,13 +14,8 @@ function ldraw_lib__4197pt1() = [
 // 
 // 0 !CATEGORY Brick
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":23156,"keyword":"Rebrickable 4197pr9997","pivot":{"part_id":50708,"part_keyword_id":23156}}
-// 0 !KEYWORDS {"id":37626,"keyword":"Brickowl 236047-93","pivot":{"part_id":50708,"part_keyword_id":37626}}
-// 0 !KEYWORDS {"id":830,"keyword":"Signboard","pivot":{"part_id":50708,"part_keyword_id":830}}
-// 0 !KEYWORDS {"id":9899,"keyword":"Bricklink 4197pb011","pivot":{"part_id":50708,"part_keyword_id":9899}}
-// 0 !KEYWORDS {"id":9900,"keyword":"Set 2404","pivot":{"part_id":50708,"part_keyword_id":9900}}
 // 0 !KEYWORDS Bricklink 4197pb011, Brickowl 236047-93, Rebrickable 4197pr9997
+// 0 !KEYWORDS Set 2404, Signboard
 // 
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

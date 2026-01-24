@@ -14,9 +14,7 @@ function ldraw_lib__30258d02() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":12201,"keyword":"Bricklink 30258pb015","pivot":{"part_id":50702,"part_keyword_id":12201}}
-// 0 !KEYWORDS {"id":4337,"keyword":"Set 10193","pivot":{"part_id":50702,"part_keyword_id":4337}}
+// 0 !KEYWORDS Bricklink 30258pb015, Set 10193
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2025-12-23 [MagFors] Update description, corrected sticker colour

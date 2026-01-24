@@ -13,16 +13,8 @@ function ldraw_lib__169675f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":13,"keyword":"Train","pivot":{"part_id":39688,"part_keyword_id":13}}
-// 0 !KEYWORDS {"id":194,"keyword":"Station","pivot":{"part_id":39688,"part_keyword_id":194}}
-// 0 !KEYWORDS {"id":34296,"keyword":"Bricklink 4555stk01","pivot":{"part_id":39688,"part_keyword_id":34296}}
-// 0 !KEYWORDS {"id":34298,"keyword":"Rebrickable 169675","pivot":{"part_id":39688,"part_keyword_id":34298}}
-// 0 !KEYWORDS {"id":36504,"keyword":"Brickowl 985413","pivot":{"part_id":39688,"part_keyword_id":36504}}
-// 0 !KEYWORDS {"id":933,"keyword":"Set 4555","pivot":{"part_id":39688,"part_keyword_id":933}}
-// 0 !KEYWORDS {"id":934,"keyword":"Transport","pivot":{"part_id":39688,"part_keyword_id":934}}
-// 0 !KEYWORDS {"id":935,"keyword":"Cargo","pivot":{"part_id":39688,"part_keyword_id":935}}
-// 0 !KEYWORDS Bricklink 4555stk01, Brickowl 985413, Rebrickable 169675
+// 0 !KEYWORDS Bricklink 4555stk01, Brickowl 985413, Cargo, Rebrickable 169675
+// 0 !KEYWORDS Set 4555, Station, Train, Transport
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2024-08-02 [RainbowDolphin] Subfiled the pattern

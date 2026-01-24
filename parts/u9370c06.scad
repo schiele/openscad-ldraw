@@ -12,9 +12,7 @@ function ldraw_lib__u9370c06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":1081,"keyword":"Fabuland","pivot":{"part_id":50671,"part_keyword_id":1081}}
-// 0 !KEYWORDS {"id":1083,"keyword":"set 350","pivot":{"part_id":50671,"part_keyword_id":1083}}
+// 0 !KEYWORDS Fabuland, set 350
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut

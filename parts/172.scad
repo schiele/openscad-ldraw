@@ -20,10 +20,7 @@ function ldraw_lib__172() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":939,"keyword":"12V","pivot":{"part_id":50681,"part_keyword_id":939}}
-// 0 !KEYWORDS {"id":940,"keyword":"4.5V","pivot":{"part_id":50681,"part_keyword_id":940}}
-// 0 !KEYWORDS {"id":941,"keyword":"set 872","pivot":{"part_id":50681,"part_keyword_id":941}}
+// 0 !KEYWORDS 12V, 4.5V, set 872
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2017-08-07 [MagFors] bfc'd

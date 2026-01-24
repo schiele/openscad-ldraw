@@ -11,13 +11,8 @@ function ldraw_lib__2345p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":18937,"keyword":"Set 6067","pivot":{"part_id":50303,"part_keyword_id":18937}}
-// 0 !KEYWORDS {"id":18938,"keyword":"Set 10000","pivot":{"part_id":50303,"part_keyword_id":18938}}
-// 0 !KEYWORDS {"id":25430,"keyword":"Rebrickable 2345pr0001","pivot":{"part_id":50303,"part_keyword_id":25430}}
-// 0 !KEYWORDS {"id":36785,"keyword":"Brickowl 200822","pivot":{"part_id":50303,"part_keyword_id":36785}}
-// 0 !KEYWORDS {"id":36786,"keyword":"Brickset 80588","pivot":{"part_id":50303,"part_keyword_id":36786}}
-// 0 !KEYWORDS Brickowl 200822, Brickset 80588, Rebrickable 2345pr0001
+// 0 !KEYWORDS Brickowl 200822, Brickset 80588, Rebrickable 2345pr0001, Set 10000
+// 0 !KEYWORDS Set 6067
 // 
 // 0 !HISTORY 2000-08-01 {Manfred Moolhuysen} fixes to resolve L3P error messages
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

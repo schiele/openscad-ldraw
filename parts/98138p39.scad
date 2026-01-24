@@ -12,17 +12,8 @@ function ldraw_lib__98138p39() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":12091,"keyword":"Set 41757","pivot":{"part_id":50711,"part_keyword_id":12091}}
-// 0 !KEYWORDS {"id":20104,"keyword":"Set 60437","pivot":{"part_id":50711,"part_keyword_id":20104}}
-// 0 !KEYWORDS {"id":20238,"keyword":"Rebrickable 98138pr0271","pivot":{"part_id":50711,"part_keyword_id":20238}}
-// 0 !KEYWORDS {"id":20239,"keyword":"Bricklink 98138pb262","pivot":{"part_id":50711,"part_keyword_id":20239}}
-// 0 !KEYWORDS {"id":20240,"keyword":"Set 76444","pivot":{"part_id":50711,"part_keyword_id":20240}}
-// 0 !KEYWORDS {"id":37629,"keyword":"Brickowl 1230633","pivot":{"part_id":50711,"part_keyword_id":37629}}
-// 0 !KEYWORDS {"id":37630,"keyword":"Brickset 103352","pivot":{"part_id":50711,"part_keyword_id":37630}}
-// 0 !KEYWORDS {"id":9586,"keyword":"Set 80108","pivot":{"part_id":50711,"part_keyword_id":9586}}
 // 0 !KEYWORDS Bricklink 98138pb262, Brickowl 1230633, Brickset 103352
-// 0 !KEYWORDS Rebrickable 98138pr0271
+// 0 !KEYWORDS Rebrickable 98138pr0271, Set 41757, Set 60437, Set 76444, Set 80108
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

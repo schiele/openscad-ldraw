@@ -18,15 +18,8 @@ function ldraw_lib__581c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":13,"keyword":"Train","pivot":{"part_id":50508,"part_keyword_id":13}}
-// 0 !KEYWORDS {"id":37427,"keyword":"Rebrickable upn0274c01","pivot":{"part_id":50508,"part_keyword_id":37427}}
-// 0 !KEYWORDS {"id":37428,"keyword":"Brickowl 335619","pivot":{"part_id":50508,"part_keyword_id":37428}}
-// 0 !KEYWORDS {"id":6461,"keyword":"Bricklink x550b","pivot":{"part_id":50508,"part_keyword_id":6461}}
-// 0 !KEYWORDS {"id":6462,"keyword":"set 725","pivot":{"part_id":50508,"part_keyword_id":6462}}
-// 0 !KEYWORDS {"id":6463,"keyword":"set 726","pivot":{"part_id":50508,"part_keyword_id":6463}}
-// 0 !KEYWORDS {"id":6464,"keyword":"set 727","pivot":{"part_id":50508,"part_keyword_id":6464}}
-// 0 !KEYWORDS Bricklink x550b, Brickowl 335619, Rebrickable upn0274c01
+// 0 !KEYWORDS Bricklink x550b, Brickowl 335619, Rebrickable upn0274c01, set 725
+// 0 !KEYWORDS set 726, set 727, Train
 // 
 // 0 !CMDLINE -c0
 // 

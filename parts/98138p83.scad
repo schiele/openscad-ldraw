@@ -12,14 +12,8 @@ function ldraw_lib__98138p83() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":31386,"keyword":"Rebrickable 98138pr0037","pivot":{"part_id":50713,"part_keyword_id":31386}}
-// 0 !KEYWORDS {"id":33399,"keyword":"Set 60113","pivot":{"part_id":50713,"part_keyword_id":33399}}
-// 0 !KEYWORDS {"id":37633,"keyword":"Brickowl 185877","pivot":{"part_id":50713,"part_keyword_id":37633}}
-// 0 !KEYWORDS {"id":37634,"keyword":"Brickset 24609","pivot":{"part_id":50713,"part_keyword_id":37634}}
-// 0 !KEYWORDS {"id":8238,"keyword":"BrickLink 98138pb052","pivot":{"part_id":50713,"part_keyword_id":8238}}
 // 0 !KEYWORDS BrickLink 98138pb052, Brickowl 185877, Brickset 24609
-// 0 !KEYWORDS Rebrickable 98138pr0037
+// 0 !KEYWORDS Rebrickable 98138pr0037, Set 60113
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-12-23 [MagFors] Update description

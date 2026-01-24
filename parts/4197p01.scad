@@ -14,19 +14,9 @@ function ldraw_lib__4197p01() = [
 // 
 // 0 !CATEGORY Brick
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":23151,"keyword":"Rebrickable 4197pr0002","pivot":{"part_id":50706,"part_keyword_id":23151}}
-// 0 !KEYWORDS {"id":2628,"keyword":"Clown","pivot":{"part_id":50706,"part_keyword_id":2628}}
-// 0 !KEYWORDS {"id":37624,"keyword":"Brickowl 382108","pivot":{"part_id":50706,"part_keyword_id":37624}}
-// 0 !KEYWORDS {"id":5415,"keyword":"Circus","pivot":{"part_id":50706,"part_keyword_id":5415}}
-// 0 !KEYWORDS {"id":5463,"keyword":"Set 2221","pivot":{"part_id":50706,"part_keyword_id":5463}}
-// 0 !KEYWORDS {"id":9799,"keyword":"Set 1685","pivot":{"part_id":50706,"part_keyword_id":9799}}
-// 0 !KEYWORDS {"id":9824,"keyword":"Set 2326","pivot":{"part_id":50706,"part_keyword_id":9824}}
-// 0 !KEYWORDS {"id":9882,"keyword":"Bricklink 4197pb002","pivot":{"part_id":50706,"part_keyword_id":9882}}
-// 0 !KEYWORDS {"id":9883,"keyword":"Set 1583","pivot":{"part_id":50706,"part_keyword_id":9883}}
-// 0 !KEYWORDS {"id":9884,"keyword":"Set 2383","pivot":{"part_id":50706,"part_keyword_id":9884}}
-// 0 !KEYWORDS {"id":9885,"keyword":"Set 2387","pivot":{"part_id":50706,"part_keyword_id":9885}}
-// 0 !KEYWORDS Bricklink 4197pb002, Brickowl 382108, Rebrickable 4197pr0002
+// 0 !KEYWORDS Bricklink 4197pb002, Brickowl 382108, Circus, Clown
+// 0 !KEYWORDS Rebrickable 4197pr0002, Set 1583, Set 1685, Set 2221, Set 2326
+// 0 !KEYWORDS Set 2383, Set 2387
 // 
 // 0 !HISTORY 2025-03-31 [Holly-Wood] Added prims
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04

@@ -19,10 +19,7 @@ function ldraw_lib__4215ap18() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":24610,"keyword":"Rebrickable 4215apr0012","pivot":{"part_id":45661,"part_keyword_id":24610}}
-// 0 !KEYWORDS {"id":33268,"keyword":"Set 6684","pivot":{"part_id":45661,"part_keyword_id":33268}}
-// 0 !KEYWORDS Brickowl 921951, Rebrickable 4215apr0012
+// 0 !KEYWORDS Brickowl 921951, Rebrickable 4215apr0012, Set 6684
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

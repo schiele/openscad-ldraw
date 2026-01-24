@@ -14,8 +14,7 @@ function ldraw_lib__3596cw1() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":4223,"keyword":"set 6769","pivot":{"part_id":50670,"part_keyword_id":4223}}
+// 0 !KEYWORDS set 6769
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

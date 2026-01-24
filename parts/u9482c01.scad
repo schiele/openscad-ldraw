@@ -18,8 +18,7 @@ function ldraw_lib__u9482c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":13,"keyword":"Train","pivot":{"part_id":50510,"part_keyword_id":13}}
+// 0 !KEYWORDS Train
 // 
 // 0 !CMDLINE -c0
 // 

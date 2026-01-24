@@ -22,9 +22,7 @@ function ldraw_lib__32124() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":34639,"keyword":"plate 1 x 5","pivot":{"part_id":46524,"part_keyword_id":34639}}
-// 0 !KEYWORDS Brickowl 240539
+// 0 !KEYWORDS Brickowl 240539, plate 1 x 5
 // 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

@@ -15,9 +15,6 @@ function ldraw_lib__564c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":37429,"keyword":"Brickowl 85261","pivot":{"part_id":50509,"part_keyword_id":37429}}
-// 0 !KEYWORDS {"id":37430,"keyword":"Bricklink bb0006","pivot":{"part_id":50509,"part_keyword_id":37430}}
 // 0 !KEYWORDS Bricklink bb0006, Brickowl 85261
 // 
 // 0 !HISTORY 2012-01-07 [Steffen] replaced color 383 by 494

@@ -13,17 +13,8 @@ function ldraw_lib__973p1k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 0 !KEYWORDS {"id":17222,"keyword":"Set 6553","pivot":{"part_id":42134,"part_keyword_id":17222}}
-// 0 !KEYWORDS {"id":17557,"keyword":"Bricklink 973px37","pivot":{"part_id":42134,"part_keyword_id":17557}}
-// 0 !KEYWORDS {"id":3772,"keyword":"Cameraman","pivot":{"part_id":42134,"part_keyword_id":3772}}
-// 0 !KEYWORDS {"id":3773,"keyword":"Crisis","pivot":{"part_id":42134,"part_keyword_id":3773}}
-// 0 !KEYWORDS {"id":3774,"keyword":"News","pivot":{"part_id":42134,"part_keyword_id":3774}}
-// 0 !KEYWORDS {"id":3775,"keyword":"Reporter","pivot":{"part_id":42134,"part_keyword_id":3775}}
-// 0 !KEYWORDS {"id":391,"keyword":"helicopter","pivot":{"part_id":42134,"part_keyword_id":391}}
-// 0 !KEYWORDS {"id":57,"keyword":"television","pivot":{"part_id":42134,"part_keyword_id":57}}
-// 0 !KEYWORDS {"id":58,"keyword":"van","pivot":{"part_id":42134,"part_keyword_id":58}}
-// 0 !KEYWORDS Bricklink 973px37, Brickowl 638976
+// 0 !KEYWORDS Bricklink 973px37, Brickowl 638976, Cameraman, Crisis, helicopter
+// 0 !KEYWORDS News, Reporter, Set 6553, television, van
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement
