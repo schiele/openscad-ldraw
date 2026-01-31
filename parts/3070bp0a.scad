@@ -9,16 +9,19 @@ function ldraw_lib__3070bp0a() = [
 // 0 Tile  1 x  1 with Keyhole Pattern
 // 0 Name: 3070bp0a.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070pb081, Rebrickable 3070bpr0147, Set 21330
+// 0 !KEYWORDS BrickLink 3070pb081, Brickowl 342963, Brickset 16827
+// 0 !KEYWORDS Rebrickable 3070bpr0147, Set 21330
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat

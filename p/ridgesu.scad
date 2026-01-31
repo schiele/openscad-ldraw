@@ -1,0 +1,41 @@
+use <../lib.scad>
+function ldraw_lib__ridgesu() = [
+// 0 Underside Stud Holder Ridge Sloped Up Perpendicular
+// 0 Name: ridgesu.dat
+// 0 Author: Gerald Lasser [GeraldLasser]
+// 0 !LDRAW_ORG Primitive UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
+// 
+// 3 16 1.5 0 0 1.5 0 1 1.5 -.4 1
+  [3,16,1.5,0,0,1.5,0,1,1.5,-.4,1],
+// 3 16 -1.5 0 1 -1.5 0 0 -1.5 -.4 1
+  [3,16,-1.5,0,1,-1.5,0,0,-1.5,-.4,1],
+// 4 16 0 0 2.5 -1.5 0 1 -1.5 -.4 1 0 -1 2.5
+  [4,16,0,0,2.5,-1.5,0,1,-1.5,-.4,1,0,-1,2.5],
+// 4 16 0 0 2.5 0 -1 2.5 1.5 -.4 1 1.5 0 1
+  [4,16,0,0,2.5,0,-1,2.5,1.5,-.4,1,1.5,0,1],
+// 
+// 2 24 0 0 2.5 0 -1 2.5
+  [2,24,0,0,2.5,0,-1,2.5],
+// 2 24 -1.5 0 1 -1.5 -.4 1
+  [2,24,-1.5,0,1,-1.5,-.4,1],
+// 2 24 1.5 0 1 1.5 -.4 1
+  [2,24,1.5,0,1,1.5,-.4,1],
+// 2 24 1.5 -.4 1 1.5 0 0
+  [2,24,1.5,-.4,1,1.5,0,0],
+// 2 24 -1.5 0 0 -1.5 -.4 1
+  [2,24,-1.5,0,0,-1.5,-.4,1],
+// 2 24 1.5 -.4 1 0 -1 2.5
+  [2,24,1.5,-.4,1,0,-1,2.5],
+// 2 24 -1.5 -.4 1 0 -1 2.5
+  [2,24,-1.5,-.4,1,0,-1,2.5],
+];
+module ldraw_lib__ridgesu(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ridgesu(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ridgesu(line=0.2);

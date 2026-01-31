@@ -3,22 +3,24 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4ndis.scad>
 function ldraw_lib__004757e() = [
-// 0 Sticker 2.3 x 1.3 with Black Train Window with Light Grey Trim
+// 0 Sticker  2.3 x  1.3 with Black Train Window with Light Grey Trim
 // 0 Name: 004757e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Caboose, Passenger wagon, Set 164-1, Train
+// 0 !KEYWORDS Bricklink 164stk01, Brickowl 575181, Caboose, Passenger wagon
+// 0 !KEYWORDS Rebrickable 4757stk, Set 164-1, Train
 // 
 // 0 !HISTORY 2020-01-07 [Plastikean] Original TEXMAP pattern for OMR
 // 0 !HISTORY 2021-03-28 [RainbowDolphin] File preparation for LDraw Parts Tracker, vectorized the pattern
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2026-01-23 [MagFors] Update description
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 0 // Sticker box
 // 1 16 9.75 0 -20 0 0 3 0 -.25 0 -3 0 0 1-4cyli.dat
@@ -51,6 +53,7 @@ function ldraw_lib__004757e() = [
   [4,16,-12.75,0,20,-12.75,0,-20,-12.75,-.25,-20,-12.75,-.25,20],
 // 4 16 12.75 -.25 -20 12.75 0 -20 12.75 0 20 12.75 -.25 20
   [4,16,12.75,-.25,-20,12.75,0,-20,12.75,0,20,12.75,-.25,20],
+// 
 // 1 0 9.2 -0.25 -19.4 0 0 1 0 1 0 -1 0 0 1-4chrd.dat
   [1,0,9.2,-0.25,-19.4,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4chrd()],
 // 1 0 -9.2 -0.25 -19.4 -1 0 0 0 1 0 0 0 -1 1-4chrd.dat

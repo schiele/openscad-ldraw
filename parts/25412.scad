@@ -7,7 +7,7 @@ function ldraw_lib__25412() = [
 // 0 Minifig Hair Tousled and Sticking Out on Both Sides
 // 0 Name: 25412.dat
 // 0 Author: Lisa Winter [LisaWinter]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,6 +24,8 @@ function ldraw_lib__25412() = [
 // 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 0 !HISTORY 2025-12-01 [Holly-Wood] Fixed typo in description
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 0 // Inside
 // 1 16 0 -6 0 1 0 0 0 -1.5 0 0 0 1 stud4o.dat

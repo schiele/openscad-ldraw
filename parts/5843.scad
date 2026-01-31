@@ -16,7 +16,7 @@ function ldraw_lib__5843() = [
 // 0 Arch  1 x  3 x  1.667 with Curved Top
 // 0 Name: 5843.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,6 +29,8 @@ function ldraw_lib__5843() = [
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 0 !HISTORY 2025-12-24 [Philo] Fixed bottom stud collision
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 4 16 10 40 -30 6 40 -34 -6 40 -34 -10 40 -30
   [4,16,10,40,-30,6,40,-34,-6,40,-34,-10,40,-30],

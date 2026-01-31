@@ -3,14 +3,16 @@ function ldraw_lib__s__98100ps1s01() = [
 // 0 ~Cone  2 x  2 Truncated with SW R5 Red Pattern - Side Panel
 // 0 Name: s\98100ps1s01.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Subpart UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 4 80 0 8.6 -17.456 0 7.9 -17.216 -0.392 7.926 -17.147 -0.392 8.626 -17.387

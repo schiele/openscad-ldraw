@@ -11,7 +11,7 @@ function ldraw_lib__581c01() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 2  4.5V
 // 0 Name: 581c01.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,6 +32,8 @@ function ldraw_lib__581c01() = [
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 0 !HISTORY 2025-12-05 [OrionP] Corrected Category
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9189.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9189()],

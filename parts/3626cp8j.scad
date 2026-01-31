@@ -10,19 +10,22 @@ function ldraw_lib__3626cp8j() = [
 // 0 Minifig Head with Open Smile with Teeth / Eyebrows, Scared 2-Sided Pattern
 // 0 Name: 3626cp8j.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626pb1089, Emmet, Rebrickable 3626cpr1354, set 30280
-// 0 !KEYWORDS Set 70803, Set 70810, The LEGO Movie
+// 0 !KEYWORDS BrickLink 3626pb1089, Brickowl 590605, Brickset 16160, Emmet
+// 0 !KEYWORDS Rebrickable 3626cpr1354, set 30280, Set 70803, Set 70810
+// 0 !KEYWORDS The LEGO Movie
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Head without front or back face

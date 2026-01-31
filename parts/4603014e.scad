@@ -6,7 +6,7 @@ function ldraw_lib__4603014e() = [
 // 0 Sticker  2.2 x  2.8 with Two Cupcakes
 // 0 Name: 4603014e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__4603014e() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2025-08-19 [RainbowDolphin] Corrected colour, updated with latest sticker spec
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\stickerback022x028.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__stickerback022x028()],

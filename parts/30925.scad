@@ -13,7 +13,7 @@ function ldraw_lib__30925() = [
 // 0 Plate  1 x  2 with Spoiler  1 x  4
 // 0 Name: 30925.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,6 +25,8 @@ function ldraw_lib__30925() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-11-21 [Blechtaler] added missing complementary condlines
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],

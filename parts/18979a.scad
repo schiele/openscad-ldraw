@@ -13,18 +13,20 @@ function ldraw_lib__18979a() = [
 // 0 Wheel Rim 11 x 18 Front with  7 Y-Shaped Spokes
 // 0 Name: 18979a.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 18979b, Rebrickable 18979b
+// 0 !KEYWORDS BrickLink 18979b, Brickowl 196478, Cap, cover, Rebrickable 18979b
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2026-01-09 [Jaco] Add keywords
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 stud4a.dat
   [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__stud4a()],

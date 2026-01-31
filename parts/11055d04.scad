@@ -5,7 +5,7 @@ function ldraw_lib__11055d04() = [
 // 0 Flag  2 x  2 with Reddish Brown Symmetric Symbols on White Background Sticker on Both Sides
 // 0 Name: 11055d04.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__11055d04() = [
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 0 !HISTORY 2025-12-23 [MagFors] Update description
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11055.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11055()],

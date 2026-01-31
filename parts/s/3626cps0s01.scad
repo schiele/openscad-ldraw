@@ -7,8 +7,8 @@ function ldraw_lib__s__3626cps0s01() = [
 // 0 ~Minifig Head SW Jawa, Yellow Eyes with Orange Rim Pattern - Half
 // 0 Name: s\3626cps0s01.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Subpart UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -19,6 +19,8 @@ function ldraw_lib__s__3626cps0s01() = [
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 0 !HISTORY 2024-03-26 [OrionP] Fix y column all zeros
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 226 -4.9751 9.3 -12.0107 0 0 1.764 1.8 0 0 0 1 -0.350772 2-4disc.dat
   [1,226,-4.9751,9.3,-12.0107,0,0,1.764,1.8,0,0,0,1,-0.350772, ldraw_lib__2_4disc()],

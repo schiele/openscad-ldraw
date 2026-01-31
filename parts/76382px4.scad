@@ -4,20 +4,22 @@ use <3819px0.scad>
 use <3820.scad>
 use <973px4.scad>
 function ldraw_lib__76382px4() = [
-// 0 Minifig Torso with Arms and Hands with Jumpsuit, "P.V." ID Badge and "PETER" with Ghostbusters Logo Pattern
+// 0 Minifig Torso with Arms with Elbow Pads and Hands with Jumpsuit, "P.V." ID Badge and "PETER" with Ghostbusters Logo Pattern
 // 0 Name: 76382px4.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1696c02, Peter Venkman, Rebrickable 973c26h03pr3204
-// 0 !KEYWORDS Set 71228
+// 0 !KEYWORDS Bricklink 973pb1696c02, Brickowl 100248, Brickset 88585
+// 0 !KEYWORDS Ghostbusters, Peter Venkman, Rebrickable 973c26h03pr3204, Set 71228
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2026-01-11 [MagFors] Update description
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973px4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973px4()],

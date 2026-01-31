@@ -6,7 +6,7 @@ function ldraw_lib__35578() = [
 // 0 Tyre 14/ 70 x 17
 // 0 Name: 35578.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__35578() = [
 // 0 !HISTORY 2025-02-20 [Blechtaler] subfiled sidewall with ndis
 // 0 !HISTORY 2025-03-09 [Blechtaler] used common center
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 

@@ -15,18 +15,22 @@ function ldraw_lib__18978a() = [
 // 0 Wheel Rim 11 x 18 Front with  5 Spokes
 // 0 Name: 18978a.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Brickowl 322426, Cap, cover
+// 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2016-07-09 [MagFors] Corrected description
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2026-01-09 [Jaco] Add keywords
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 -3.25 1.95 0 0 0 0 -1.95 0 0.5 0 bump5000.dat
   [1,16,0,0,-3.25,1.95,0,0,0,0,-1.95,0,0.5,0, ldraw_lib__bump5000()],

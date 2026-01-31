@@ -4,22 +4,24 @@ use <3819.scad>
 use <3820.scad>
 use <973ps4.scad>
 function ldraw_lib__76382ps4() = [
-// 0 Minifig Torso with Arms and Hands with SW Shirt Open Collar No Vest Pattern
+// 0 Minifig Torso with Arms and Hands with SW Shirt Open Collar No Vest and Yellow Chest Pattern
 // 0 Name: 76382ps4.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps4c01, Carbonite, Desert Skiff, Episode VI, Han Solo
-// 0 !KEYWORDS Jabba, Mini Upper Part No 403, Original Trilogy
-// 0 !KEYWORDS Rebrickable 973c27h01pr0004, Return of the Jedi, Set 7104, Star Wars
-// 0 !KEYWORDS Tatooine
+// 0 !KEYWORDS Bricklink 973ps4c01, Brickowl 361148, Carbonite, Desert Skiff
+// 0 !KEYWORDS Episode VI, Han Solo, Jabba, Mini Upper Part No 403
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c27h01pr0004, Return of the Jedi
+// 0 !KEYWORDS Set 7104, Star Wars, Tatooine
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-04-13 [MagFors] Update description
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973ps4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973ps4()],

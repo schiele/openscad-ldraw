@@ -7,8 +7,8 @@ function ldraw_lib__973pri() = [
 // 0 Minifig Torso SW Jawa with Dark Brown Pouches and Black and Tan Straps Pattern
 // 0 Name: 973pri.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -19,6 +19,8 @@ function ldraw_lib__973pri() = [
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Torso

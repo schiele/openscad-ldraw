@@ -18,18 +18,21 @@ function ldraw_lib__30361dps7() = [
 // 0 Cylinder  2 x  2 x  2 Robot Body with Black Lines and Green Pattern (R2 Unit)
 // 0 Name: 30361dps7.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 30361pb028, astromech, BrickLink 30361pb028, droid, green droid
-// 0 !KEYWORDS minifig, Rebrickable 30361cpr1004, set 75059, Star Wars
+// 0 !KEYWORDS 30361pb028, astromech, BrickLink 30361pb028, Brickowl 483894
+// 0 !KEYWORDS Brickset 18030, droid, green droid, minifig
+// 0 !KEYWORDS Rebrickable 30361cpr1004, set 75059, Star Wars
 // 
 // 0 !HISTORY 2020-12-07 [Holly-Wood] Streamlined pattern, reduced subfiles, corrected rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Body without front face

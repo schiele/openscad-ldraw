@@ -7,18 +7,20 @@ function ldraw_lib__973psv() = [
 // 0 Minifig Torso with SW Moisture Farmer Pattern
 // 0 Name: 973psv.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973pb0406, Set 10144
+// 0 !KEYWORDS BrickLink 973pb0406, Brickowl 704658, Set 10144
 // 
 // 0 !CMDLINE -c19
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Main Body

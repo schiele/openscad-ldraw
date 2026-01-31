@@ -3,8 +3,8 @@ function ldraw_lib__s__30361dps6s01() = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW Astromech Pattern - Background
 // 0 Name: s\30361dps6s01.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Subpart UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -12,6 +12,8 @@ function ldraw_lib__s__30361dps6s01() = [
 // 
 // 0 !HISTORY 2020-11-18 [Holly-Wood] Added Conds, streamlined pattern, fixed rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 4 16 -11.3 -8 -16.038 -11.7 -7.6 -15.771 -11.7 16.9 -15.771 -11.3 17.3 -16.038

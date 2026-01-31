@@ -10,13 +10,13 @@ function ldraw_lib__973pss() = [
 // 0 Name: 973pss.dat
 // 0 Author: John Troxler [Gargan]
 // 0 !LDRAW_ORG Part UPDATE 2009-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0405, Set 10144
+// 0 !KEYWORDS Bricklink 973pb0405, Brickowl 750198, Set 10144
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

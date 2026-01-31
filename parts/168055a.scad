@@ -1,20 +1,22 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 function ldraw_lib__168055a() = [
-// 0 Sticker 2.1 x 1.9 with White "RENAULT" and Red "5" on Blue Background
+// 0 Sticker  2.1 x  1.9 with White "RENAULT" and Red "5" on Blue Background
 // 0 Name: 168055a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-01
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Formula 1, race car, Set 1750
+// 0 !KEYWORDS Bricklink 1750stk01, Brickowl 753731, Formula 1, race car
+// 0 !KEYWORDS Rebrickable 168055, Set 1750
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
-// 
+// 0 !HISTORY 2026-01-23 [MagFors] Update description
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 21 box5-12.dat
   [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,21, ldraw_lib__box5_12()],

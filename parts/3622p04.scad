@@ -4,17 +4,19 @@ function ldraw_lib__3622p04() = [
 // 0 Brick  1 x  3 with Cat Face Sick Pattern
 // 0 Name: 3622p04.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3622pb052, Queasy Kitty, Rebrickable 3622pr0003, Set 70810
-// 0 !KEYWORDS The LEGO Movie
+// 0 !KEYWORDS BrickLink 3622pb052, Brickowl 582841, Brickset 17331, Queasy Kitty
+// 0 !KEYWORDS Rebrickable 3622pr0003, Set 70810, The LEGO Movie
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Brick without front face

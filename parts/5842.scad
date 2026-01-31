@@ -1,0 +1,30 @@
+use <../lib.scad>
+use <../p/1-4cyli.scad>
+use <s/5842s01.scad>
+function ldraw_lib__5842() = [
+// 0 Brick  2 x  4 x  1 with Curved Top
+// 0 Name: 5842.dat
+// 0 Author: Peter Grass [Evilspyre]
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Brickowl 372549
+// 
+// 0 !HISTORY 2026-01-05 [GeraldLasser] Complete Rework
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\5842s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__5842s01()],
+// 
+// 1 16 40 20 -10 0 -80 0 -20 0 0 0 0 -20 1-4cyli.dat
+  [1,16,40,20,-10,0,-80,0,-20,0,0,0,0,-20, ldraw_lib__1_4cyli()],
+// 4 16 40 20 -30 -40 20 -30 -40 24 -30 40 24 -30
+  [4,16,40,20,-30,-40,20,-30,-40,24,-30,40,24,-30],
+];
+module ldraw_lib__5842(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5842(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5842(line=0.2);

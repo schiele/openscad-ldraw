@@ -2,10 +2,10 @@ use <../lib.scad>
 use <170882c.scad>
 use <2916.scad>
 function ldraw_lib__2916d02() = [
-// 0 Wedge 4 x  6 x  2.333 with Black Train Logo Sticker
+// 0 Wedge  4 x  6 x  2.333 with Black Train Logo Sticker
 // 0 Name: 2916d02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,11 +13,14 @@ function ldraw_lib__2916d02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sticker Shortcut
+// 
 // 0 !KEYWORDS Bricklink 2916pb02, Set 4559
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 0 !HISTORY 2025-03-25 [MagFors] Update description, added space
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-01-22 [MagFors] Update description
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2916.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2916()],

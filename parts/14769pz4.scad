@@ -7,7 +7,7 @@ function ldraw_lib__14769pz4() = [
 // 0 Tile  2 x  2 Round with Centered Black Disc (8 LDU Diameter) Pattern
 // 0 Name: 14769pz4.dat
 // 0 Author: Jeff Jones [notmaster]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,6 +25,8 @@ function ldraw_lib__14769pz4() = [
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
 // 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],

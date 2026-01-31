@@ -20,7 +20,7 @@ function ldraw_lib__92906() = [
 // 0 Technic Steering Constant Velocity 4.8mm Joint Female
 // 0 Name: 92906.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,6 +32,8 @@ function ldraw_lib__92906() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2025-12-13 [MagFors] Shaped axleend, unrotated prims
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 -2 10 0 0 0 0 -10 0 -8 0 4-4cyli.dat
   [1,16,0,0,-2,10,0,0,0,0,-10,0,-8,0, ldraw_lib__4_4cyli()],

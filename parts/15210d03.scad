@@ -5,7 +5,7 @@ function ldraw_lib__15210d03() = [
 // 0 Roadsign Clip-on  2 x  2 Square with Cup Prohibited Sign on White Background Sticker
 // 0 Name: 15210d03.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__15210d03() = [
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2025-12-22 [MagFors] Update description,corrected sticker colour
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 15210.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15210()],

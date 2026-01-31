@@ -16,18 +16,21 @@ function ldraw_lib__30361dps6() = [
 // 0 Cylinder  2 x  2 x  2 Robot Body with Red Lines and Blue Pattern (R5-D8 / R5-D4)
 // 0 Name: 30361dps6.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, BrickLink 30361cpb017, droid, minifig
-// 0 !KEYWORDS Rebrickable 30361cpr0015, red droid, set 75059, Set 9493, Star Wars
+// 0 !KEYWORDS astromech, BrickLink 30361cpb017, Brickowl 451845, Brickset 74376
+// 0 !KEYWORDS droid, minifig, Rebrickable 30361cpr0015, red droid, set 75059
+// 0 !KEYWORDS Set 9493, Star Wars
 // 
 // 0 !HISTORY 2020-12-07 [Holly-Wood] Streamlined pattern, reduced subfiles, corrected rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 0 // Body without front face

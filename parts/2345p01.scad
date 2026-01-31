@@ -4,7 +4,7 @@ function ldraw_lib__2345p01() = [
 // 0 Panel Wall  3 x  3 x  6 Corner with Black Lines Pattern
 // 0 Name: 2345p01.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2025-12
+// 0 !LDRAW_ORG Part UPDATE 2026-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,6 +26,8 @@ function ldraw_lib__2345p01() = [
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
 // 0 !HISTORY 2025-11-18 [MagFors] Removed emphasis lines and T-junctions
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2345s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345s01()],

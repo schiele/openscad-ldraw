@@ -5,16 +5,18 @@ function ldraw_lib__2680b() = [
 // 0 Support  4 x  4 x  5 Stanchion with Regular Studs
 // 0 Name: 2680b.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2026-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS girder, leg, Monorail, Space, stand
+// 0 !KEYWORDS Brickowl 11535, Brickset 2680, girder, leg, Monorail, Space, stand
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 !HISTORY 2026-01-29 [OrionP] Minor header edits
+// 0 !HISTORY 2026-01-29 [OrionP] Official Update 2026-01
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2680s01.dat
