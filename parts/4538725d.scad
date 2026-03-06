@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <4294106a.scad>
 function ldraw_lib__4538725d() = [
-// 0 =Sticker  1.8 x  1.8 with Blue and Yellow Rectangle Pattern
+// 0 =Sticker  1.8 x  1.8 with Blue and Yellow Rectangle Flag
 // 0 Name: 4538725d.dat
 // 0 Author: Eugen [app4soft]
-// 0 !LDRAW_ORG Part UPDATE 2024-11
+// 0 !LDRAW_ORG Part UPDATE 2026-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__4538725d() = [
 // 0 !KEYWORDS Rebrickable 64846, Set 3833, SpongeBob, Ukraine
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
+// 0 !HISTORY 2026-03-02 [MagFors] Update description
+// 0 !HISTORY 2026-03-06 [OrionP] Official Update 2026-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4294106a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4294106a()],

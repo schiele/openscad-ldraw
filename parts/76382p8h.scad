@@ -4,21 +4,24 @@ use <3819.scad>
 use <3820.scad>
 use <973p8h.scad>
 function ldraw_lib__76382p8h() = [
-// 0 Minifig Torso with Arms and Hands with Suit with Pocket, Brown Pen, Red Tie, Train Logo Pattern
+// 0 Minifig Torso with Arms and Yellow Hands with Suit with Pocket, Brown Pen, Red Tie, Train Logo Pattern
 // 0 Name: 76382p8h.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973pb0320c02, City, dacta, Mini Upper Part No 1164
-// 0 !KEYWORDS Mini Upper Part No 843, Rebrickable 973c05h02pr0320, set 10173
-// 0 !KEYWORDS set 10194, set 4511, Set 60197, set 7904, World City
+// 0 !KEYWORDS BrickLink 973pb0320c01, Brickowl 19930, Brickset 73403, City, dacta
+// 0 !KEYWORDS Mini Upper Part No 1164, Mini Upper Part No 843
+// 0 !KEYWORDS Rebrickable 973c05h01pr1164, set 10173, set 10194, set 4511
+// 0 !KEYWORDS Set 60197, set 7904, World City
 // 
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-02-17 [KnightOfTarenta] Fixed External References, changed Description
+// 0 !HISTORY 2026-03-06 [OrionP] Official Update 2026-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p8h.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p8h()],
