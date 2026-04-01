@@ -1,0 +1,37 @@
+use <../lib.scad>
+use <3818.scad>
+use <3819.scad>
+use <3820.scad>
+use <973pv3.scad>
+function ldraw_lib__76382pv3() = [
+// 0 Minifig Torso with Arms and Hands with Uniform Vest with Starfleet Combadge and Light Nougat Neck Pattern
+// 0 Name: 76382pv3.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-03
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 973pb6406c01, BrickOwl 662487, Brickset 76382
+// 0 !KEYWORDS Counsellor Deanna Troi, Icons, Rebrickable 973c33h02pr0002
+// 0 !KEYWORDS Set 10356, Star Trek, The Next Generation
+// 0 !KEYWORDS U.S.S. Enterprise NCC-1701-D
+// 
+// 0 !HISTORY 2026-03-31 [OrionP] Official Update 2026-03
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pv3.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pv3()],
+// 1 16 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
+  [1,16,-15.552,9,0,0.985,-0.17,0,0.17,0.985,0,0,0,1, ldraw_lib__3818()],
+// 1 16 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
+  [1,16,15.552,9,0,0.985,0.17,0,-0.17,0.985,0,0,0,1, ldraw_lib__3819()],
+// 1 78 -23.69 26.774 -9.898 0.985 -0.12 0.12 0.17 0.696 -0.696 0 0.707 0.707 3820.dat
+  [1,78,-23.69,26.774,-9.898,0.985,-0.12,0.12,0.17,0.696,-0.696,0,0.707,0.707, ldraw_lib__3820()],
+// 1 78 23.69 26.774 -9.898 0.985 0.12 -0.12 -0.17 0.696 -0.696 0 0.707 0.707 3820.dat
+  [1,78,23.69,26.774,-9.898,0.985,0.12,-0.12,-0.17,0.696,-0.696,0,0.707,0.707, ldraw_lib__3820()],
+];
+module ldraw_lib__76382pv3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__76382pv3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__76382pv3(line=0.2);
