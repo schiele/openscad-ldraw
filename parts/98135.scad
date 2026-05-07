@@ -1,7 +1,6 @@
 use <../lib.scad>
 use <../p/1-4cylo.scad>
-use <../p/axleend.scad>
-use <../p/axlehol2.scad>
+use <../p/axleend2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
 use <../p/rect2p.scad>
@@ -10,7 +9,7 @@ function ldraw_lib__98135() = [
 // 0 Constraction Blade 16L with Axle
 // 0 Name: 98135.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,11 +17,14 @@ function ldraw_lib__98135() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS hero factory, Ninjago, sword, Weapon
+// 
+// 0 !KEYWORDS Brickowl 709025, hero factory, Ninjago, sword, Weapon
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-11-14 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2025-12-12 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 0 // Subparts
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98135s01.dat
@@ -30,14 +32,10 @@ function ldraw_lib__98135() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98135s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98135s01()],
 // 0 // Primitives
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axleend.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend()],
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axlehol2.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol2()],
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axlehol9.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol9()],
-// 1 16 0 0 0 1 0 0 0 0 1 0 20 0 axlehol8.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,20,0, ldraw_lib__axlehol8()],
+// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axleend2.dat
+  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend2()],
+// 1 16 0 0 0 1 0 0 0 0 1 0 17.5 0 axlehol8.dat
+  [1,16,0,0,0,1,0,0,0,0,1,0,17.5,0, ldraw_lib__axlehol8()],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 axlehol9.dat
   [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol9()],
 // 1 16 -2.5 -9.25 -2 0 5 0 -2 0 0 0 0 2 1-4cylo.dat

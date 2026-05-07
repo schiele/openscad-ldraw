@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__1621s02() = [
-// 0 ~Minifig Utensil Candy Cane - Highlight Colour
+// 0 ~Minifig Candy Cane - Highlight Colour
 // 0 Name: s\1621s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2026-03
+// 0 !LDRAW_ORG Subpart UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__1621s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2026-03-31 [OrionP] Official Update 2026-03
+// 0 !HISTORY 2026-04-04 [Holly-Wood] Sanded description
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 4 16 2.828 -4.209 -2.828 3.696 -4.212 -1.531 3.696 -8.327 -1.531 2.828 -7.297 -2.828
   [4,16,2.828,-4.209,-2.828,3.696,-4.212,-1.531,3.696,-8.327,-1.531,2.828,-7.297,-2.828],

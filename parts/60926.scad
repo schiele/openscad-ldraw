@@ -4,8 +4,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/7-16cylo.scad>
 use <../p/9-16cylo.scad>
-use <../p/axle.scad>
 use <../p/axleconnect.scad>
+use <../p/axleend20.scad>
 use <../p/beamhole.scad>
 use <../p/connhole.scad>
 use <s/60926s01.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__60926() = [
 // 0 Constraction Weapon Pincer  7 x 12
 // 0 Name: 60926.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2025-05
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,12 +21,15 @@ function ldraw_lib__60926() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS Antroz, Battle Vehicles, bionicle, Blade, Claw, Furno Bike
-// 0 !KEYWORDS Makuta Icarax, Phantoka, Piraka, Set 7137, Set 7158, Set 8691
-// 0 !KEYWORDS Set 8953, Set 8996, Skopio XV-1, Stars, Technic, Warriors
+// 
+// 0 !KEYWORDS Antroz, Battle Vehicles, bionicle, Blade, Brickowl 868659, Claw
+// 0 !KEYWORDS Furno Bike, Makuta Icarax, Phantoka, Piraka, Set 7137, Set 7158
+// 0 !KEYWORDS Set 8691, Set 8953, Set 8996, Skopio XV-1, Stars, Technic, Warriors
 // 
 // 0 !HISTORY 2025-04-26 [Holly-Wood] Sanded
 // 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
+// 0 !HISTORY 2025-12-14 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\60926s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60926s01()],
@@ -40,8 +43,8 @@ function ldraw_lib__60926() = [
   [1,16,0,0,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__axleconnect()],
 // 1 16 0 0 0 0 -1 0 -1 0 0 0 0 -1 axleconnect.dat
   [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__axleconnect()],
-// 1 16 0 0 30 0 0 1 -1 0 0 0 -20 0 axle.dat
-  [1,16,0,0,30,0,0,1,-1,0,0,0,-20,0, ldraw_lib__axle()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 axleend20.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend20()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 29.5 -74.5 0 4.25 0 8 0 0 0 0 8 4-4cylc.dat
@@ -794,6 +797,16 @@ function ldraw_lib__60926() = [
   [5,24,0,33.086,-20.831,0,31.927,-19.632,1.022,32,-20,-1.022,32,-20],
 // 5 24 3.68 169.445 -71.484 -3.658 169.445 -71.484 3.312 168.646 -72.604 -4 169.747 -70.63
   [5,24,3.68,169.445,-71.484,-3.658,169.445,-71.484,3.312,168.646,-72.604,-4,169.747,-70.63],
+// 5 24 0 -15.647 -61.644 0 -17.465 -58.95 -4.335 -14.254 -60.704 4.335 -14.254 -60.704
+  [5,24,0,-15.647,-61.644,0,-17.465,-58.95,-4.335,-14.254,-60.704,4.335,-14.254,-60.704],
+// 5 24 0 -12.151 -66.825 0 -13.969 -64.131 4.335 -10.758 -65.885 -4.335 -10.758 -65.885
+  [5,24,0,-12.151,-66.825,0,-13.969,-64.131,4.335,-10.758,-65.885,-4.335,-10.758,-65.885],
+// 5 24 0 -8.656 -72.006 0 -10.473 -69.312 4.335 -7.263 -71.066 -4.335 -7.263 -71.066
+  [5,24,0,-8.656,-72.006,0,-10.473,-69.312,4.335,-7.263,-71.066,-4.335,-7.263,-71.066],
+// 5 24 0 -5.16 -77.187 0 -6.978 -74.493 4.335 -3.767 -76.247 -4.335 -3.767 -76.247
+  [5,24,0,-5.16,-77.187,0,-6.978,-74.493,4.335,-3.767,-76.247,-4.335,-3.767,-76.247],
+// 5 24 0 -1.664 -82.368 0 -3.482 -79.674 4.335 -.271 -81.428 -4.335 -.271 -81.428
+  [5,24,0,-1.664,-82.368,0,-3.482,-79.674,4.335,-.271,-81.428,-4.335,-.271,-81.428],
 ];
 module ldraw_lib__60926(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__60926(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

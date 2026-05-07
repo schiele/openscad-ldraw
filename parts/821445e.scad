@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <../p/box5-12.scad>
+function ldraw_lib__821445e() = [
+// 0 Sticker  0.4 x  4 Blue
+// 0 Name: 821445e.dat
+// 0 Author: Takeshi Takahashi [RainbowDolphin]
+// 0 !LDRAW_ORG Part UPDATE 2026-04
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Hovercraft, set 8824, Technic
+// 
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
+// 
+// 1 16 0 -0.25 0 40 0 0 0 0.25 0 0 0 4 box5-12.dat
+  [1,16,0,-0.25,0,40,0,0,0,0.25,0,0,0,4, ldraw_lib__box5_12()],
+// 4 1 40 -0.25 4 -40 -0.25 4 -40 -0.25 -4 40 -0.25 -4
+  [4,1,40,-0.25,4,-40,-0.25,4,-40,-0.25,-4,40,-0.25,-4],
+];
+module ldraw_lib__821445e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__821445e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__821445e(line=0.2);

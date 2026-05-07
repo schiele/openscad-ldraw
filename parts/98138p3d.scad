@@ -6,17 +6,19 @@ function ldraw_lib__98138p3d() = [
 // 0 Tile  1 x  1 Round with Red Ladybug Pattern
 // 0 Name: 98138p3d.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-02
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb447, Insect, Rebrickable 98138pr0429, Set 42651
-// 0 !KEYWORDS Set 42652, Set 42669, Set 42670
+// 0 !KEYWORDS Bricklink 98138pb447, Brickowl 405170, Brickset 107749, Insect
+// 0 !KEYWORDS Rebrickable 98138pr0429, Set 42651, Set 42652, Set 42669, Set 42670
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2026-01-16 [Blechtaler] added NOCLIP
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
@@ -27,6 +29,9 @@ function ldraw_lib__98138p3d() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p3ds01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98138p3ds01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p3ds01()],
+// 
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
 // 4 0 -.2 0 -.09 .55 0 .23 .28 0 2.37 -.25 0 .19
   [4,0,-.2,0,-.09,.55,0,.23,.28,0,2.37,-.25,0,.19],
 // 4 0 -2.92 0 -.47 -2.55 0 .14 -2.91 0 .74 -3.35 0 -.52

@@ -3,10 +3,10 @@ use <../p/1-4cyli.scad>
 use <s/973pv0s03.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pv4() = [
-// 0 Minifig Torso with Bright Light Orange Starfleet Duty Uniform and Silver Klingon Baldrik Pattern
+// 0 Minifig Torso with ST Bright Light Orange Starfleet Duty Uniform and Silver Klingon Baldrik Pattern
 // 0 Name: 973pv4.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2026-03
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__973pv4() = [
 // 0 !KEYWORDS U.S.S. Enterprise NCC-1701-D
 // 
 // 0 !HISTORY 2026-03-31 [OrionP] Official Update 2026-03
+// 0 !HISTORY 2026-04-05 [Holly-Wood] Sanded description
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

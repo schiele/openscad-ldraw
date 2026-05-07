@@ -5,10 +5,7 @@ use <../p/1-8ndis.scad>
 use <../p/2-4cylc.scad>
 use <../p/4-4cylc.scad>
 use <../p/5-16cylo.scad>
-use <../p/axleend.scad>
-use <../p/axlehol2.scad>
-use <../p/axlehol8.scad>
-use <../p/axlehol9.scad>
+use <../p/axleend20.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
@@ -16,8 +13,8 @@ use <s/11305s01.scad>
 function ldraw_lib__11305() = [
 // 0 Constraction Convex Blade 14L with Axle
 // 0 Name: 11305.dat
-// 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,12 +22,15 @@ function ldraw_lib__11305() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS hero facory, rotor, Weapon
+// 
+// 0 !KEYWORDS Brickowl 858739, hero factory, rotor, Weapon
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-09-14 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2025-12-21 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11305s01.dat
@@ -38,18 +38,8 @@ function ldraw_lib__11305() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11305s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11305s01()],
 // 0 // Primitives
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axleend.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend()],
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axlehol2.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol2()],
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 axlehol9.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol9()],
-// 1 16 0 0 0 1 0 0 0 0 1 0 20 0 axlehol8.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,20,0, ldraw_lib__axlehol8()],
-// 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol2()],
-// 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 axlehol9.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlehol9()],
+// 1 16 0 0 0 1 0 0 0 0 -1 0 -1 0 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,0,-1,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 0 0 0 7.75 0 0 0 0 7.75 0 -.625 0 4-4cylc.dat
   [1,16,0,0,0,7.75,0,0,0,0,7.75,0,-.625,0, ldraw_lib__4_4cylc()],
 // 0 BFC INVERTNEXT

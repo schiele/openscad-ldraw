@@ -1,11 +1,11 @@
 use <../lib.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <s/11641s01.scad>
 function ldraw_lib__11641() = [
 // 0 Minifig Basketball Net with Axle
 // 0 Name: 11641.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2025-05
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,12 +14,16 @@ function ldraw_lib__11641() = [
 // 
 // 0 !CATEGORY Figure Accessory
 // 
+// 0 !KEYWORDS Brickowl 479821
+// 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-08-17 [RainbowDolphin] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
-// 1 16 0 0 0 -1 0 0 0 0 -1 0 -20 0 axle.dat
-  [1,16,0,0,0,-1,0,0,0,0,-1,0,-20,0, ldraw_lib__axle()],
+// 1 16 0 0 -20 -1 0 0 0 0 -1 0 -1 0 axleend20.dat
+  [1,16,0,0,-20,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__axleend20()],
 // 0 // Half subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11641s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11641s01()],

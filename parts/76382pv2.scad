@@ -4,10 +4,10 @@ use <3819pv0.scad>
 use <3820.scad>
 use <973pv2.scad>
 function ldraw_lib__76382pv2() = [
-// 0 Minifig Torso with Arms and Hands with Dark Azure Starfleet Duty Uniform (2360s Variant) Pattern
+// 0 Minifig Torso with Arms and Hands with ST Dark Azure Starfleet Duty Uniform (2360s Variant) Pattern
 // 0 Name: 76382pv2.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2026-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +20,8 @@ function ldraw_lib__76382pv2() = [
 // 0 !KEYWORDS U.S.S. Enterprise NCC-1701-D
 // 
 // 0 !HISTORY 2026-03-31 [OrionP] Official Update 2026-03
+// 0 !HISTORY 2026-04-05 [Holly-Wood] Sanded description
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pv2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pv2()],

@@ -3,25 +3,26 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect2p.scad>
 use <s/55706s01.scad>
 function ldraw_lib__55706() = [
 // 0 Animal Wing  9 x  9 with Axle
 // 0 Name: 55706.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2026-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman
+// 0 !KEYWORDS Batman, Brickowl 101985
 // 
 // 0 !HISTORY 2014-07-23 [MagFors] reworked edge and cond lines
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\55706s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__55706s01()],
@@ -35,8 +36,8 @@ function ldraw_lib__55706() = [
   [1,16,0,0,-10,10,0,0,0,0,10,0,1,0, ldraw_lib__4_4disc()],
 // 1 16 0 0 -10 -10 0 0 0 0 10 0 -1 0 4-4edge.dat
   [1,16,0,0,-10,-10,0,0,0,0,10,0,-1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -10 -1 0 0 0 0 1 0 -19 0 axle.dat
-  [1,16,0,0,-10,-1,0,0,0,0,1,0,-19,0, ldraw_lib__axle()],
+// 1 16 0 0 -10 -1 0 0 0 0 1 0 1 0 axleend20.dat
+  [1,16,0,0,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__axleend20()],
 // 1 16 -184 0 122 0 -4 0 -4 0 0 0 0 -4 4-8sphe.dat
   [1,16,-184,0,122,0,-4,0,-4,0,0,0,0,-4, ldraw_lib__4_8sphe()],
 // 1 16 -124 0 68 0 -2.5 0 -2.5 0 0 0 0 -2.5 4-8sphe.dat
