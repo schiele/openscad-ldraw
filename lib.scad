@@ -4,9 +4,10 @@ use <colors.scad>
 
 /* general data structure after translation:
       array of
-          boolean value indicating
-              true: array element is a face
-              false: array element is a line
+          integer indicating type
+              0: array element is a line
+              1: array element is a face
+              2: array element is a face to be used for solids only
           vectors of
               array of points forming the face or line
           color index
@@ -91,10 +92,10 @@ module fancypoly(poly, step=0, col=false, unit=2/5,
                 // regular color
                 ldraw_color(f[2], alt)[0])))
         // check whether this is a face or line
-        if(f[0]) {
+        if(f[0] == 1) {
             // face --> convert to a polyhedron
             polyhedron(f[1], [[for(i=[0:1:len(f[1])-1]) i]]);
-        } else if (line) {
+        } else if (line && !f[0]) {
             // line --> check whether we have control points
             // draw if either we have no control points or the line
             // between the two control points does not cross the plane
@@ -172,11 +173,11 @@ function det3(M) = + M[0][0] * M[1][1] * M[2][2]
                    - M[0][0] * M[1][2] * M[2][1];
 
 /* l1: transform the subpart according to a line 1 specification */
-function l1(M, poly, col, invert=false, step=0) =
+function l1(M, poly, col, invert=false, step=0, solidonly=false) =
     // For each face or line:
     [for(f=lines(poly))
          // Don't touch the type
-        [f[0],
+        [(solidonly && f[0]==1) ? 2 : f[0],
          // Transform the array of points by matrix multiplication.
          // Reverse the face direction (and ignore the lines) if:
          // - determinant of the non-absolute 3x3 matrix part is
@@ -236,30 +237,31 @@ function metaline(v, meta) =
 
 /* line: construct data structure according to specification */
 function line(v, meta) =
-    (v[0] == 1) ?
+    (v[0] == 1 || v[0] == -1) ?
         l1([[v[ 5], v[ 6], v[ 7], v[2]],
             [v[ 8], v[ 9], v[10], v[3]],
             [v[11], v[12], v[13], v[4]]],
            v[14],
            v[1],
            meta[2],
-           meta[0]) : (
+           meta[0],
+           v[0]<0) : (
     (v[0] == 2) ?
-        [[false,
+        [[0,
           [[v[ 2], v[ 3], v[ 4]],
            [v[ 5], v[ 6], v[ 7]]],
           v[1],
           meta[0]]] : (
-    (v[0] == 3) ?
-        [[true,
+    (v[0] == 3 || v[0] == -3) ?
+        [[v[0]>0 ? 1 : 2,
           rev([[v[ 2], v[ 3], v[ 4]],
                [v[ 5], v[ 6], v[ 7]],
                [v[ 8], v[ 9], v[10]]],
               meta[1]),
           v[1],
           meta[0]]] : (
-    (v[0] == 4) ?
-        [[true,
+    (v[0] == 4 || v[0] == -4) ?
+        [[v[0]>0 ? 1 : 2,
           rev([[v[ 2], v[ 3], v[ 4]],
                [v[ 5], v[ 6], v[ 7]],
                [v[ 8], v[ 9], v[10]],
@@ -268,7 +270,7 @@ function line(v, meta) =
           v[1],
           meta[0]]] : (
     (v[0] == 5) ?
-        [[false,
+        [[0,
           [[v[ 2], v[ 3], v[ 4]],
            [v[ 5], v[ 6], v[ 7]],
            [v[ 8], v[ 9], v[10]],

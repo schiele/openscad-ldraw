@@ -38,6 +38,7 @@ function ldraw_lib__stud4() = [
   [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli()],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
   [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [-1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
 // 0
 ];
 module ldraw_lib__stud4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
