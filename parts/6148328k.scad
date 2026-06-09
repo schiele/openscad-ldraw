@@ -13,20 +13,22 @@ use <s/6221655aps06.scad>
 use <s/6221655aps07.scad>
 use <s/stickerback008x078.scad>
 function ldraw_lib__6148328k() = [
-// 0 Sticker  0.8 x  7.8 with White Mobil1 and Michelin Logos on Dark Grey Background
+// 0 Sticker  0.8 x  7.8 with White Mobil 1 and Michelin Logos on Dark Grey Background
 // 0 Name: 6148328k.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-08
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 917K, 919, Bricklink 75876stk01, Hybrid, Pit Lane, Porsche
-// 0 !KEYWORDS Rebrickable 26357, set 75876, Speed Champions
+// 0 !KEYWORDS 917K, 919, Bricklink 75876stk01, Brickowl 333459, Hybrid, Pit Lane
+// 0 !KEYWORDS Porsche, Rebrickable 26357, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2026-05-27 [MagFors] Update description
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 0 // Stickerback
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\stickerback008x078.dat

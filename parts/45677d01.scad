@@ -2,10 +2,10 @@ use <../lib.scad>
 use <45677.scad>
 use <4616559cc01.scad>
 function ldraw_lib__45677d01() = [
-// 0 Wedge  4 x  4 x  0.667 Curved with Sticker with Maersk Logo
+// 0 Wedge  4 x  4 x  0.667 Curved with Maersk Logo Sticker
 // 0 Name: 45677d01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,12 +13,14 @@ function ldraw_lib__45677d01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sticker Shortcut
+// 
 // 0 !KEYWORDS Set 10219
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
-// 
+// 0 !HISTORY 2026-04-28 [Sirio] Changed description: moved "Sticker" to end
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 45677.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45677()],

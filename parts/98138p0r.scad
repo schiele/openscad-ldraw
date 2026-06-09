@@ -5,8 +5,8 @@ use <s/98138s02.scad>
 function ldraw_lib__98138p0r() = [
 // 0 Tile  1 x  1 Round with White Six-Pointed Snowflake Pattern
 // 0 Name: 98138p0r.dat
-// 0 Author: Rene Rechthaler [Blechtaler]
-// 0 !LDRAW_ORG Part UPDATE 2026-04
+// 0 Author: Gerald Lasser [GeraldLasser]
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__98138p0r() = [
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2026-01-16 [Blechtaler] subfiled, added NOCLIP
 // 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
+// 0 !HISTORY 2026-05-02 [OrionP] Fix improperly changed author
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],

@@ -1,32 +1,28 @@
 use <../lib.scad>
-use <../p/axleend.scad>
-use <../p/axlehol2.scad>
+use <../p/axleend2.scad>
 use <../p/axlehol8.scad>
-use <../p/axlehol9.scad>
 use <s/40582s01.scad>
 function ldraw_lib__40582() = [
-// 0 Constraction Weapon Ice Pick with Axle
+// 0 Constraction Weapon Ice Pick with Axle 7L
 // 0 Name: 40582.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS bionicle, Brickowl 981314, Nuju, Technic, Turaga
+// 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !HISTORY 2025-11-02 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
-// 
-// 1 16 0 0 0 0 0 1 -1 0 0 0 -1 0 axleend.dat
-  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__axleend()],
-// 1 16 0 0 0 0 0 1 -1 0 0 0 -1 0 axlehol9.dat
-  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__axlehol9()],
-// 1 16 0 0 0 0 0 1 -1 0 0 0 -1 0 axlehol2.dat
-  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__axlehol2()],
-// 1 16 0 0 0 0 0 1 -1 0 0 0 -154 0 axlehol8.dat
-  [1,16,0,0,0,0,0,1,-1,0,0,0,-154,0, ldraw_lib__axlehol8()],
-// 
+// 1 16 0 0 0 0 0 1 -1 0 0 0 -1 0 axleend2.dat
+  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__axleend2()],
+// 1 16 0 0 -2.5 0 0 1 -1 0 0 0 -151.5 0 axlehol8.dat
+  [1,16,0,0,-2.5,0,0,1,-1,0,0,0,-151.5,0, ldraw_lib__axlehol8()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40582s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40582s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\40582s01.dat

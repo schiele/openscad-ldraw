@@ -13,8 +13,8 @@ use <s/11305s01.scad>
 function ldraw_lib__11305() = [
 // 0 Constraction Convex Blade 14L with Axle
 // 0 Name: 11305.dat
-// 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2026-04
+// 0 Author: Massimo Maso [Sirio]
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,6 +31,8 @@ function ldraw_lib__11305() = [
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 0 !HISTORY 2025-12-21 [MagFors] Shaped axleend
 // 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
+// 0 !HISTORY 2026-05-02 [OrionP] Fix improperly changed author
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11305s01.dat

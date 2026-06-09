@@ -17,8 +17,8 @@ use <s/61801s01.scad>
 function ldraw_lib__61801() = [
 // 0 Technic Bionicle Jet Booster 5L
 // 0 Name: 61801.dat
-// 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2026-04
+// 0 Author: Santeri Piippo [arezey]
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,6 +33,8 @@ function ldraw_lib__61801() = [
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 0 !HISTORY 2025-12-14 [MagFors] Shaped axleend, added erings
 // 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
+// 0 !HISTORY 2026-05-02 [OrionP] Fix improperly changed author
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61801s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61801s01()],

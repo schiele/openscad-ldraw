@@ -2,10 +2,10 @@ use <../lib.scad>
 use <195405a.scad>
 use <4182.scad>
 function ldraw_lib__4182d04() = [
-// 0 Train Door  1 x  4 x  5 Right with Sticker DB 7727
+// 0 Train Door  1 x  4 x  5 Right with White DB 7727 Sticker
 // 0 Name: 4182d04.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-12
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,6 +28,8 @@ function ldraw_lib__4182d04() = [
 // 0 !HISTORY 2025-11-30 [OrionP] Official Update 2025-11
 // 0 !HISTORY 2025-12-25 [OrionP] Minor header edits
 // 0 !HISTORY 2025-12-25 [OrionP] Official Update 2025-12
+// 0 !HISTORY 2026-04-28 [Sirio] Changed description: moved "Sticker" to end and added color
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4182.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4182()],

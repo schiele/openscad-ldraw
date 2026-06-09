@@ -2,10 +2,10 @@ use <../lib.scad>
 use <196925a.scad>
 use <4181p05.scad>
 function ldraw_lib__4181p05d01() = [
-// 0 Train Door  1 x  4 x  5 Left Blue Bottom Half Sticker DB 7715
+// 0 Train Door  1 x  4 x  5 Left with Blue Bottom Half Pattern and White DB 7715 Sticker
 // 0 Name: 4181p05d01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__4181p05d01() = [
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2026-04-28 [Sirio] Changed description: moved "Sticker" to end and added color
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4181p05.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4181p05()],

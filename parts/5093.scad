@@ -1,17 +1,21 @@
 use <../lib.scad>
 use <s/5093s01.scad>
 function ldraw_lib__5093() = [
-// 0 Slope Curved  2 x  2 x  0.667 with Stud Notch Right
+// 0 Slope Brick Curved  2 x  2 x  0.667 with Stud Notch Right
 // 0 Name: 5093.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-02
+// 0 !LDRAW_ORG Part UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Brickowl 230058
+// 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2026-05-06 [MagFors] Update description
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\5093s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__5093s01()],

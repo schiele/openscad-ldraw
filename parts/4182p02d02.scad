@@ -2,10 +2,10 @@ use <../lib.scad>
 use <195515a.scad>
 use <4182p02.scad>
 function ldraw_lib__4182p02d02() = [
-// 0 Train Door  1 x  4 x  5 Right Red Bottom Half w/ Mail Sticker
+// 0 Train Door  1 x  4 x  5 Right with Red Bottom Half Pattern and White Mail Logo Sticker
 // 0 Name: 4182p02d02.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,11 +16,15 @@ function ldraw_lib__4182p02d02() = [
 // 
 // 0 !CMDLINE -c14
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2026-04-28 [Sirio] Changed description: added "Pattern" and added color
+// 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4182p02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4182p02()],
