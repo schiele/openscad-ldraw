@@ -13,7 +13,10 @@ function ldraw_lib__24201d00() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sticker Shortcut
+// 
 // 0 !KEYWORDS Chevrolet, Corvette, Icons, Set 10321
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 -1 0 0 0 1
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

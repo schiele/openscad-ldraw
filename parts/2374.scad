@@ -10,18 +10,21 @@ use <../p/stud2a.scad>
 use <../p/stud4.scad>
 use <../p/stug-2x2.scad>
 function ldraw_lib__2374() = [
-// 0 Boat Cargo Loading Plate 10 x 12 x  3.333
+// 0 ~Boat Cargo Loading Plate 10 x 12 x  3.333  (Obsolete)
 // 0 Name: 2374.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
+// 0 !CATEGORY Obsolete
 // 
+// 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
+// 0 !HISTORY 2025-03-07 [KnightOfTarenta] Obsolete due to bad geometry
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 2 24 100 0 120 -100 0 120
   [2,24,100,0,120,-100,0,120],

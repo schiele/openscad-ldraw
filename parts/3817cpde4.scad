@@ -5,7 +5,7 @@ function ldraw_lib__3817cpde4() = [
 // 0 Minifig Leg Left with Black Gap Pattern
 // 0 Name: 3817cpde4.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -17,9 +17,11 @@ function ldraw_lib__3817cpde4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1203, Looney Tunes, Road Runner, Set 71031
+// 0 !KEYWORDS Bricklink 970c00pb1203, Looney Tunes, Road Runner, Set 71030
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2026-06-08 [MagFors] Corrected set number
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817cs01()],

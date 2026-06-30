@@ -4,25 +4,28 @@ use <3819.scad>
 use <3820.scad>
 use <973p7v.scad>
 function ldraw_lib__76382p7v() = [
-// 0 Minifig Torso with Arms and Hands with Neon Yellow Stripes, Radio and Badge Pattern
+// 0 Minifig Torso with Arms and Yellow Hands with Neon Yellow Stripes, Radio and Badge Pattern
 // 0 Name: 76382p7v.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0300c01, City, Fire, firefighter
-// 0 !KEYWORDS Rebrickable 973c03h01pr1187, Set 10197, Set 10661, Set 20002
-// 0 !KEYWORDS Set 30001, Set 30010, Set 4900, Set 4938, Set 4992, Set 5613
-// 0 !KEYWORDS Set 6191, Set 7046, Set 7206, Set 7207, Set 7208, Set 7213, Set 7239
-// 0 !KEYWORDS Set 7240, Set 7241, Set 7891, Set 7906, Set 7942, Set 7944, Set 7945
-// 0 !KEYWORDS Set 9247, Set 9302, Set 9314, Set 9321, Set 9348, Set 9691
-// 0 !KEYWORDS World City
+// 0 !KEYWORDS Bricklink 973pb0300c01, Brickowl 17901, Brickset 76382, City, Fire
+// 0 !KEYWORDS firefighter, fireman, Mini Upper Part No 1187
+// 0 !KEYWORDS Mini Upper Part No 893, Rebrickable 973c03h01pr1187, Set 10197
+// 0 !KEYWORDS Set 10661, Set 20002, Set 30001, Set 30010, Set 4900, Set 4938
+// 0 !KEYWORDS Set 4992, Set 5613, Set 6191, Set 7046, Set 7206, Set 7207, Set 7208
+// 0 !KEYWORDS Set 7213, Set 7239, Set 7240, Set 7241, Set 7891, Set 7906, Set 7942
+// 0 !KEYWORDS Set 7944, Set 7945, Set 9247, Set 9302, Set 9314, Set 9321, Set 9348
+// 0 !KEYWORDS Set 9691, World City
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 0 !HISTORY 2026-06-08 [KnightOfTarenta] Added word "Yellow" to description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p7v.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p7v()],

@@ -14,20 +14,24 @@ function ldraw_lib__4599b() = [
 // 0 Tap  1 x  1 without Hole in Spout
 // 0 Name: 4599b.dat
 // 0 Author: Owen Burgoyne [C3POwen]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bathroom, faucet, hydrant, Kitchen, lavatory, pipe, plug, restroom
-// 0 !KEYWORDS sauna, shower, shower room, sink, spa, toilet, valve, washroom
-// 0 !KEYWORDS water
+// 0 !KEYWORDS Bathroom, Brickowl 733456, Brickset 4599, faucet, hydrant, Kitchen
+// 0 !KEYWORDS lavatory, pipe, plug, restroom, sauna, shower, shower room, sink
+// 0 !KEYWORDS spa, toilet, valve, washroom, water
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2018-03-26 [cwdee] Replace t04ounit with identical r04o1000
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 0 !HISTORY 2026-06-28 [OrionP] Minor header edits
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 
 // 1 16 0 20 0 1 0 0 0 -1 0 0 0 -1 stud4o.dat

@@ -4,21 +4,24 @@ use <3819.scad>
 use <3820.scad>
 use <973p9i.scad>
 function ldraw_lib__76382p9i() = [
-// 0 Minifig Torso with Arms and Hands with Open Suit Jacket with White Shirt, Dark Red Tie and Reddish Brown Belt Pattern
+// 0 Minifig Torso with Arms and Light Nougat Hands with Open Suit Jacket with White Shirt, Dark Red Tie and Reddish Brown Belt Pattern
 // 0 Name: 76382p9i.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1415c01, chief editor, Daily Bugle, J Jonah Jameson
-// 0 !KEYWORDS Marvel Super Heroes, Mini Upper Part No 2175
-// 0 !KEYWORDS Rebrickable 973c24h02pr2175, set 76005, Ultimate Spider-Man
+// 0 !KEYWORDS Bricklink 973pb1415c01, Brickowl 311409, Brickset 76382
+// 0 !KEYWORDS chief editor, Daily Bugle, J Jonah Jameson, Marvel Super Heroes
+// 0 !KEYWORDS Mini Upper Part No 2175, Rebrickable 973c24h02pr2175, set 76005
+// 0 !KEYWORDS Ultimate Spider-Man
 // 
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-06-08 [KnightOfTarenta] Added "Light Nougat" to description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p9i.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p9i()],

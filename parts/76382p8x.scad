@@ -4,23 +4,27 @@ use <3819.scad>
 use <3820.scad>
 use <973p8x.scad>
 function ldraw_lib__76382p8x() = [
-// 0 Minifig Torso with Arms and Hands with Three White and Silver Squares Pattern
+// 0 Minifig Torso with Dark Blue Arms and Yellow Hands with Three White and Silver Squares Pattern
 // 0 Name: 76382p8x.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-11
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0274c02, Gravity Games, Rebrickable 973c05h01pr1173
-// 0 !KEYWORDS Set 10196, set 10244, set 2230, Set 30012, Set 3579, Set 40108
-// 0 !KEYWORDS Set 45800, Set 60031, Set 7346, Set 7641, Set 7643, Set 7688
-// 0 !KEYWORDS Set 7739, Set 7894, set 7937, Set 7993, Set 8403, Set 9337, Set 9348
-// 0 !KEYWORDS Set 9389
+// 0 !KEYWORDS Bricklink 973pb0274c02, Brickowl 98916, Brickset 76382, City
+// 0 !KEYWORDS creator expert, Gravity Games, Mini Upper Part No 1173
+// 0 !KEYWORDS Mini Upper Part No 942, Rebrickable 973c05h01pr1173, Set 10196
+// 0 !KEYWORDS set 10244, set 2230, Set 30012, Set 3579, Set 40108, Set 45800
+// 0 !KEYWORDS Set 60031, Set 7346, Set 7641, Set 7643, Set 7688, Set 7739
+// 0 !KEYWORDS Set 7894, set 7937, Set 7993, Set 8403, Set 9337, Set 9348, Set 9389
+// 0 !KEYWORDS Sports
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
+// 0 !HISTORY 2026-06-08 [KnightOfTarenta] Added colour words to description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p8x.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p8x()],

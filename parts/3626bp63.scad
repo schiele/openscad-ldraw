@@ -4,18 +4,18 @@ use <s/3626bs02.scad>
 use <s/3626bs05.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626bp63() = [
-// 0 Minifig Head with Silver Robot Pattern
+// 0 Minifig Head Robot with Silver Circuitry Pattern
 // 0 Name: 3626bp63.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626p63, Rebrickable 3626bpr0023, set 6705, set 6939
-// 0 !KEYWORDS Set 6949, Spyrius, Time Cruisers
+// 0 !KEYWORDS BrickLink 3626p63, Brickowl 428124, droid, Rebrickable 3626bpr0023
+// 0 !KEYWORDS set 6705, set 6939, Set 6949, Spyrius, Time Cruisers, Wacco
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement
@@ -25,6 +25,8 @@ function ldraw_lib__3626bp63() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2026-06-21 [MagFors] Update description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

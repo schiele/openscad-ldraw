@@ -4,20 +4,20 @@ use <s/3626bs02.scad>
 use <s/3626bs04.scad>
 use <../p/t08o6250.scad>
 function ldraw_lib__3626bpa2() = [
-// 0 Minifig Head with Adventurers Mummy Pattern
+// 0 Minifig Head Mummy with Red Eyes and Stiches Pattern
 // 0 Name: 3626bpa2.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS ancient, archeology, BrickLink 3626pa2, Cairo, corpse, crypt, Egypt
-// 0 !KEYWORDS egyptian, eyebrows, face, Giza, King Tut, Nile, Pharaoh, pyramid
-// 0 !KEYWORDS Rebrickable 3626bpr0046, ruins, scars, set 5958, set 5978, set 5988
-// 0 !KEYWORDS sutures, undead, walking dead
+// 0 !KEYWORDS Adventurers, ancient, archeology, BrickLink 3626pa2, Brickowl 773999
+// 0 !KEYWORDS Cairo, corpse, crypt, Egypt, egyptian, eyebrows, face, Giza
+// 0 !KEYWORDS King Hotep, Nile, Pharaoh, pyramid, Rebrickable 3626bpr0046, ruins
+// 0 !KEYWORDS scars, set 5958, set 5978, set 5988, sutures, undead, walking dead
 // 
 // 0 !CMDLINE -c7
 // 
@@ -30,6 +30,8 @@ function ldraw_lib__3626bpa2() = [
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2026-06-20 [MagFors] Update description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

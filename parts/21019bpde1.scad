@@ -6,7 +6,7 @@ function ldraw_lib__21019bpde1() = [
 // 0 Minifig Hips and Legs with Stripes, Kneepad and Bright Pink Boots Pattern
 // 0 Name: 21019bpde1.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-07
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move at z=1.25 relative to stud grid
@@ -17,10 +17,12 @@ function ldraw_lib__21019bpde1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1207, CMF, Lola Bunny, Looney Tunes
-// 0 !KEYWORDS Rebrickable 970c33pat43pr2044, set 710310
+// 0 !KEYWORDS Bricklink 970c00pb1207, Brickowl 883372, Brickset 77767, CMF
+// 0 !KEYWORDS Lola Bunny, Looney Tunes, Rebrickable 970c33pat43pr2044, Set 71030
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2026-06-08 [MagFors] Corrected set number
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815b()],

@@ -4,18 +4,19 @@ use <s/3626bs04.scad>
 use <s/3626bs05.scad>
 use <s/3626p64a.scad>
 function ldraw_lib__3626bp64() = [
-// 0 Minifig Head with Gold Robot Pattern
+// 0 Minifig Head Robot with Gold Circuitry on Black Pattern
 // 0 Name: 3626bp64.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2026-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ann Droid, BrickLink 3626pb0005, clear headed, droid, Exploriens
-// 0 !KEYWORDS Rebrickable 3626bpr0022, set 1858, set 6958, set 6982
+// 0 !KEYWORDS Ann Droid, BrickLink 3626pb0005, Brickowl 930793, clear headed
+// 0 !KEYWORDS droid, Exploriens, Rebrickable 3626bpr0022, set 1858, set 6958
+// 0 !KEYWORDS set 6982
 // 
 // 0 !CMDLINE -c47
 // 
@@ -26,6 +27,8 @@ function ldraw_lib__3626bp64() = [
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2026-06-21 [MagFors] Update description
+// 0 !HISTORY 2026-06-28 [OrionP] Official Update 2026-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
