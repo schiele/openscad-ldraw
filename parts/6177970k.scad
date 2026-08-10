@@ -3,20 +3,23 @@ use <../p/1-4chrd.scad>
 use <s/6177970ks01.scad>
 use <s/stickerback008x028.scad>
 function ldraw_lib__6177970k() = [
-// 0 Sticker  0.8 x  2.8 with with 6 Black Trapezoid inside 2 Black Lines on Red Background
+// 0 Sticker  0.8 x  2.8 with 6 Black Trapezoid inside 2 Black Lines on Red Background
 // 0 Name: 6177970k.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 75882stk01, Center, Development, Ferrari, FXXK
-// 0 !KEYWORDS Rebrickable 30899, Set 75882, Speed Champions, Tunnel, Wind
+// 0 !CATEGORY Sticker
+// 0 !KEYWORDS BrickLink 75882stk01, Brickowl 758946, Center, Development, Ferrari
+// 0 !KEYWORDS FXXK, Rebrickable 30899, Set 75882, Speed Champions, Tunnel, Wind
 // 
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2026-07-16 [Cheenzo] Removed second "with" in description
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 0 // Stickerback
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\stickerback008x028.dat

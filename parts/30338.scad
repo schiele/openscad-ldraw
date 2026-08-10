@@ -13,7 +13,10 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/axle.scad>
+use <../p/axleend2.scad>
+use <../p/axlehol2.scad>
+use <../p/axlehol8.scad>
+use <../p/axlehol9.scad>
 use <../p/box4.scad>
 use <s/30338s01.scad>
 use <s/30338s02.scad>
@@ -22,7 +25,7 @@ function ldraw_lib__30338() = [
 // 0 Plant Tree Palm Base  4 x  4
 // 0 Name: 30338.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Uncomment one line for leaves with various orientations
@@ -34,14 +37,17 @@ function ldraw_lib__30338() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Plant
+// 0 !KEYWORDS Adventurers, Brickowl 699601, city center, Jungle
+// 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2008-02-06 [Philo] Complete rewrite for LDraw Parts Tracker
 // 0 !HISTORY 2008-02-13 [Philo] Subparted and improved some details
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-10-11 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 0 // Trunk
-// 
 // 1 16 -4.501 -63.72 0 0.9903 0.1392 0 -0.1392 0.9903 0 0 0 1 s\30338s01.dat
   [1,16,-4.501,-63.72,0,0.9903,0.1392,0,-0.1392,0.9903,0,0,0,1, ldraw_lib__s__30338s01()],
 // 1 16 -11.172 -96.04 0 0.9781 0.2079 0 -0.2079 0.9781 0 0 0 1 s\30338s01.dat
@@ -229,19 +235,24 @@ function ldraw_lib__30338() = [
 // 1 16 20 3 -20 1 0 0 0 -1.25 0 0 0 1 stud4.dat
   [1,16,20,3,-20,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4()],
 // 0 // Top
-// 1 16 -10.654 -253.482 0 19.3185 0.2588 0 5.1764 -0.9659 0 0 0 20 4-4disc.dat
-  [1,16,-10.654,-253.482,0,19.3185,0.2588,0,5.1764,-0.9659,0,0,0,20, ldraw_lib__4_4disc()],
-// 1 16 -10.654 -253.482 0 19.3185 0.2588 0 5.1764 -0.9659 0 0 0 20 4-4edge.dat
-  [1,16,-10.654,-253.482,0,19.3185,0.2588,0,5.1764,-0.9659,0,0,0,20, ldraw_lib__4_4edge()],
-// 1 16 -9.36 -258.312 0 19.3185 -0.2588 0 5.1764 0.9659 0 0 0 20 4-4disc.dat
-  [1,16,-9.36,-258.312,0,19.3185,-0.2588,0,5.1764,0.9659,0,0,0,20, ldraw_lib__4_4disc()],
+// 1 16 -10.654 -253.482 0 19.3185 0 0 5.1764 -1 0 0 0 20 4-4disc.dat
+  [1,16,-10.654,-253.482,0,19.3185,0,0,5.1764,-1,0,0,0,20, ldraw_lib__4_4disc()],
+// 1 16 -10.654 -253.482 0 19.3185 0 0 5.1764 -1 0 0 0 20 4-4edge.dat
+  [1,16,-10.654,-253.482,0,19.3185,0,0,5.1764,-1,0,0,0,20, ldraw_lib__4_4edge()],
+// 1 16 -9.36 -258.312 0 19.3185 0 0 5.1764 1 0 0 0 20 4-4disc.dat
+  [1,16,-9.36,-258.312,0,19.3185,0,0,5.1764,1,0,0,0,20, ldraw_lib__4_4disc()],
 // 1 16 -9.36 -258.312 0 19.3185 -1.2941 0 5.1764 4.8296 0 0 0 20 4-4cyli.dat
   [1,16,-9.36,-258.312,0,19.3185,-1.2941,0,5.1764,4.8296,0,0,0,20, ldraw_lib__4_4cyli()],
-// 1 16 -9.36 -258.312 0 19.3185 0.2588 0 5.1764 -0.9659 0 0 0 20 4-4edge.dat
-  [1,16,-9.36,-258.312,0,19.3185,0.2588,0,5.1764,-0.9659,0,0,0,20, ldraw_lib__4_4edge()],
-// 1 16 -9.36 -258.312 0 0.9659 3.3646 0 0.2588 -12.557 0 0 0 1 axle.dat
-  [1,16,-9.36,-258.312,0,0.9659,3.3646,0,0.2588,-12.557,0,0,0,1, ldraw_lib__axle()],
-// 0
+// 1 16 -9.36 -258.312 0 19.3185 0 0 5.1764 -1 0 0 0 20 4-4edge.dat
+  [1,16,-9.36,-258.312,0,19.3185,0,0,5.1764,-1,0,0,0,20, ldraw_lib__4_4edge()],
+// 1 16 -9.36 -258.312 0 .9659 0 0 .2588 1 0 0 0 -1 axlehol2.dat
+  [1,16,-9.36,-258.312,0,.9659,0,0,.2588,1,0,0,0,-1, ldraw_lib__axlehol2()],
+// 1 16 -9.36 -258.312 0 .9659 0 0 .2588 1 0 0 0 -1 axlehol9.dat
+  [1,16,-9.36,-258.312,0,.9659,0,0,.2588,1,0,0,0,-1, ldraw_lib__axlehol9()],
+// 1 16 -9.36 -258.312 0 .9659 2.7177 0 .2588 -10.1421 0 0 0 -1 axlehol8.dat
+  [1,16,-9.36,-258.312,0,.9659,2.7177,0,.2588,-10.1421,0,0,0,-1, ldraw_lib__axlehol8()],
+// 1 16 -5.9954 -270.869 0 .9659 -.2588 0 .2588 .9659 0 0 0 -1 axleend2.dat
+  [1,16,-5.9954,-270.869,0,.9659,-.2588,0,.2588,.9659,0,0,0,-1, ldraw_lib__axleend2()],
 ];
 module ldraw_lib__30338(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30338(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

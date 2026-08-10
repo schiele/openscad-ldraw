@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring8.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/box3u8p.scad>
 use <../p/connhol2.scad>
 use <../p/npeghol2.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__44817() = [
 // 0 Constraction Weapon Spearhead with Fork Tip
 // 0 Name: 44817.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,12 +21,14 @@ function ldraw_lib__44817() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle, Guurahk, Rahkshi, Staff of Disintegration
+// 0 !KEYWORDS bionicle, Brickowl 175468, Guurahk, Kazi, Kopaka
+// 0 !KEYWORDS Matoran of Voya Nui, Pohatu, Rahkshi, Staff of Disintegration
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
-// 
+// 0 !HISTORY 2025-10-12 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 0 1 0 1 0 0 0 0 -1 connhol2.dat
   [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__connhol2()],
@@ -58,8 +60,8 @@ function ldraw_lib__44817() = [
   [1,16,0,-9,-5.5,0,0,-10,0,1,0,14.5,0,0, ldraw_lib__rect2p()],
 // 1 16 0 9 -5.5 0 0 10 0 -1 0 14.5 0 0 rect2p.dat
   [1,16,0,9,-5.5,0,0,10,0,-1,0,14.5,0,0, ldraw_lib__rect2p()],
-// 1 16 0 0 9 0 0 -1 -1 0 0 0 20 0 axle.dat
-  [1,16,0,0,9,0,0,-1,-1,0,0,0,20,0, ldraw_lib__axle()],
+// 1 16 0 0 9 1 0 0 0 0 1 0 -1 0 axleend20.dat
+  [1,16,0,0,9,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44817s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44817s01()],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\44817s01.dat

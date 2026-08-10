@@ -1,12 +1,12 @@
 use <../lib.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect2p.scad>
 use <s/41663s01.scad>
 function ldraw_lib__41663() = [
 // 0 Constraction Shield  5 x  5 with Dual Prongs
 // 0 Name: 41663.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,11 +14,12 @@ function ldraw_lib__41663() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle, Blasters
+// 0 !KEYWORDS bionicle, Blasters, Bohrok, Brickowl 551630, Nuhvok
 // 
 // 0 !HISTORY 2019-08-05 [Cheenzo] Removed editing relics
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-12-17 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41663s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41663s01()],
@@ -56,8 +57,8 @@ function ldraw_lib__41663() = [
   [4,16,20,-15,29,11,-12.5,20,-11,-12.5,20,-20,-15,29],
 // 4 16 -20 -8.7421 6.4715 -11 -12.5 20 11 -12.5 20 20 -8.7421 6.4715
   [4,16,-20,-8.7421,6.4715,-11,-12.5,20,11,-12.5,20,20,-8.7421,6.4715],
-// 1 16 0 0 0 -1 0 0 0 20 0 0 0 -1 axle.dat
-  [1,16,0,0,0,-1,0,0,0,20,0,0,0,-1, ldraw_lib__axle()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axleend20()],
 // 5 24 -1.5 -15.9691 20 1.5 -15.9691 20 1.5 -17.5294 28.064 -1.5 -14.1116 12.236
   [5,24,-1.5,-15.9691,20,1.5,-15.9691,20,1.5,-17.5294,28.064,-1.5,-14.1116,12.236],
 // 5 24 -20 -15 29 20 -15 29 -3.393 -15 45.7764 11 -12.5 20

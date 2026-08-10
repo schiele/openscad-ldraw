@@ -3,7 +3,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring8.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/axleho10.scad>
 use <../p/peghole.scad>
 use <s/44938s01.scad>
@@ -12,19 +12,21 @@ function ldraw_lib__44938() = [
 // 0 Constraction Shield  5 x  5 with Gear Tips
 // 0 Name: 44938.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle
+// 0 !CATEGORY Constraction Accessory
+// 0 !KEYWORDS bionicle, Bohrok-Kal, Brickowl 614199, Kohrak-Kal, Millennium Falcon
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-01-20 [OrionP] Update description
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-12-17 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 -20 40 9 0 0 0 0.5 0 0 0 9 4-4cylo.dat
   [1,16,0,-20,40,9,0,0,0,0.5,0,0,0,9, ldraw_lib__4_4cylo()],
@@ -42,8 +44,8 @@ function ldraw_lib__44938() = [
   [1,16,0,0,40,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
 // 1 16 0 0 40 10 0 0 0 -15.864 0 0 0 10 4-4cylo.dat
   [1,16,0,0,40,10,0,0,0,-15.864,0,0,0,10, ldraw_lib__4_4cylo()],
-// 1 16 0 0 0 1 0 0 0 20 0 0 0 1 axle.dat
-  [1,16,0,0,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axle()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axleend20()],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 axleho10.dat
   [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__axleho10()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44938s01.dat

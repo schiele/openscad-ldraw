@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__87846s01() = [
-// 0 ~Figure Tail  8 x  6 Curved 1/2
+// 0 ~Constraction Tail  8 x  6 Curved 1/2
 // 0 Name: s\87846s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__s__87846s01() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-04-18 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-08-16 [notmaster] changed description
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 3 16 0 100 -174.731 2.375 100 -174.095 0 96.75 -174.731
   [3,16,0,100,-174.731,2.375,100,-174.095,0,96.75,-174.731],

@@ -1,26 +1,32 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect1.scad>
 use <s/87846s01.scad>
 function ldraw_lib__87846() = [
-// 0 Figure Tail  8 x  6 Curved
+// 0 Constraction Tail  8 x  6 Curved
 // 0 Name: 87846.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Constraction
+// 0 !KEYWORDS animal, Ben 10, Bionicle 2016, bow, Brickowl 999500, Claw
+// 0 !KEYWORDS hero factory
+// 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-04-18 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 0 !HISTORY 2024-08-16 [notmaster] changed description and added keywords
+// 0 !HISTORY 2025-10-05 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
-// 
-// 1 16 0 0 0 1 0 0 0 0 -1 0 20 0 axle.dat
-  [1,16,0,0,0,1,0,0,0,0,-1,0,20,0, ldraw_lib__axle()],
+// 1 16 0 0 0 1 0 0 0 0 -1 0 -1 0 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,0,-1,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 0 120 -170 4 0 0 0 -20 0 0 0 4 4-4cylc.dat
   [1,16,0,120,-170,4,0,0,0,-20,0,0,0,4, ldraw_lib__4_4cylc()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87846s01.dat

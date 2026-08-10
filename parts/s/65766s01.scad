@@ -1,0 +1,41 @@
+use <../../lib.scad>
+use <../../p/3-8edge.scad>
+use <../../p/4-4cyli.scad>
+use <../../p/axlehol2.scad>
+use <../../p/axlehole.scad>
+use <23801s02.scad>
+function ldraw_lib__s__65766s01() = [
+// 0 ~Technic Steering Wheel Bearing with 2 Pegholes and 2 Axleholes Arms Half without Slots
+// 0 Name: s\65766s01.dat
+// 0 Author: Jens Brühl [jb70]
+// 0 !LDRAW_ORG Subpart UPDATE 2026-07
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\23801s02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23801s02()],
+// 1 16 40 10 0 1 0 0 0 20 0 0 0 1 axlehole.dat
+  [1,16,40,10,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axlehole()],
+// 1 16 40 10 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
+  [1,16,40,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+// 1 16 40 30 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
+  [1,16,40,30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+// 1 16 40 13 0 9 0 0 0 14 0 0 0 9 4-4cyli.dat
+  [1,16,40,13,0,9,0,0,0,14,0,0,0,9, ldraw_lib__4_4cyli()],
+// 1 16 40 27 0 0 0 -9 0 1 0 -9 0 0 3-8edge.dat
+  [1,16,40,27,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__3_8edge()],
+// 1 16 40 13 0 0 0 -9 0 1 0 -9 0 0 3-8edge.dat
+  [1,16,40,13,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__3_8edge()],
+// 2 24 31.5327 13 -2.6789 31.5327 27 -2.6789
+  [2,24,31.5327,13,-2.6789,31.5327,27,-2.6789],
+// 2 24 31 13 0 31 27 0
+  [2,24,31,13,0,31,27,0],
+];
+module ldraw_lib__s__65766s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__65766s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__65766s01(line=0.2);

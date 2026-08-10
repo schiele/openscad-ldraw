@@ -4,7 +4,7 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/beamhole.scad>
 use <../p/connhole.scad>
 use <../p/rect.scad>
@@ -15,18 +15,22 @@ function ldraw_lib__44033() = [
 // 0 Constraction Blade 12L Curved with  2 Pinholes and Axle
 // 0 Name: 44033.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Air Katana, bionicle, rotor, sword, Technic, Weapon
+// 0 !CATEGORY Constraction Accessory
+// 0 !KEYWORDS Air Katana, bionicle, Brickowl 258732, Lewa, rotor, sword, Technic
+// 0 !KEYWORDS Toa Nuva, Weapon
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2024-11-17 [MagFors] Update description
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2025-10-12 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\44033s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__44033s01()],
@@ -58,8 +62,8 @@ function ldraw_lib__44033() = [
   [4,16,8,-20,10,8,-9,10,-8,-9,10,-8,-20,10],
 // 4 16 4 -30 10 8 -20 10 -8 -20 10 -4 -30 10
   [4,16,4,-30,10,8,-20,10,-8,-20,10,-4,-30,10],
-// 1 16 0 0 10 1 0 0 0 0 1 0 20 0 axle.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,20,0, ldraw_lib__axle()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 axleend20.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 10 0 -20 0 1 0 9 0 0 0 0 -9 2-4edge.dat
   [1,16,10,0,-20,0,1,0,9,0,0,0,0,-9, ldraw_lib__2_4edge()],
 // 1 16 -10 0 -20 0 1 0 9 0 0 0 0 -9 2-4edge.dat

@@ -3,21 +3,23 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/box3u12.scad>
 function ldraw_lib__6142271o() = [
-// 0 Sticker  1.8 x  .8 with Black 4 on White Stripe on Blue Background
+// 0 Sticker  1.8 x  0.8 with Black 4 on White Stripe on Blue Background
 // 0 Name: 6142271o.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-02
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker
 // 0 !KEYWORDS Audi, Bricklink 75873stk01a, Brickowl 427960, LMS, R8
 // 0 !KEYWORDS Rebrickable 24755, Set 75873, Speed Champions, Ultra
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
-// 
+// 0 !HISTORY 2026-07-18 [MagFors] Update description
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 0 // Primitives
 // 1 16 6.5 0 16.5 0 0 1.5 0 -1 0 1.5 0 0 1-4chrd.dat

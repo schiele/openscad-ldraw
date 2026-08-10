@@ -14,7 +14,7 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__41816() = [
 // 0 ~Pneumatic Fire Hose Nozzle Handle with Bladder or Hose Attachment
 // 0 Name: 41816.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,10 +33,11 @@ function ldraw_lib__41816() = [
 // 0 !CATEGORY Technic
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
+// 0 !HISTORY 2025-10-11 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
-// 
-// 1 16 0 20 0 1 0 0 0 20 0 0 0 -1 axle.dat
-  [1,16,0,20,0,1,0,0,0,20,0,0,0,-1, ldraw_lib__axle()],
+// 1 16 0 20 0 1 0 0 0 -1 0 0 0 -1 axleend20.dat
+  [1,16,0,20,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axleend20()],
 // 1 16 0 20 0 10 0 0 0 -4 0 0 0 -10 4-4cylc.dat
   [1,16,0,20,0,10,0,0,0,-4,0,0,0,-10, ldraw_lib__4_4cylc()],
 // 1 16 0 16 0 10 0 0 0 1 0 0 0 -10 4-4disc.dat

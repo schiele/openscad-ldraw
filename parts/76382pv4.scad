@@ -7,19 +7,22 @@ function ldraw_lib__76382pv4() = [
 // 0 Minifig Torso with Arms and Hands with ST Bright Light Orange Starfleet Duty Uniform and Silver Klingon Baldrik Pattern
 // 0 Name: 76382pv4.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2026-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Minifig Upper
 // 0 !KEYWORDS Bricklink 973pb6405c01, Brickowl 174451, Brickset 76382, Icons
 // 0 !KEYWORDS Lieutenant Worf, Rebrickable 973c38h69pr0002, Set 10356, Star Trek
 // 0 !KEYWORDS The Next Generation, U.S.S. Enterprise NCC-1701-D
 // 
 // 0 !HISTORY 2026-03-31 [OrionP] Official Update 2026-03
 // 0 !HISTORY 2026-04-27 [OrionP] Official Update 2026-04
+// 0 !HISTORY 2026-07-07 [MagFors] Corrected parttype
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pv4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pv4()],

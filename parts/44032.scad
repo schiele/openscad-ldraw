@@ -5,7 +5,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylse.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/beamhole.scad>
 use <../p/connhole.scad>
 use <../p/rect1.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__44032() = [
 // 0 Constraction Skate
 // 0 Name: 44032.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2024-04
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,13 +24,16 @@ function ldraw_lib__44032() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle, Ice Blade, Kopaka, Toa Nuva, Weapon
+// 0 !KEYWORDS Agents, Alpha Team, bionicle, Brickowl 935160, Ice Blade, Kopaka
+// 0 !KEYWORDS Mission Deep Freeze, Toa Nuva, Weapon
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-12 [arezey] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-01-02 [MagFors] Moved more surfaces to the subfile
 // 0 !HISTORY 2024-04-30 [RainbowDolphin] Added a missing condline
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2025-10-12 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 -40 0 1 0 -1 0 0 0 0 1 connhole.dat
   [1,16,0,0,-40,0,1,0,-1,0,0,0,0,1, ldraw_lib__connhole()],
@@ -44,8 +47,8 @@ function ldraw_lib__44032() = [
   [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__2_4ndis()],
 // 1 16 -10 0 -40 0 20 0 9 0 0 0 0 -9 2-4cylo.dat
   [1,16,-10,0,-40,0,20,0,9,0,0,0,0,-9, ldraw_lib__2_4cylo()],
-// 1 16 0 0 30 0 0 1 -1 0 0 0 20 0 axle.dat
-  [1,16,0,0,30,0,0,1,-1,0,0,0,20,0, ldraw_lib__axle()],
+// 1 16 0 0 30 0 0 1 -1 0 0 0 -1 0 axleend20.dat
+  [1,16,0,0,30,0,0,1,-1,0,0,0,-1,0, ldraw_lib__axleend20()],
 // 1 16 0 9 -15 0 0 -10 0 -1 0 -25 0 0 rect2p.dat
   [1,16,0,9,-15,0,0,-10,0,-1,0,-25,0,0, ldraw_lib__rect2p()],
 // 1 16 0 -9 -15 10 0 0 0 1 0 0 0 25 rect3.dat

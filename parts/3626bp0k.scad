@@ -5,21 +5,24 @@ use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
 function ldraw_lib__3626bp0k() = [
-// 0 Minifig Head Glasses with Grey Moustache, Crosseyed Pattern
+// 0 Minifig Head with Glasses with Grey Moustache, Crosseyed Pattern
 // 0 Name: 3626bp0k.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626px55, Dr. Cyber, Freestyle, Rebrickable 3626bpr9982
-// 0 !KEYWORDS Set 1853, Set 4055, Set 4128, Set 4255, Set 6492, set 6493, set 6494
-// 0 !KEYWORDS Time Cruisers
+// 0 !CATEGORY Minifig Head
+// 0 !KEYWORDS BrickLink 3626px55, Brickowl 270924, Dr. Cyber, Freestyle
+// 0 !KEYWORDS Rebrickable 3626bpr9982, Set 1853, Set 4055, Set 4128, Set 4255
+// 0 !KEYWORDS Set 6492, set 6493, set 6494, Time Cruisers
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2026-06-29 [MagFors] Update description
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 0 // Base Part
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat

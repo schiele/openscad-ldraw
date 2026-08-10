@@ -5,9 +5,9 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring1.scad>
 use <../p/axleend.scad>
+use <../p/axleend2.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
-use <../p/axlehol9.scad>
 use <../p/box3u2p.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
@@ -17,17 +17,20 @@ function ldraw_lib__48083() = [
 // 0 ~Electric Motor Boat Back
 // 0 Name: 48083.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Electric
+// 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-10-01 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-12-19 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48083s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48083s01()],
@@ -215,18 +218,16 @@ function ldraw_lib__48083() = [
   [1,16,-2.79,-60,29.5,-0.79,0,0,0,1,0,0,0,-1.5, ldraw_lib__rect1()],
 // 1 16 0 -58 -8 0 0 -1 -1 0 0 0 36 0 axlehol8.dat
   [1,16,0,-58,-8,0,0,-1,-1,0,0,0,36,0, ldraw_lib__axlehol8()],
-// 1 16 0 -58 31 0 0 -1 -1 0 0 0 9 0 axlehol8.dat
-  [1,16,0,-58,31,0,0,-1,-1,0,0,0,9,0, ldraw_lib__axlehol8()],
-// 1 16 0 -58 -20 0 0 -1 -1 0 0 0 9 0 axlehol8.dat
-  [1,16,0,-58,-20,0,0,-1,-1,0,0,0,9,0, ldraw_lib__axlehol8()],
-// 1 16 0 -58 -20 0 0 -1 -1 0 0 0 1 0 axleend.dat
-  [1,16,0,-58,-20,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axleend()],
+// 1 16 0 -58 31 0 0 -1 -1 0 0 0 6.5 0 axlehol8.dat
+  [1,16,0,-58,31,0,0,-1,-1,0,0,0,6.5,0, ldraw_lib__axlehol8()],
+// 1 16 0 -58 -17.5 0 0 -1 -1 0 0 0 6.5 0 axlehol8.dat
+  [1,16,0,-58,-17.5,0,0,-1,-1,0,0,0,6.5,0, ldraw_lib__axlehol8()],
+// 1 16 0 -58 -20 0 0 -1 -1 0 0 0 1 0 axleend2.dat
+  [1,16,0,-58,-20,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axleend2()],
 // 1 16 0 -58 -8 0 0 -1 -1 0 0 0 1 0 axleend.dat
   [1,16,0,-58,-8,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axleend()],
 // 1 16 0 -58 31 0 0 -1 -1 0 0 0 1 0 axleend.dat
   [1,16,0,-58,31,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axleend()],
-// 1 16 0 -58 -20 0 0 -1 -1 0 0 0 1 0 axlehol2.dat
-  [1,16,0,-58,-20,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol2()],
 // 1 16 0 -58 -11 0 0 -1 -1 0 0 0 1 0 axlehol2.dat
   [1,16,0,-58,-11,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol2()],
 // 1 16 0 -58 -8 0 0 -1 -1 0 0 0 1 0 axlehol2.dat
@@ -235,18 +236,12 @@ function ldraw_lib__48083() = [
   [1,16,0,-58,28,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol2()],
 // 1 16 0 -58 31 0 0 -1 -1 0 0 0 1 0 axlehol2.dat
   [1,16,0,-58,31,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol2()],
-// 1 16 0 -58 -20 0 0 -1 -1 0 0 0 1 0 axlehol9.dat
-  [1,16,0,-58,-20,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol9()],
-// 1 16 0 -58 40 0 0 -1 -1 0 0 0 -1 0 axleend.dat
-  [1,16,0,-58,40,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__axleend()],
+// 1 16 0 -58 40 0 0 -1 -1 0 0 0 -1 0 axleend2.dat
+  [1,16,0,-58,40,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__axleend2()],
 // 1 16 0 -58 28 0 0 -1 -1 0 0 0 -1 0 axleend.dat
   [1,16,0,-58,28,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__axleend()],
 // 1 16 0 -58 -11 0 0 -1 -1 0 0 0 -1 0 axleend.dat
   [1,16,0,-58,-11,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__axleend()],
-// 1 16 0 -58 40 0 0 -1 -1 0 0 0 1 0 axlehol2.dat
-  [1,16,0,-58,40,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol2()],
-// 1 16 0 -58 40 0 0 -1 -1 0 0 0 1 0 axlehol9.dat
-  [1,16,0,-58,40,0,0,-1,-1,0,0,0,1,0, ldraw_lib__axlehol9()],
 // 2 24 -2 -63.58 -11 -2 -61.58 -11
   [2,24,-2,-63.58,-11,-2,-61.58,-11],
 // 2 24 -2 -61.58 -8 -2 -63.58 -8

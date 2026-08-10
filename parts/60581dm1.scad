@@ -5,7 +5,7 @@ function ldraw_lib__60581dm1() = [
 // 0 Panel  1 x  4 x  3 Reinforced with Books, Cobweb, Stones and Arrow Left Sticker
 // 0 Name: 60581dm1.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,13 +17,13 @@ function ldraw_lib__60581dm1() = [
 // 
 // 0 !CMDLINE -c70
 // 
-// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
-// 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-05-25 [PTadmin] Update description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2026-07-30 [OrionP] Minor header edits
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 60581.dat

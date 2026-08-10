@@ -4,10 +4,10 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/box4-7a.scad>
 function ldraw_lib__s__4707s01() = [
-// 0 ~Electric Switch: Front with 1 Twin Plug Socket
+// 0 ~Electric Switch: Front with 1 Twin Plug Socket (Obsolete)
 // 0 Name: s\4707s01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__4707s01() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-01-26 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-09-30 [MagFors] Obsoleted due to complete rework
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 4 16 -40 -8 0 -40 15 0 -80 15 0 -80 -8 0
   [4,16,-40,-8,0,-40,15,0,-80,15,0,-80,-8,0],

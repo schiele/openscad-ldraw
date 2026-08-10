@@ -1,25 +1,30 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <s/15107s01.scad>
 function ldraw_lib__15107() = [
 // 0 Animal Leg Segmented with Axle and Bar  1L on Tip
 // 0 Name: 15107.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Animal
+// 0 !KEYWORDS Brickowl 563951
+// 
 // 0 !HISTORY 2014-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-02-03 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 0 !HISTORY 2025-10-04 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
-// 
-// 1 16 0 0 0 -1 0 0 0 20 0 0 0 -1 axle.dat
-  [1,16,0,0,0,-1,0,0,0,20,0,0,0,-1, ldraw_lib__axle()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 axleend20.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__axleend20()],
 // 1 16 0 -170 -120 -4 0 0 0 0 -4 0 20 0 4-4cylc.dat
   [1,16,0,-170,-120,-4,0,0,0,0,-4,0,20,0, ldraw_lib__4_4cylc()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15107s01.dat

@@ -2,7 +2,10 @@ use <../lib.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
-use <../p/axle.scad>
+use <../p/axleend2.scad>
+use <../p/axlehol2.scad>
+use <../p/axlehol8.scad>
+use <../p/axlehol9.scad>
 use <../p/box2-7.scad>
 use <../p/box3u2p.scad>
 use <../p/box3u5p.scad>
@@ -12,17 +15,27 @@ function ldraw_lib__61280() = [
 // 0 ~Technic Competition Cannon Trigger Short
 // 0 Name: 61280.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !CATEGORY Technic
 // 
-// 1 16 0 -48 3 1 0 0 0 18 0 0 0 1 axle.dat
-  [1,16,0,-48,3,1,0,0,0,18,0,0,0,1, ldraw_lib__axle()],
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2025-10-05 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
+// 
+// 1 16 0 -48 3 1 0 0 0 1 0 0 0 1 axleend2.dat
+  [1,16,0,-48,3,1,0,0,0,1,0,0,0,1, ldraw_lib__axleend2()],
+// 1 16 0 -30 3 1 0 0 0 1 0 0 0 1 axlehol2.dat
+  [1,16,0,-30,3,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+// 1 16 0 -30 3 1 0 0 0 1 0 0 0 1 axlehol9.dat
+  [1,16,0,-30,3,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol9()],
+// 1 16 0 -30 3 1 0 0 0 -15.5 0 0 0 1 axlehol8.dat
+  [1,16,0,-30,3,1,0,0,0,-15.5,0,0,0,1, ldraw_lib__axlehol8()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32075s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32075s01()],
 // 

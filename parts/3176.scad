@@ -1,16 +1,19 @@
 use <../lib.scad>
 use <48995.scad>
-use <../p/stug2.scad>
+use <../p/stug-2x2.scad>
 function ldraw_lib__3176() = [
 // 0 Plate  3 x  2 with Hole
 // 0 Name: 3176.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Plate
+// 0 !KEYWORDS Brickowl 796492
 // 
 // 0 !HISTORY 2007-06-24 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
@@ -21,12 +24,13 @@ function ldraw_lib__3176() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2026-04-17 [KnightOfTarenta] Replaced ~Moved to Primitive
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48995.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48995()],
-// 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug2()],
-// 0
+// 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x2.dat
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2()],
 ];
 module ldraw_lib__3176(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3176(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

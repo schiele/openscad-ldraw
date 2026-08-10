@@ -1,0 +1,34 @@
+use <../lib.scad>
+use <s/20606s01.scad>
+use <s/20606s02.scad>
+use <s/20606s03.scad>
+function ldraw_lib__20606p06() = [
+// 0 Minifig Hair Mid-Length Scraggly with Dual Mould Blue Floppy Witch Hat
+// 0 Name: 20606p06.dat
+// 0 Author: Lisa Winter [LisaWinter]
+// 0 !LDRAW_ORG Part UPDATE 2026-07
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BAM, Bricklink 20606pb06, Brickowl 907908, Build-A-Minifigure
+// 0 !KEYWORDS Colour Combination, Rebrickable 20606pr0004
+// 
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
+// 
+// 0 // Hat
+// 1 1 0 0 0 1 0 0 0 1 0 0 0 1 s\20606s01.dat
+  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20606s01()],
+// 0 // Hair
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20606s02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20606s02()],
+// 0 // Patternable area
+// 1 1 0 0 0 1 0 0 0 1 0 0 0 1 s\20606s03.dat
+  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20606s03()],
+];
+module ldraw_lib__20606p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__20606p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__20606p06(line=0.2);

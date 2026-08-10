@@ -2,19 +2,22 @@ use <../lib.scad>
 use <s/1006030s01.scad>
 use <s/1006030s03.scad>
 function ldraw_lib__1006030p02() = [
-// 0 Figure Friends Girl with Bright Light Yellow Tank Top over Medium Lavender Sleeveless Shirt, Black and Coral Panels and Music Note Necklace Pattern
+// 0 Figure Friends Girl Torso with Bright Light Yellow Tank Top over Medium Lavender Sleeveless Shirt, Black and Coral Panels and Music Note Necklace Pattern
 // 0 Name: 1006030p02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-08
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Figure
 // 0 !KEYWORDS Bricklink FTGpb451c01, Paisley, set 42615, Set 42620, Set 42639
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2026-07-12 [MagFors] Update description
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\1006030s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1006030s01()],

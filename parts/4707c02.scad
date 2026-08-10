@@ -1,29 +1,23 @@
 use <../lib.scad>
-use <4707.scad>
-use <u9001p04.scad>
-use <u9002p04.scad>
+use <4707bc02.scad>
 function ldraw_lib__4707c02() = [
-// 0 Electric Switch: Remote Control for Train Decoupler
+// 0 ~Moved to 4707bc02
 // 0 Name: 4707c02.dat
-// 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2011-01
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4707pb03
+// 0 !CATEGORY Moved
 // 
-// 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
-// 
-// 1 16 0 8 0 1 0 0 0 1 0 0 0 1 4707.dat
-  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4707()],
-// 1 16 -40 31 60 1 0 0 0 1 0 0 0 1 u9001p04.dat
-  [1,16,-40,31,60,1,0,0,0,1,0,0,0,1, ldraw_lib__u9001p04()],
-// 1 16 40 31 60 1 0 0 0 1 0 0 0 1 u9002p04.dat
-  [1,16,40,31,60,1,0,0,0,1,0,0,0,1, ldraw_lib__u9002p04()],
+// 0 // Electric Switch: Remote Control for Train Decoupler
+// 1 16 0 8 0 1 0 0 0 1 0 0 0 1 4707bc02.dat
+  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4707bc02()],
 ];
 module ldraw_lib__4707c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__4707c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

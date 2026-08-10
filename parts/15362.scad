@@ -4,13 +4,16 @@ use <../p/4-4cylc3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/axle.scad>
+use <../p/axleend2.scad>
+use <../p/axlehol2.scad>
+use <../p/axlehol8.scad>
+use <../p/axlehol9.scad>
 use <s/15362s01.scad>
 function ldraw_lib__15362() = [
 // 0 Claw  6.4L with Axle
 // 0 Name: 15362.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,12 +21,13 @@ function ldraw_lib__15362() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction
-// 0 !KEYWORDS Blade
+// 0 !KEYWORDS Blade, Brickowl 494761
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-11-15 [MMR1988] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-10-11 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15362s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15362s01()],
@@ -56,8 +60,16 @@ function ldraw_lib__15362() = [
   [1,16,0,-26.9,10.95,0,0,-5.25,0,-1.3,0,5.25,0,0, ldraw_lib__4_4cylc3()],
 // 1 16 0 -26.9 10.95 0 0 -5.25 0 1 0 5.25 0 0 4-4edge.dat
   [1,16,0,-26.9,10.95,0,0,-5.25,0,1,0,5.25,0,0, ldraw_lib__4_4edge()],
-// 1 16 0 -22 0 0 0 -1 0 22 0 1 0 0 axle.dat
-  [1,16,0,-22,0,0,0,-1,0,22,0,1,0,0, ldraw_lib__axle()],
+// 
+// 1 16 0 -22 0 0 0 -1 0 -1 0 1 0 0 axlehol2.dat
+  [1,16,0,-22,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__axlehol2()],
+// 1 16 0 -22 0 0 0 -1 0 -1 0 1 0 0 axlehol9.dat
+  [1,16,0,-22,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__axlehol9()],
+// 1 16 0 -22 0 0 0 -1 0 19.5 0 1 0 0 axlehol8.dat
+  [1,16,0,-22,0,0,0,-1,0,19.5,0,1,0,0, ldraw_lib__axlehol8()],
+// 1 16 0 0 0 0 0 -1 0 -1 0 1 0 0 axleend2.dat
+  [1,16,0,0,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__axleend2()],
+// 
 // 1 16 0 -8.5 -33.6 0 0 -3.15 0 -12 0 3.15 0 0 4-4cyli.dat
   [1,16,0,-8.5,-33.6,0,0,-3.15,0,-12,0,3.15,0,0, ldraw_lib__4_4cyli()],
 // 1 16 0 -8.5 -33.6 0 0 -3.15 0 1 0 3.15 0 0 4-4edge.dat

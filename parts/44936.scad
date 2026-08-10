@@ -1,11 +1,11 @@
 use <../lib.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <s/44936s01.scad>
 function ldraw_lib__44936() = [
 // 0 Constraction Shield  5 x  5 with Wrench with Teeth
 // 0 Name: 44936.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,17 +13,19 @@ function ldraw_lib__44936() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle
+// 0 !KEYWORDS bionicle, Bohrok-Kal, Brickowl 109531, Claw, Lehvak-Kal
 // 
 // 0 !HISTORY 2024-05-17 [Holly-Wood] Added edges, sanded mesh, closed gaps, fixed overlap, unificator, regenerated conds, fixed T-junk
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2025-12-17 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44936s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44936s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\44936s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__44936s01()],
-// 1 16 0 0 0 1 0 0 0 20 0 0 0 1 axle.dat
-  [1,16,0,0,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axle()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 axleend20.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axleend20()],
 // 
 // 2 24 -5 -11.5 -8 5 -11.5 -8
   [2,24,-5,-11.5,-8,5,-11.5,-8],

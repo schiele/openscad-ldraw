@@ -4,7 +4,7 @@ use <../p/4-4ndis.scad>
 use <../p/8/2-4cyli.scad>
 use <../p/8/2-4edge.scad>
 use <../p/8/4-8sphe.scad>
-use <../p/axle.scad>
+use <../p/axleend20.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
@@ -12,28 +12,28 @@ function ldraw_lib__41812() = [
 // 0 Projectile Launcher  4 x  2 x  1 with Bottom Axle
 // 0 Name: 41812.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2026-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 !HELP Uncomment next lines for ready to shoot assembly
+// 0 !HELP Complete code for ready to shoot assembly
+// 0 !HELP 1 71 0 -4 19 1 0 0 0 1 0 0 0 1 98138.dat
+// 0 !HELP 1 71 0 -4 -1 1 0 0 0 1 0 0 0 1 98138.dat
+// 0 !HELP 1 71 0 -4 -21 1 0 0 0 1 0 0 0 1 98138.dat
+// 0 !HELP 1 72 0 0 69 0 0 1 0 1 0 -1 0 0 87083.dat
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
-// 0 !KEYWORDS Shooter, tile
+// 0 !KEYWORDS Brickowl 953710, Shooter, tile
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
+// 0 !HISTORY 2025-10-11 [MagFors] Shaped axleend
+// 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
 // 
-// 
-// 0 // 1 71 0 -4 19 1 0 0 0 1 0 0 0 1 98138.dat
-// 0 // 1 71 0 -4 -1 1 0 0 0 1 0 0 0 1 98138.dat
-// 0 // 1 71 0 -4 -21 1 0 0 0 1 0 0 0 1 98138.dat
-// 0 // 1 72 0 0 69 0 0 1 0 1 0 -1 0 0 87083.dat
-// 
-// 1 16 0 10 0 1 0 0 0 20 0 0 0 1 axle.dat
-  [1,16,0,10,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axle()],
+// 1 16 0 10 0 1 0 0 0 -1 0 0 0 -1 axleend20.dat
+  [1,16,0,10,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axleend20()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 31 6 0 0 0 0 6 0 6 0 4-4cylo.dat
