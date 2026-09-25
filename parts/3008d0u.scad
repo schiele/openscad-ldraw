@@ -2,10 +2,10 @@ use <../lib.scad>
 use <3008.scad>
 use <6152075d.scad>
 function ldraw_lib__3008d0u() = [
-// 0 Brick  1 x  8 with with "THE BRICK SEPARATOR" Movie Poster Sticker
+// 0 Brick  1 x  8 with "THE BRICK SEPARATOR" Movie Poster Sticker
 // 0 Name: 3008d0u.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-08
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__3008d0u() = [
 // 0 !KEYWORDS Bricklink 3008pb147R, London Mini Bus, Set 40220
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2026-08-25 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3008.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3008()],

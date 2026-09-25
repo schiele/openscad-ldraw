@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__logo_epson_text_box() = [
-// 0 Logo Epson Text
+// 0 Logo Epson Outer Box
 // 0 Name: logo-epson-text-box.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Primitive UPDATE 2026-07
+// 0 !LDRAW_ORG Primitive UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 45.565; Z = 10
@@ -14,6 +14,8 @@ function ldraw_lib__logo_epson_text_box() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2026-07-30 [OrionP] Official Update 2026-07
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
+// 0 !HISTORY 2027-08-01 [Holly-Wood] Sanded description
 // 
 // 0 // Outerbox
 // 4 16 .0418 0 -2.1967 -.2092 0 -1.5691 -.6276 0 -3.159 -.1464 0 -2.8033

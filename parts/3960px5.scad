@@ -2,21 +2,25 @@ use <../lib.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
 function ldraw_lib__3960px5() = [
-// 0 Dish 4 x  4 Inverted with Two Minions in Washing Machine Pattern
+// 0 Dish  4 x  4 Inverted with Two Minions in Washing Machine Pattern
 // 0 Name: 3960px5.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb067, Gru, Rebrickable 3960pr0047, Set 75546
+// 0 !CATEGORY Dish
+// 0 !KEYWORDS Bricklink 3960pb067, Brickowl 955064, Brickset 68355, Gru
+// 0 !KEYWORDS Rebrickable 3960pr0047, Set 75546
 // 
 // 0 !CMDLINE -c71
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-08-26 [Cheenzo] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],

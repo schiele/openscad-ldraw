@@ -2,10 +2,10 @@ use <../lib.scad>
 use <3678a.scad>
 use <4159998c.scad>
 function ldraw_lib__3678ad01() = [
-// 0 Slope Brick 65  2 x  2 x  2 without Centre Tube with Sticker Silver Frame and Rivets on Black Background
+// 0 Slope Brick 65  2 x  2 x  2 without Centre Tube with Silver Frame and Rivets on Black Background Sticker
 // 0 Name: 3678ad01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__3678ad01() = [
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
-// 
+// 0 !HISTORY 2026-04-28 [Sirio] Changed description: moved "Sticker" to end
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3678a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3678a()],

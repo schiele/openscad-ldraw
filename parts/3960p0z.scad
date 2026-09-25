@@ -3,22 +3,25 @@ use <s/3960p0zs01.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
 function ldraw_lib__3960p0z() = [
-// 0 Dish 4 x 4 Inverted with Dark Pink Star Shaped Eyes, Medium Lavender Stripes and Dark Purple Closed Mouth with Tooth Pattern
+// 0 Dish  4 x  4 Inverted with Dark Pink Star Shaped Eyes, Medium Lavender Stripes and Dark Purple Closed Mouth with Tooth Pattern
 // 0 Name: 3960p0z.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3960pb078, Cat, Gabby's Dollhouse, Rebrickable 3960pr9969
-// 0 !KEYWORDS Set 10797
+// 0 !CATEGORY Dish
+// 0 !KEYWORDS BrickLink 3960pb078, Brickowl 775027, Brickset 110058, Cat
+// 0 !KEYWORDS Gabby's Dollhouse, Rebrickable 3960pr9969, Set 10797
 // 
 // 0 !CMDLINE -c31
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-08-26 [Cheenzo] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],

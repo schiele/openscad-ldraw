@@ -2,20 +2,23 @@ use <../lib.scad>
 use <1015152.scad>
 use <1023000p03.scad>
 function ldraw_lib__2241p03() = [
-// 0 Figure Friends Hip And Legs with Short Skirt with Medium Nougat Legs and Gold Ankle and Foot Strap Sandals Pattern
+// 0 Figure Friends Hips and Legs with Short Skirt with Medium Nougat Legs and Gold Ankle and Foot Strap Sandals Pattern
 // 0 Name: 2241p03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-08
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adi, Bricklink 35216ac00pb009, Rebrickable 2241c01pr0018, set 41732
-// 0 !KEYWORDS Set 41757
+// 0 !CATEGORY Figure
+// 0 !KEYWORDS Adi, Bricklink 35216ac00pb009, Brickowl 1391003, Brickset 2241
+// 0 !KEYWORDS Rebrickable 2241c01pr0018, set 41732, Set 41757
 // 
 // 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
+// 0 !HISTORY 2026-07-12 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1023000p03.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1023000p03()],

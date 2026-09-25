@@ -2,20 +2,23 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 function ldraw_lib__6337749j() = [
-// 0 Sticker  1.0 x  1.8 with with "C.R." and Wood Grain Background
+// 0 Sticker  1.0 x  1.8 with "C.R." and Wood Grain Background
 // 0 Name: 6337749j.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 21326, Winnie the Pooh
+// 0 !CATEGORY Sticker
+// 0 !KEYWORDS Bricklink 21326stk01, Brickowl 377100, Rebrickable 77398, Set 21326
+// 0 !KEYWORDS Winnie the Pooh
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2026-08-25 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 84 -15.5 -.25 8 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
   [1,84,-15.5,-.25,8,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],

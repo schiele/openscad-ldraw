@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__6218812us05() = [
-// 0 ~Sticker  0.8 x  1.9 with Light Blue and White Triangles on Blue Background Right - Fifth Face
+// 0 ~Sticker  0.8 x  1.7 with Light Blue and White Triangles on Blue Background Right - Fifth Face
 // 0 Name: s\6218812us05.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-07
+// 0 !LDRAW_ORG Subpart UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__6218812us05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-05-17 [Sirio] Changed descritpion
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 0 // Faces
 // 0 // Blue faces

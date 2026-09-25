@@ -5,19 +5,22 @@ use <s/1023035s03.scad>
 use <s/25727p05s01.scad>
 use <s/25727p05s02.scad>
 function ldraw_lib__1023035p04() = [
-// 0 Figure Friends with Cargo Pants with Medium Tan Legs and Dark Blue V-Shaped Straps Sandals Pattern
+// 0 Figure Friends Legs with Cargo Pants with Medium Tan Legs and Dark Blue V-Shaped Straps Sandals Pattern
 // 0 Name: 1023035p04.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Figure
 // 0 !KEYWORDS Bricklink 35216bc00pb002, Koa, Rebrickable 2268c01pr0009, Set 41710
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-07-12 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\1023035s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s02()],

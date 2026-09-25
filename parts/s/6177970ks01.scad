@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__6177970ks01() = [
-// 0 ~Sticker  0.8 x  2.8 with with 6 Black Trapezoid inside 2 Black Lines on Red Background - One Trapezoid
+// 0 ~Sticker  0.8 x  2.8 with 6 Black Trapezoid inside 2 Black Lines on Red Background - One Trapezoid
 // 0 Name: s\6177970ks01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-09
+// 0 !LDRAW_ORG Subpart UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__6177970ks01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
-// 
+// 0 !HISTORY 2026-08-25 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 0 // Faces
 // 0 // Black faces

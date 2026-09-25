@@ -4,14 +4,14 @@ function ldraw_lib__4215a() = [
 // 0 Panel  1 x  4 x  3
 // 0 Name: 4215a.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 0 !CATEGORY Panel
 // 
 // 0 !HISTORY 2001-12-02 [bbroich] Replaced non-decorated portion with reference to s\4215s01.dat
 // 0 !HISTORY 2002-06-25 [cwdee] Corrected header and added final 0
@@ -20,6 +20,8 @@ function ldraw_lib__4215a() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [DeannaEarley] BFCd (2005-03-02)
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
+// 0 !HISTORY 2026-08-31 [OrionP] Minor header edits
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4215as01.dat

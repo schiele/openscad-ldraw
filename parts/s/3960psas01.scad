@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__3960psas01() = [
-// 0 ~Dish 4 x  4 Inverted with with SW TIE Hatch Black and Dark Bluish Grey Pattern - Half
+// 0 ~Dish  4 x  4 Inverted with SW TIE Hatch Black and Dark Bluish Grey Pattern - Half
 // 0 Name: s\3960psas01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-05
+// 0 !LDRAW_ORG Subpart UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__3960psas01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
+// 0 !HISTORY 2026-08-26 [Cheenzo] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 4 0 -18.8 1.49385 2.47468 -18.8 1.46667 0 -10 0 0 -10 .01446 1.31632
   [4,0,-18.8,1.49385,2.47468,-18.8,1.46667,0,-10,0,0,-10,.01446,1.31632],

@@ -1,29 +1,24 @@
 use <../lib.scad>
-use <3278.scad>
-use <3496.scad>
+use <9044ap02.scad>
 function ldraw_lib__3496c02() = [
-// 0 Tap  1 x  2 with Chrome Spout
+// 0 ~Moved to 9044ap02
 // 0 Name: 3496c02.dat
-// 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2025-09
+// 0 Author: Vincent Messenet [Cheenzo]
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bathroom, Belville, BrickLink 69c02, faucet, Kitchen, minifig
-// 0 !KEYWORDS Rebrickable 69c02, sink, spigot, town
+// 0 !CATEGORY Moved
 // 
-// 0 !HISTORY 2016-09-22 [Holly-Wood] Moved origin of 3278.dat
-// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 0 !HISTORY 2025-09-27 [OrionP] Changed winding to CCW
-// 0 !HISTORY 2025-09-29 [OrionP] Official Update 2025-09
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3496.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3496()],
-// 1 383 0 0 0 1 0 0 0 1 0 0 0 1 3278.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3278()],
+// 0 // Tap 1 x 2 with Chrome Spout
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 9044ap02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__9044ap02()],
 ];
 module ldraw_lib__3496c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3496c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

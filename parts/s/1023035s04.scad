@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__1023035s04() = [
-// 0 ~Figure Friends Foot for Legs with with Thin Hinge
+// 0 ~Figure Friends Foot for Legs with Thin Hinge
 // 0 Name: s\1023035s04.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-07
+// 0 !LDRAW_ORG Subpart UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__1023035s04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-08-25 [MagFors] Update description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 3 16 -2.6 -11.2 -.1 -4.8 -13.8 1.1 -5.1 -10.7 .3
   [3,16,-2.6,-11.2,-.1,-4.8,-13.8,1.1,-5.1,-10.7,.3],

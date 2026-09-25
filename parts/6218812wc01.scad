@@ -1,20 +1,24 @@
 use <../lib.scad>
 use <6218812uc01.scad>
 function ldraw_lib__6218812wc01() = [
-// 0 Sticker  0.8 x  1.9 with Light Blue Triangles on Blue Background Left (Formed)
+// 0 Sticker  0.8 x  1.7 with Light Blue Triangles on Blue Background Left (Formed)
 // 0 Name: 6218812wc01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2, 2017, Fiesta, Ford, M-Sport, Martin Järveoja, Ott Tänak
-// 0 !KEYWORDS Set 75885, Speed Champions, WRC
+// 0 !CATEGORY Sticker
+// 0 !KEYWORDS 2, 2017, BrickLink 75885stk01, Brickowl 4802, Fiesta, Ford, M-Sport
+// 0 !KEYWORDS Martin Järveoja, Ott Tänak, Rebrickable 37575, Set 75885
+// 0 !KEYWORDS Speed Champions, WRC
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-05-17 [Sirio] Changed description
+// 0 !HISTORY 2026-08-31 [OrionP] Official Update 2026-08
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6218812uc01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6218812uc01()],
