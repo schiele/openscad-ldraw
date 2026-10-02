@@ -3,7 +3,7 @@ function ldraw_lib__logo_ford_mustang_outerbox() = [
 // 0 Logo Ford Mustang Outerbox
 // 0 Name: logo-ford-mustang-outerbox.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Unofficial_Primitive
+// 0 !LDRAW_ORG Primitive UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 6.818; Z = 2.525
@@ -11,6 +11,8 @@ function ldraw_lib__logo_ford_mustang_outerbox() = [
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 0 // Faces
 // 3 16 -3.409 0 1.2625 -1.1348 0 1.2553 3.409 0 1.2625
@@ -621,6 +623,8 @@ function ldraw_lib__logo_ford_mustang_outerbox() = [
   [4,16,-.313,0,-1.2442,-.3306,0,-1.2422,-.6803,0,-1.207,-.6961,0,-1.2131],
 // 4 16 -.313 0 -1.2442 -.6961 0 -1.2131 -.7371 0 -1.2159 -.8608 0 -1.2387
   [4,16,-.313,0,-1.2442,-.6961,0,-1.2131,-.7371,0,-1.2159,-.8608,0,-1.2387],
+// 4 16 -.8608 0 -1.2387 -.2472 0 -1.2475 -.2835 0 -1.2446 -.313 0 -1.2442
+  [4,16,-.8608,0,-1.2387,-.2472,0,-1.2475,-.2835,0,-1.2446,-.313,0,-1.2442],
 // 3 16 -1.2165 0 -1.2388 -3.409 0 -1.2625 -1.1999 0 -1.2501
   [3,16,-1.2165,0,-1.2388,-3.409,0,-1.2625,-1.1999,0,-1.2501],
 // 3 16 -1.1999 0 -1.2501 -3.409 0 -1.2625 -1.1884 0 -1.253

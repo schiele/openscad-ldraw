@@ -5,7 +5,7 @@ function ldraw_lib__64391d01() = [
 // 0 Technic Panel Fairing Smooth #4 (Medium) with EV3 Sticker #2
 // 0 Name: 64391d01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,9 +14,13 @@ function ldraw_lib__64391d01() = [
 // 
 // 0 !CATEGORY Sticker Shortcut
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2026-09-30 [OrionP] Minor header edits
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 64391.dat

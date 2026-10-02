@@ -6,7 +6,7 @@ function ldraw_lib__60477dy0() = [
 // 0 Slope Brick 18  4 x  1 with Black Trapezoid on Blue Background Left Sticker
 // 0 Name: 60477dy0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,11 @@ function ldraw_lib__60477dy0() = [
 // 0 !KEYWORDS Bricklink 60477pb006L, Brickowl 283183, Ford, GT, Mustang, Set 75871
 // 0 !KEYWORDS Speed Champions
 // 
+// 0 !PREVIEW 16 0 0 0 0 0 -1 0 1 0 1 0 0
+// 
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-09-30 [OrionP] Minor header edits
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 60477.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__60477()],

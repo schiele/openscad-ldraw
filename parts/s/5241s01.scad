@@ -7,12 +7,14 @@ function ldraw_lib__s__5241s01() = [
 // 0 ~Windscreen  6 x  4 x  1.667 Wedge Angled without Patternable Surfaces
 // 0 Name: s\5241s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Unofficial_Subpart
+// 0 !LDRAW_ORG Subpart UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\5241s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__5241s02()],

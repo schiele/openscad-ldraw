@@ -6,21 +6,24 @@ use <s/28621s01.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
 function ldraw_lib__28621p16() = [
-// 0 Minifig Head with Black Eyebrows Thick Moustache and Round Glasses Pattern
+// 0 Minifig Head with Black Eyebrows, Thick Moustache and Round Glasses Pattern
 // 0 Name: 28621p16.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2026-05
+// 0 !LDRAW_ORG Part UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Minifig Head
 // 0 !KEYWORDS Bricklink 3626pb4127, Brickowl 511041, Brickset 116265, Moon Rocket
 // 0 !KEYWORDS Professeur Tryphon Tournesol, Professor Cuthbert Calculus
 // 0 !KEYWORDS Rebrickable 28621pr0063, Set 21367, Tintin
 // 
 // 0 !HISTORY 2026-05-31 [OrionP] Official Update 2026-05
+// 0 !HISTORY 2026-07-02 [Holly-Wood] Sanded description
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28621s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28621s01()],

@@ -12,21 +12,24 @@ use <../p/box2-7.scad>
 use <../p/rect.scad>
 use <../p/stud.scad>
 function ldraw_lib__85080() = [
-// 0 Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside
+// 0 Brick  2 x  2 Corner Round with Stud Notch and Reinforced Underside
 // 0 Name: 85080.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS macaroni
+// 0 !CATEGORY Brick
+// 0 !KEYWORDS Brickowl 406167, macaroni
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2026-09-13 [MagFors] Update description
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 0 // outside
 // 

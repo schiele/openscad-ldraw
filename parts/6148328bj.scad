@@ -1,26 +1,33 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
-use <../p/1-4cyli.scad>
-use <../p/box3u12.scad>
 use <../p/logo-mobil1-number-box.scad>
 use <../p/logo-mobil1-number.scad>
 use <../p/logo-mobil1-text-box.scad>
 use <../p/logo-mobil1-text.scad>
+use <s/stickerback008x008.scad>
 function ldraw_lib__6148328bj() = [
-// 0 Sticker  0.8 x  0.8 with White Mobil1 Logo on Black Background
+// 0 Sticker  0.8 x  0.8 with White Mobil 1 Logo on Black Background
 // 0 Name: 6148328bj.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2025-03
+// 0 !LDRAW_ORG Part UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 919, Bricklink 75876stk01, Brickowl 852010, Hybrid, Pit Lane
+// 0 !CATEGORY Sticker
+// 0 !KEYWORDS 919, Bricklink 75876stk01, Brickowl 333459, Hybrid, Pit Lane
 // 0 !KEYWORDS Porsche, Rebrickable 26357, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2026-05-27 [MagFors] Update description
+// 0 !HISTORY 2026-05-29 [KnightOfTarenta] Added Stickerback
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
+// 
+// 0 // Sticker Back
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\stickerback008x008.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__stickerback008x008()],
 // 
 // 0 // Logo primitive
 // 1 15 0 -.25 0 3.5 0 0 0 1 0 0 0 3.5 logo-mobil1-text.dat
@@ -32,24 +39,6 @@ function ldraw_lib__6148328bj() = [
 // 1 0 0 -.25 0 3.5 0 0 0 1 0 0 0 3.5 logo-mobil1-number-box.dat
   [1,0,0,-.25,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__logo_mobil1_number_box()],
 // 0 // Primitives
-// 1 16 -6.5 0 6.5 -1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,-6.5,0,6.5,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
-// 1 16 6.5 0 6.5 1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,6.5,0,6.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
-// 1 16 0 -.25 0 0 0 8 0 .25 0 6.5 0 0 box3u12.dat
-  [1,16,0,-.25,0,0,0,8,0,.25,0,6.5,0,0, ldraw_lib__box3u12()],
-// 1 16 -6.5 0 -6.5 -1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-6.5,0,-6.5,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
-// 1 16 6.5 0 -6.5 1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,6.5,0,-6.5,1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
-// 1 16 -6.5 0 6.5 -1.5 0 0 0 -.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,-6.5,0,6.5,-1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
-// 1 16 6.5 0 6.5 1.5 0 0 0 -.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,6.5,0,6.5,1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
-// 1 16 -6.5 0 -6.5 -1.5 0 0 0 -.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,-6.5,0,-6.5,-1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
-// 1 16 6.5 0 -6.5 1.5 0 0 0 -.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,6.5,0,-6.5,1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
 // 1 0 -6.5 -.25 6.5 -1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
   [1,0,-6.5,-.25,6.5,-1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
 // 1 0 6.5 -.25 6.5 1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
@@ -58,16 +47,6 @@ function ldraw_lib__6148328bj() = [
   [1,0,-6.5,-.25,-6.5,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
 // 1 0 6.5 -.25 -6.5 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
   [1,0,6.5,-.25,-6.5,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
-// 0 // Bottom faces
-// 4 16 6.5 0 8 8 0 6.5 -8 0 6.5 -6.5 0 8
-  [4,16,6.5,0,8,8,0,6.5,-8,0,6.5,-6.5,0,8],
-// 4 16 6.5 0 -8 -6.5 0 -8 -8 0 -6.5 8 0 -6.5
-  [4,16,6.5,0,-8,-6.5,0,-8,-8,0,-6.5,8,0,-6.5],
-// 0 // Lateral faces
-// 4 16 -6.5 0 8 -6.5 -.25 8 6.5 -.25 8 6.5 0 8
-  [4,16,-6.5,0,8,-6.5,-.25,8,6.5,-.25,8,6.5,0,8],
-// 4 16 -6.5 0 -8 6.5 0 -8 6.5 -.25 -8 -6.5 -.25 -8
-  [4,16,-6.5,0,-8,6.5,0,-8,6.5,-.25,-8,-6.5,-.25,-8],
 // 0 // Top faces
 // 4 0 -6.5 -.25 8 -8 -.25 6.5 -6.65 -.25 1.4525 -5.74 -.25 1.4525
   [4,0,-6.5,-.25,8,-8,-.25,6.5,-6.65,-.25,1.4525,-5.74,-.25,1.4525],

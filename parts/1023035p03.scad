@@ -8,19 +8,22 @@ use <s/1023035s01.scad>
 use <s/1023035s02.scad>
 use <s/1023035s03.scad>
 function ldraw_lib__1023035p03() = [
-// 0 Figure Friends Legs with Cargo Pants with Medium Nougat Legs, Tan Shoes with Dark Blue Laces and Soles Pattern
+// 0 Figure Friends Legs with Cargo Pants with Reddish Brown Legs, Olive Green Shoes with White Laces and Dark Blue Soles Pattern
 // 0 Name: 1023035p03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2025-07
+// 0 !LDRAW_ORG Part UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 35216cc00pb001, Set 41717
+// 0 !CATEGORY Figure
+// 0 !KEYWORDS Bricklink 35216bc00pb001, Rebrickable 2268c01pr0010, Set 41717
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2026-05-01 [Cheenzo] Corrected colours and keyword
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\1023035s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s02()],
@@ -28,32 +31,32 @@ function ldraw_lib__1023035p03() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\1023035s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s01()],
-// 1 84 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035s03.dat
-  [1,84,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s03()],
-// 1 84 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035s03.dat
-  [1,84,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s03()],
+// 1 70 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035s03.dat
+  [1,70,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s03()],
+// 1 70 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035s03.dat
+  [1,70,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035s03()],
 // 
-// 1 19 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035p02s01.dat
-  [1,19,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s01()],
+// 1 330 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035p02s01.dat
+  [1,330,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s01()],
 // 1 272 10 0 0 1 0 0 0 1 0 0 0 1 s\1022657p01s02.dat
   [1,272,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s02()],
-// 1 272 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035p02s02.dat
-  [1,272,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s02()],
-// 1 84 10 0 0 1 0 0 0 1 0 0 0 1 s\1022657p01s04.dat
-  [1,84,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s04()],
-// 1 84 10 0 0 1 0 0 0 1 0 0 0 1 s\1022657p01s05.dat
-  [1,84,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s05()],
+// 1 15 10 0 0 1 0 0 0 1 0 0 0 1 s\1023035p02s02.dat
+  [1,15,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s02()],
+// 1 70 10 0 0 1 0 0 0 1 0 0 0 1 s\1022657p01s04.dat
+  [1,70,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s04()],
+// 1 70 10 0 0 1 0 0 0 1 0 0 0 1 s\1022657p01s05.dat
+  [1,70,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s05()],
 // 
-// 1 19 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035p02s01.dat
-  [1,19,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s01()],
+// 1 330 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035p02s01.dat
+  [1,330,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s01()],
 // 1 272 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1022657p01s02.dat
   [1,272,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s02()],
-// 1 272 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035p02s02.dat
-  [1,272,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s02()],
-// 1 84 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1022657p01s04.dat
-  [1,84,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s04()],
-// 1 84 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1022657p01s05.dat
-  [1,84,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s05()],
+// 1 15 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1023035p02s02.dat
+  [1,15,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1023035p02s02()],
+// 1 70 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1022657p01s04.dat
+  [1,70,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s04()],
+// 1 70 -10 0 0 -1 0 0 0 1 0 0 0 1 s\1022657p01s05.dat
+  [1,70,-10,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__1022657p01s05()],
 ];
 module ldraw_lib__1023035p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__1023035p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

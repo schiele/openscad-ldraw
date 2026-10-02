@@ -5,7 +5,7 @@ function ldraw_lib__6564dy0() = [
 // 0 Wedge  3 x  2 Right with Headlamp on Red Background Right Sticker
 // 0 Name: 6564dy0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,9 +15,13 @@ function ldraw_lib__6564dy0() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Camaro, Chevrolet, Drag, Race, Set 75874, Speed Champions, SS
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2026-09-30 [OrionP] Minor header edits
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6564.dat

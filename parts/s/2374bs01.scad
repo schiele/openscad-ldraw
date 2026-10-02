@@ -13,12 +13,14 @@ function ldraw_lib__s__2374bs01() = [
 // 0 ~Boat Cargo Loading Plate 10 x 12 x  3.333 - Single Corner
 // 0 Name: s\2374bs01.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Unofficial_Subpart
+// 0 !LDRAW_ORG Subpart UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 0 // Hollow Top Studs
 // 1 16 -30 0 110 1 0 0 0 1 0 0 0 1 stud2a.dat

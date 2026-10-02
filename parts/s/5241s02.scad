@@ -17,12 +17,14 @@ function ldraw_lib__s__5241s02() = [
 // 0 ~Windscreen  6 x  4 x  1.667 Wedge Angled - Half
 // 0 Name: s\5241s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Unofficial_Subpart
+// 0 !LDRAW_ORG Subpart UPDATE 2026-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2026-09-30 [OrionP] Official Update 2026-09
 // 
 // 0 // Bottom
 // 4 16 36.2517 0 37.5103 32.3061 0 38.1679 32.6115 0 40 36 0 44
